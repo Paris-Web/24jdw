@@ -8,6 +8,7 @@
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-4722865-4']);
 		_gaq.push(['_trackPageview']);
+		_gaq.push(['_gat._anonymizeIp']);
 		(function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 			ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
