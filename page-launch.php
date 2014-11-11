@@ -33,8 +33,7 @@
 			<h1 class="title">24 jours de web</h1>
 			<p class="author">par Rémi (<a href="http://www.twitter.com/HTeuMeuLeu">@HTeuMeuLeu</a>)</p>
 			<?php
-				if(have_posts())
-				{	
+				if(have_posts()) {
 					the_post();
 					the_content();
 				}
@@ -42,14 +41,14 @@
 			<p class="footer"><a href="/">www.24joursdeweb.fr</a></p>
 		</div>
 		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-4722865-4']);
-		  _gaq.push(['_trackPageview']);
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-4722865-4']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
 		</script>
 	</body>
 </html>

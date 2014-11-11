@@ -1,6 +1,7 @@
 <?php 
 	get_header(); 
-	if (have_posts()) : the_post();
+	if (have_posts()) :
+		the_post();
 ?>
 		<div class="post">
 			<h1 class="post-title"><?php the_title(); ?></h1>
@@ -20,12 +21,13 @@
 			</div>
 		</div>
 		<?php endif; ?>
-	</div>	
-	<?php 
-		if(has_category('articles'))
+	</div>
+	<?php
+		if(has_category('articles')) {
 			get_template_part('donation');
+		}
 	?>
-	<div class="wrap">	
+	<div class="wrap">
 		<?php if(has_category('articles')) : ?>
 			<div class="posts-nav">
 				<?php 
@@ -35,7 +37,7 @@
 			</div>
 			<?php comments_template(); ?>
 		<?php endif; ?>
-<?php 
-	endif; 
+<?php
+	endif;
 	get_footer();
 ?>

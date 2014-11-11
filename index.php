@@ -1,8 +1,8 @@
 <?php
 	get_header();
-	if (have_posts())
-	{
-		while (have_posts()) : the_post();
+	if (have_posts()) {
+		while (have_posts()) :
+			the_post();
 ?>
 		<div class="post">
 			<?php if(is_page()) : ?>
@@ -19,12 +19,11 @@
 				<?php endif; ?>
 			</div>
 		</div>
-		<!-- Referer: <?php echo wp_get_referer(); ?> -->
-<?php 
-		endwhile; 
-	} 
+<?php
+		endwhile;
+	}
 ?>
-	</div>	
+	</div>
 	<?php get_template_part('donation'); ?>
-	<div class="wrap">		
+	<div class="wrap">
 <?php get_footer(); ?>

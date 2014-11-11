@@ -3,9 +3,8 @@
 	Template Name: Bundle 2013
 */
 ?><?php
-	get_header(); 
-	if (have_posts()) 
-	{
+	get_header();
+	if (have_posts()) {
 		the_post();
 ?>
 	</div>
@@ -16,9 +15,9 @@
 		</div>
 	</div>	
 	<div class="wrap">
-		<!--<div class="bundle-button">
+		<div class="bundle-button">
 			<?php get_template_part('paypal-button'); ?>
-		</div>-->
+		</div>
 		<div class="post">
 			<div class="entry">
 				<?php if((is_page('merci') && jdw_has_made_gift()) || !is_page('merci')) : ?>
@@ -27,7 +26,7 @@
 			</div>
 		</div>
 		<?php get_template_part('bundle'); ?>
-<?php 
-	} 
+<?php
+	}
+	get_footer();
 ?>
-<?php get_footer(); ?>

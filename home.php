@@ -1,8 +1,8 @@
-<?php 
-	get_header(); 
+<?php
+	get_header();
 	get_template_part('calendar');
 ?>
-</div>	
+</div>
 <?php get_template_part('donation'); ?>
-<div class="wrap">	
+<div class="wrap">
 <?php get_footer(); ?>

@@ -9,8 +9,7 @@
 		<ol class="comments-list">
 			<?php foreach ($comments as $comment) : ?>
 				<?php 
-					if($oddcomment)
-					{
+					if($oddcomment) {
 						$commentclass .= " alt-comment"; 
 					}
 				?>

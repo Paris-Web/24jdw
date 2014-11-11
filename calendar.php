@@ -1,13 +1,13 @@
 <ol class="calendar">
-	<?php 
+	<?php
 		global $jdw_current_edition;
 		$number_of_posts = 0;
 		$year = $jdw_current_edition;
-		if(is_year())
+		if(is_year()) {
 			$year = get_the_time('Y');
+		}
 		query_posts('category_name=articles&posts_per_page=28&monthnum=12&order=asc&year='.$year);
-		while(have_posts())
-		{	
+		while(have_posts()) {
 			the_post();
 			$day = get_the_date('d');
 	?><li class="calendar-day">
@@ -23,11 +23,11 @@
 			</li><?php
 			$number_of_posts++;
 		}
-		for($i=$number_of_posts+1; $i <= 24; $i++)
-		{
+		for($i=$number_of_posts+1; $i <= 24; $i++) {
 			$day = $i;
-			if($day < 10)
+			if($day < 10) {
 				$day = '0'.$day;
+			}
 	?><li class="calendar-day calendar-day--off">
 				<div class="calendar-day-frame">
 					<div class="calendar-day-frame-content">
