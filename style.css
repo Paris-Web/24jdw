@@ -187,8 +187,11 @@ textarea { padding:5px 10px; width:100%; color:#777; font:13px 'Lucida grande', 
 	
 /* Footer *************************************************/
 .footer { width:auto; margin-top:30px; margin-bottom:20px; padding:0 20px; font-size:0.8em; text-align:center; }
-	.footer a { padding:0 10px; text-decoration:none; }
-		.footer a:hover { text-decoration:underline; }
+	.footer-links { list-style:none; }
+		.footer-links li { display:inline; }
+			.footer-links li + li:before { content:'|'; }
+		.footer-links a { padding:0 10px; text-decoration:none; }
+			.footer-links a:hover { text-decoration:underline; }
 		
 /* Homepage ***********************************************/
 body.home, body.date { color:#9aafb7; background:#00141c; }

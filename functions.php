@@ -41,6 +41,12 @@ function jdw_add_iframe($initArray) {
 
 add_filter('tiny_mce_before_init', 'jdw_add_iframe');
 
+// Active le support d'un menu dans le footer
+function jdw_register_my_menu() {
+	register_nav_menu('footer-menu',__('Liens du footer'));
+}
+add_action('init', 'jdw_register_my_menu');
+
 // Fonctions utilitaires ***********************************
 function jdw_title()
 {

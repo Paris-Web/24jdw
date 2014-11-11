@@ -1,5 +1,13 @@
 		</div>
 		<div class="footer wrap">
+			<?php 
+				wp_nav_menu(array(
+					'theme_location' => 'footer-menu', 
+					'container' => 'false',
+					'menu_class' => 'footer-links',
+					'items_wrap' => '<ul class="%2$s">%3$s</ul>'
+				));
+			?>
 			<a href="<?php bloginfo('url'); ?>/bundle/">Le bundle</a> | <a href="<?php bloginfo('url'); ?>/2013/association-handiparentalite">L'association Handiparentalit&eacute;</a> | <a href="<?php bloginfo('url'); ?>/2013/remerciements/">Remerciements</a> | <a href="<?php bloginfo('url'); ?>/mentions-legales/">Mentions l&eacute;gales</a> | <a href="<?php bloginfo('url'); ?>/2012/">L'&eacute;dition 2012</a> | <a href="http://www.twitter.com/24joursdeweb" title="Suivez 24 jours de web sur Twitter">@24joursdeweb</a>
 		</div>
 	</div>
