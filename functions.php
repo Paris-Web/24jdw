@@ -93,45 +93,6 @@ function jdw_has_made_gift() {
 }
 
 /**
- * Gestion des avatars des auteurs n'ayant pas de Gravatar.
- * (C'est un poil sale. Idéalement il faudrait ajouter un champ personnalisé dans l'admin.)
- */
-function jdw_get_the_author_avatar($user_login) {
-	$avatar_img = '';
-	// 2012
-	if($user_login == 'auteur-cleprevost')
-		$avatar_img = 'http://media.24joursdeweb.fr/2012/12/charleslp.jpg';
-	else if($user_login == 'auteur-kdubost')
-		$avatar_img = 'http://media.24joursdeweb.fr/2012/12/kdubost.jpg'; 
-	else if($user_login == 'auteur-ckeirua')
-		$avatar_img = 'http://media.24joursdeweb.fr/2012/12/ckeirua.jpg'; 
-	else if($user_login == 'auteur-ahaasser')
-		$avatar_img = 'http://media.24joursdeweb.fr/2012/12/ahaasser.jpg'; 
-	// 2013	
-	else if($user_login == 'auteur-rbrasier')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/rbrasier.jpg'; 
-	else if($user_login == 'auteur-jhenrotte')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/jhenrotte.jpg'; 
-	else if($user_login == 'auteur-commitstrip')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/commitstrip.jpg'; 
-	else if($user_login == 'auteur-jrivalan')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/jrivalan.jpg'; 
-	else if($user_login == 'auteur-mcpaccard')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/mcpaccard.jpg'; 
-	else if($user_login == 'auteur-drousset')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/drousset.jpg'; 
-	else if($user_login == 'auteur-aleygues')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/aleygues.jpg'; 
-	else if($user_login == 'auteur-ndeschamps')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/naomi.jpg'; 
-	else if($user_login == 'auteur-bmenant')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/bmenant.jpg'; 
-	else if($user_login == 'auteur-rgrumeau')
-		$avatar_img = 'http://media.24joursdeweb.fr/2013/12/rgrumeau.jpg'; 
-	return $avatar_img;
-}
-
-/**
  * Affiche un lien vers articles précédents.
  */
 function jdw_previous_post_link() {
