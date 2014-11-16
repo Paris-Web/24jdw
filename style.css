@@ -1,307 +1,375 @@
 /*
 Theme Name:24 jours de web
 Theme URI:http://www.24joursdeweb.fr
-Description:Theme de 24 jours de web, edition 2013
-Version:2.0.0
-Author:Remi
+Description:Thème de 24 jours de web, édition 2014
+Version:3.0.0
+Author:Rémi
 Author URI:http://www.hteumeuleu.fr
 */
 
-/* Reset **************************************************/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License:none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+/**
+ * 1. Header
+ * 2. Footer
+ * 3. Calendrier
+ * 4. Article
+ * 5. Bundle
+ */
+
+/**
+ * Styles globaux
+ */
+* {
 	margin:0;
 	padding:0;
-	border:0;
-	font-size:100%;
-	font:inherit;
-	vertical-align:baseline;
+	box-sizing:border-box;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display:block;
-}
+
 body {
-	line-height:1;
-}
-blockquote, q {
-	quotes:none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content:'';
-	content:none;
-}
-table {
-	border-collapse:collapse;
-	border-spacing:0;
+	min-width:17.5em;
+	color:#595959;
+	font:1em/1.5 Georgia, serif;
+	background-color:#fafafb;
 }
 
-/* Styles globaux *****************************************/
-body { color:#595959; font:1.1em/1.5 Georgia, serif; background:#fff; }
-a { color:inherit; }
-a img { border:none; }
-.wrap { width:38em; margin:0 auto; }
-textarea { padding:5px 10px; width:100%; color:#777; font:13px 'Lucida grande', sans-serif; border:1px solid #aaa; border-radius:3px; resize:vertical; min-height:20px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
-.calendar-day-link { -webkit-transition:all linear 0.2s; -moz-transition:all linear 0.2s; -o-transition:all linear 0.2s; transition:all linear 0.2s; }
+a {
+	color:inherit;
+}
 
-/* Header *************************************************/
-.header { position:relative; }
-	/* Header calendrier */
-	.header-main { 
-		position:relative;
-		overflow:hidden;
-		height:350px;
-		padding:25px 0 0 0;
-		/*margin-bottom:-40px; height:390px;*/
-		background:#002c3e url(images/header/stars.png) repeat-x center top;
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#002c3e), color-stop(99%,#019397));
-		background:-webkit-linear-gradient(top,  #002c3e 0%,#019397 99%);
-		background:url(images/header/stars.png) repeat-x center top, linear-gradient(to bottom,  #002c3e 0%,#019397 99%);
-		-webkit-transition:height linear 0.2s;
-		transition:height linear 0.2s;
+a img {
+	border:none;
+}
+
+textarea {
+	padding:5px 10px;
+	width:100%;
+	color:#777;
+	font:13px 'Lucida grande', sans-serif;
+	border:1px solid #aaa;
+	border-radius:3px;
+	resize:vertical;
+	min-height:20px;
+}
+
+.wrap {
+	width:40em;
+	margin:0 auto;
+}
+
+/**
+ * Header
+ */
+.header {
+	position:relative;
+}
+
+	/* Header illustré de 2014 */
+	.header--2014 {
+		background:url(images/header/2014/background.png) repeat-x center top;
 	}
-	 
-		.header-main .wrap {
-			position:relative;
-			width:1000px;
-			margin:0 auto;
-			height:350px;
-			background:url(images/header/rooftop.png) no-repeat 75% bottom;
-			background:url(images/header/rooftop.png) no-repeat 75% bottom, url(images/header/city.png) no-repeat center bottom;
+
+		.header--2014 .wrap {
+			min-height:21.875em;
+			background:url(images/header/2014/illustration.png) no-repeat center top;
+			background-size:cover;
 		}
-	
-		.logo {
-			width:234px;
-			margin:0 auto 10px;
+
+		.header--2014 .logo {
+			width:10em;
+			margin:0 auto 0.5em;
+			padding-top:3em;
+			font-size:1em;
 		}
-	
-		.baseline {
-			display:block;
-			width:210px;
-			margin:0 auto;
-			text-align:center;
-			font-size:0.8em;
-			color:#e6daa8;
-			line-height:1.2;
-		}
-	
-		.santa {
-			position:absolute;
-			left:30px;
-			top:65px;
-			-webkit-transition:left linear 0.2s, top linear 0.2s;
-			transition:left linear 0.2s, top linear 0.2s;
-		}
-		
-		.header-donation {
-			position:absolute;
-			right:0;
-			top:20px;
-			width:310px;
-			text-align:center;
-		}
-			.header-donation p {
-				margin-bottom:10px;
-				padding:0 40px;
-				text-align:center;
-				font-size:14px;
-				line-height:17px;
-				color:#d3cfa1;
-			}
-			
-			.header-donation .organisation-name { 
+
+			.header--2014 .logo img {
 				display:block;
-				color:#fff;
-			}
-			
-			.header-donation .donation-link {
-				display:inline-block;
-				padding:15px 10px;
-				text-decoration:none;
-				text-transform:uppercase;
-				color:#e6e0cd;
-				font-family:Arial, sans-serif;
-				font-size:30px;
-				font-weight:bold;
-				border-radius:10px;
-				box-shadow:0 0 5px #333;
-				background:#9a0000;
-				-webkit-transition:background-color linear 0.2s, -webkit-transform linear 0.1s;
-				transition:background-color linear 0.2s, transform linear 0.1s;
-			}
-			
-			.header-donation .donation-link:hover {
-				background:#c60505;
-			}
-			
-			.header-donation .donation-link:active {
-				-webkit-transform:scale(0.95);
-				transform:scale(0.95);
-			}
-			
-	@media only screen and (max-width:1000px)
-	{
-		.header-main { margin-bottom:0; height:185px; }
-		.header-main .wrap { width:100%; background:url(images/header/city.png) no-repeat -550px 200%; }
-		.santa { left:-15%; top:0; }
-	}
-	
-	/*@media only screen and (max-width:800px)
-	{
-		.header-main .wrap { background:none; }
-		.santa { display:none; }
-		.logo,
-		.baseline { margin-left:10%; }
-	}*/
-	
-	@media only screen and (max-width:550px)
-	{
-		.header-donation { display:none; }
-		.santa { display:none; }
-		.logo,
-		.baseline { margin-left:auto; }
-	}
-	/* Header simple */
-	.header-back { padding:5px 0 10px; margin-bottom:55px; text-align:left; color:#fff; background:#022b3d; }
-		.logo-link, .comments-link { margin-top:0.6em; color:#fff; font-size:1em; line-height:1; text-decoration:none; }
-			.logo-link:hover, .comments-link:hover { color:#eee; }
-			.logo-link:before { content:'‹'; margin-right:5px;  }
-		.comments-link { float:right; font-size:0.8em; }	
-			.comments-link:after { content:'▼'; margin-left:5px; font-size:0.8em; }
-	
-/* Footer *************************************************/
-.footer { width:auto; margin-top:30px; margin-bottom:20px; padding:0 20px; font-size:0.8em; text-align:center; }
-	.footer-links { list-style:none; }
-		.footer-links li { display:inline; }
-			.footer-links li + li:before { content:'|'; }
-		.footer-links a { padding:0 10px; text-decoration:none; }
-			.footer-links a:hover { text-decoration:underline; }
-		
-/* Homepage ***********************************************/
-body.home, body.date { color:#9aafb7; background:#00141c; }
-	body.home .wrap, body.date .wrap { width:920px; }
-	
-.calendar { 
-	position:relative; margin-top:20px; 
-}
-	
-	.calendar-day 
-	{ 
-		position:relative;
-		display:inline-block; 
-		overflow:hidden; 
-		width:25%; 
-		height:25%; 
-		vertical-align:top; 
-		padding:3px; 
-		list-style:none; 
-		background:#fff; 
-		/*outline:1px solid #00141c; */
-		-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; 
-	}
-	
-		.calendar-day:before { content:''; display:block; padding-top:100%; }
-		
-		.calendar-day-frame 
-		{
-			position:absolute;
-			left:3px;
-			right:3px;
-			top:3px;
-			bottom:3px;
-		}
-		
-			.calendar-day-frame-content
-			{
-				display:table;
 				width:100%;
-				height:100%;
+				height:auto;
 			}
-	
-		.calendar-day-link, 
-		.calendar-day-number--off 
-		{ 
-			display:table-cell;
-			padding:1.13636364em; 
-			font-size:1.13636364em; 
-			color:#002c3e; 
-			text-decoration:none; 
-			background:#d6ceaf no-repeat 0 0; 
-			-webkit-box-sizing:border-box; 
-			-moz-box-sizing:border-box; 
-			box-sizing:border-box; 
+
+		.header--2014 .baseline {
+			width:16em;
+			margin:0 auto;
+			padding:0 1em;
+			color:#aa160e;
+			font-family:sans-serif;
+			font-size:0.625em;
+			line-height:1.25;
+			text-align:center;
 		}
-		
-		/*.calendar-day-link:active
-		{
-			-ms-transform:scale(0.9); -webkit-transform:scale(0.9); -o-transform:scale(0.9); transform:scale(0.9);
-		}*/
-		
-		.calendar
-		{
-			-webkit-transform:translateZ(0);
-			-moz-perspective:700px;
-			-webkit-perspective:700px;
-			perspective:700px;
+
+	/* Header simple */
+	.header--back {
+		padding:0.3em 0 0.6em;
+		margin-bottom:3.5em;
+		text-align:left;
+		color:#fff;
+		vertical-align:baseline;
+		background:#4a725b;
+	}
+
+		.logo-link,
+		.comments-link {
+			display:inline-block;
+			font-size:1em;
+			line-height:2;
+			text-decoration:none;
 		}
-		
-		[class="calendar-day"]
-		{
-			-webkit-transform-origin:50% 0;
-			transform-origin:50% 0;
-			-webkit-transform:rotateX(0);
-			transform:rotateX(0);
-			-webkit-transition:-webkit-transform linear 0.3s;
-			transition:transform linear 0.3s;
+
+			.logo-link:hover, .comments-link:hover {
+				color:#eee;
+			}
+
+			.logo-link:before {
+				content:'‹';
+				margin-right:0.3em;
+			}
+
+		.comments-link {
+			float:right;
 		}
-		
-		[class="calendar-day"]:hover 
-		{
+
+			.comments-link:after {
+				content:'▼';
+				margin-left:0.3em;
+				font-size:0.8em;
+			}
+
+/**
+ * Footer
+ */
+.footer {
+	margin:30px 0;
+	padding:0 20px;
+	font-size:0.8em;
+	text-align:center;
+}
+
+	.footer-links {
+		list-style:none;
+		font-size:0;
+	}
+
+	.footer-links:first-line:after { content:'lol'; color:red; }
+
+		.footer-links li {
+			display:inline;
+			font-size:13px;
+			font-size:0.8rem;
+		}
+
+		.footer-links a {
+			padding:0 10px;
+			text-decoration:none;
+			white-space:nowrap;
+		}
+
+		.footer-links a:hover {
+			text-decoration:underline;
+		}
+
+	@media only screen and (min-width:30em) {
+		.footer-links li:not(:last-child):after {
+			content:'|';
+		}
+	}
+
+	@media only screen and (max-width:30em) {
+		.footer {
+			padding:0;
+			margin:0;
+		}
+
+		.footer-links li {
+			display:block;
+			border-bottom:1px solid #eee;
+		}
+
+			.footer-links li:last-child {
+				border-bottom:none;
+			}
+
+		.footer-links a {
+			display:block;
+			padding:1em;
+		}
+	}
+
+/**
+ * Calendrier
+ */
+body.home .wrap, body.date .wrap {
+	width:57.5em;
+}
+
+.calendar {
+	position:relative;
+	margin-top:20px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	align-items:stretch;
+	width:100%;
+}
+
+	.day,
+	.day-off {
+		flex:1 0 0;
+		position:relative;
+		min-width:15.625em;
+		list-style:none;
+		border:3px solid transparent;
+	}
+
+	.day {
+		position:relative;
+		z-index:1;
+		perspective:80em;
+	}
+
+		.day:hover {
 			z-index:2;
-			-webkit-transform:rotateX(2deg);
-			transform:rotateX(2deg);
 		}
-		
-		[class="calendar-day"]:focus,
-		[class="calendar-day"]:active 
-		{
-			-webkit-transform:rotateX(0);
-			transform:rotateX(0);
+
+	.day-link {
+		display:flex;
+		flex-direction:column;
+		min-height:100%;
+		padding:1em;
+		font-size:1.25em;
+		color:#002c3e;
+		text-decoration:none;
+		word-wrap:break-word;
+		transform-origin:50% 0;
+		transform-style:preserve-3d;
+		transform:rotateX(0);
+		transition:transform cubic-bezier(0.5, 1.5, 0.5, 1.5) 0.4s 0.1s;
+		background-color:#89ab83;
+	}
+
+		.day-link:hover {
+			transform:rotateX(20deg);
 		}
-		
-	.calendar-day-number { display:block; margin:-0.5em 0 0.5em -0.5em; width:54px; height:49px; text-align:center; font-size:1.1em; line-height:49px; white-space:nowrap; color:#aa2a2a; font-weight:bold; letter-spacing:-0.05em; background:url(images/number.png) no-repeat 0 0; }	
-	.calendar-day-title { display:block; max-height:6em; position:relative; overflow:hidden; color:#002c3e; line-height:1.3; word-wrap:break-word; -webkit-hyphens:auto; -moz-hyphens:auto; hyphens:auto; }
-	.calendar-day-author { position:absolute; left:1em; right:1em; bottom:1em; overflow:hidden; display:block; padding-top:1em; margin-top:1em; color:#5f3813; font-size:0.8em; line-height:1; font-style:italic; white-space:nowrap; text-overflow:ellipsis; }
-		.calendar-day-author:before { content:''; position:absolute; left:0; top:0; display:block; width:64px; height:2px; background:#d9c98c; }
-	
-	.calendar-day--off { background:none; outline:none; }
-		.calendar-day-number--off { vertical-align:middle; padding:10px; color:#3a4549; font-size:4em; letter-spacing:-0.05em; line-height:1; text-align:center; background:none; border:1px dashed #3a4549; }
-		
-	.calendar-day:nth-child(3n+1) .calendar-day-link { background:#d6ceaf; }	
-	.calendar-day:nth-child(3n+2) .calendar-day-link { background:#e6e0cd; }	
-	.calendar-day:nth-child(3n+3) .calendar-day-link { background:#bbc8bf; }	
-	
-	/* Archive */
-	.title-year { text-align:center; color:#e6daa8; margin:0.5em 0 0; font-size:1.8em; }
-	
-/* Contenu principal **************************************/
-/* Article */
+
+		.day:nth-child(3n+1) .day-link { background:#c6c095; }
+		.day:nth-child(3n+2) .day-link { background:#b6c194; }
+		.day:nth-child(3n+3) .day-link { background:#dae4ce; }
+
+	.day-number {
+		display:block;
+		margin:-0.5em 0 0.5em -0.5em;
+		width:3.375em;
+		height:3.0625em;
+		text-align:center;
+		font-size:1em;
+		line-height:3.0625em;
+		white-space:nowrap;
+		color:#b8140b;
+		font-weight:bold;
+		letter-spacing:-0.05em;
+		background:url(images/number.png) no-repeat 0 0;
+		background-size:cover;
+	}
+
+	.day-title {
+		flex-grow:1;
+		position:relative;
+		display:block;
+		color:#3c3022;
+		line-height:1.3;
+	}
+
+	.day-author {
+		position:relative;
+		display:block;
+		padding-top:1em;
+		margin-top:1em;
+		color:#3a3122;
+		font-size:0.8em;
+		line-height:1;
+		font-style:italic;
+	}
+
+		.day-author:before {
+			content:'';
+			position:absolute;
+			left:0;
+			top:0;
+			display:block;
+			width:64px;
+			height:2px;
+			background:#fff;
+		}
+
+	.day-off {
+		display:flex;
+		align-items:stretch;
+		justify-content:center;
+		min-height:7.5em;
+		color:#c6ccc8;
+	}
+
+		.day-off-cell {
+			display:flex;
+			align-items:center;
+			flex-grow:1;
+			border:1px dashed #c6ccc8;
+		}
+
+		.day-off-number {
+			flex-grow:1;
+			vertical-align:middle;
+			font-size:3em;
+			letter-spacing:-0.05em;
+			text-align:center;
+		}
+
+	@media only screen and (min-width:63.125em) {
+		.day,
+		.day-off {
+			min-width:25%;
+		}
+
+			.day-off:nth-child(8n + 1),
+			.day-off:nth-child(8n + 1) ~ .day-off {
+				min-width: 12.5%;
+			}
+	}
+
+	@media only screen and (min-width:46.875em) and (max-width:63.125em) {
+		.day,
+		.day-off {
+			min-width:33.33333333%;
+		}
+
+			.day-off:nth-child(6n + 1),
+			.day-off:nth-child(6n + 1) ~ .day-off {
+				min-width:16.6666667%;
+			}
+	}
+
+	@media only screen and (min-width:31.25em) and (max-width:46.875em) {
+		.day,
+		.day-off {
+			min-width:50%;
+		}
+
+			.day-off:nth-child(4n + 1),
+			.day-off:nth-child(4n + 1) ~ .day-off {
+				min-width: 25%;
+			}
+	}
+
+/* Archive */
+.archive-title {
+	margin:0.5em 0 0;
+	color:#4a725b;
+	font-size:1.8em;
+	text-align:center;
+}
+
+/**
+ * Article
+ */
 .post { margin:0 0 40px; }
 	.post-title { color:#950001; margin:0 -100px 0.5em; font-weight:normal; font-size:2.5em; line-height:0.9em; text-align:center; }
 		.post-title a { color:#950001; text-decoration:none; }	
@@ -432,9 +500,11 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 		#commentform .user a { color:#A4A4A4; }
 		#commentform .user strong a { font-size:12px; text-decoration:none; }
 		#commentform small { display:block; margin:5px 0; color:#999; }	
-	
-/* Bundle */
-.page-template-page-bundle-php .header-back { margin-bottom:0; }
+
+/**
+ * Bundle
+ */
+.page-template-page-bundle-php .header--back { margin-bottom:0; }
 .bundle { 
 	padding-top:20px; color:#fff; text-align:center; 
 	background:#002c3e url(images/header/stars.png) repeat-x center top;
@@ -455,23 +525,22 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 			.book-specialoffer { display:block; margin-top:10px; color:#5F3813; padding:10px; background:#D6CEAF; }
 .bundle-button { margin-top:55px; text-align:center; }
 .notice { margin-bottom:1.5em; background:#ffffe0; border:1px solid #e6db55; border-radius:3px; padding:.6em; color:#333; }	
-	
-/* Raichu **********************************************/
-@media only screen and (min-width:1010px) {
-	.calendar { width:1000px; left:-40px; }
-		/*.calendar-day--off:nth-child(8n+1):not(:first-child), */
-		.calendar-day--off:nth-child(8n) ~ .calendar-day--off { width:12.5%; height:12.5%; }
-	 .entry table { min-width:-webkit-calc(100% + 200px); min-width:calc(100% + 200px); margin-left:-100px; margin-right:-100px; }
+
+/**
+ * Gros Papa Noël
+ */
+@media only screen and (min-width:63.125em) {
+	.calendar { width:62.5em; left:-2.5em; }
+	.entry table { min-width:-webkit-calc(100% + 200px); min-width:calc(100% + 200px); margin-left:-100px; margin-right:-100px; }
 }
 
-/* Pikachu *********************************************/
-@media only screen and (max-width:760px) {
-	.calendar-day-title { max-height:4em; }
-	.bundle-img { max-width:100%; height:auto; }
-}
+/**
+ * Papa Noël
+ */
+@media only screen and (max-width:63.125em) {
+	body.home .wrap, body.date .wrap { padding-left:0; padding-right:0; width:auto; }
+	.calendar { margin-top:0; border:3px solid transparent; }
 
-@media only screen and (max-width:1010px) {
-	body.home .wrap, body.date .wrap { padding-left:6px; padding-right:6px; width:auto; }
 	.wrap { width:auto; padding-left:20px; padding-right:20px; }
 	.posts-list { margin:0 10px; }
 	.post-title { font-size:32px; }
@@ -491,48 +560,29 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 	.entry img.alignleft, .entry img.alignright { float:none; width:100%; max-width:100%; margin-left:0; margin-right:0; } 
 }
 
-@media only screen and (min-width:481px) and (max-width:1010px) {
-	.calendar-day { width:33.3333%; }
+@media only screen and (max-width:47.5em) {
+	.bundle-img { max-width:100%; height:auto; }
 }
 
-/* Pichu **********************************************/
-@media only screen and (max-width:600px) {
-	/* Bundle */
+/**
+ * Petit Papa Noël
+ */
+@media only screen and (max-width:37.5em) {
 	.book-title { line-height:1; margin-bottom:0.5em; }
 	.book-cover { width:auto; }
 	.book-info { margin-right:0; overflow:visible; }
-	/* Homepage */
-	.calendar-day { width:50%; }	
-		.calendar-day-link { padding:1em; font-size:0.9em; }
-		/* Days off */
-		.calendar-day:nth-child(4n) ~ .calendar-day--off { width:25%; font-size:0.6em; }
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:30em) {
+	.calendar { border:3px solid #fff; }
+	.day-off { display:none; }
 	.logo { font-size:1.8em; }
 	.author-text { padding-left:0; }
 	.author-avatar { margin-right:20px; }
 	.comment { padding-left:0; }
 		.comment .avatar { position:relative; left:auto; top:auto; float:left; display:block; margin-right:20px; margin-bottom:10px; }
-	.calendar-day-title { max-height:4em; }
 }
 
-@media only screen and (max-width:360px) {
-	.calendar-day:before { padding-top:120%; }
-	/* Bundle */
+@media only screen and (max-width:22.5em) {
 	.book-cover { float:none; }
 }
-
-@media only screen and (max-width:320px) {
-	body { min-width:280px; }
-	.calendar-day { width:100%; }	
-		.calendar-day:before { content:none; }
-		.calendar-day-frame { position:static; }
-			.calendar-day-number--off { font-size:2em; }
-		.calendar-day-link { display:block; position:static; padding:1em; font-size:0.9em; }
-		.calendar-day-number { position:absolute; left:10px; top:10px; margin:0; }
-		.calendar-day-title { padding-left:55px; min-height:40px; height:auto; word-wrap:break-word; }
-		.calendar-day-author { position:relative; left:0; bottom:0; white-space:normal; }
-}
-
-/********************** Joyeux Noel ***********************/

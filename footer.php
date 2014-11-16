@@ -1,8 +1,8 @@
 		</div>
-		<div class="footer wrap">
+		<div class="footer">
 			<?php 
 				wp_nav_menu(array(
-					'theme_location' => 'footer-menu', 
+					'theme_location' => 'footer-menu',
 					'container' => 'false',
 					'menu_class' => 'footer-links',
 					'items_wrap' => '<ul class="%2$s">%3$s</ul>'
