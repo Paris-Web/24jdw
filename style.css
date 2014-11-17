@@ -204,18 +204,24 @@ body.home .wrap, body.date .wrap {
 .calendar {
 	position:relative;
 	margin-top:20px;
+	display:block;
+	display:-webkit-flex;
 	display:flex;
+	-webkit-flex-direction:row;
 	flex-direction:row;
+	-webkit-flex-wrap:wrap;
 	flex-wrap:wrap;
+	-webkit-align-items:stretch;
 	align-items:stretch;
 	width:100%;
 }
 
 	.day,
 	.day-off {
-		flex:1 0 0;
+		-webkit-flex-grow:1;
+		flex-grow:1;
 		position:relative;
-		min-width:15.625em;
+		width:15.625em;
 		list-style:none;
 		border:3px solid transparent;
 	}
@@ -223,6 +229,14 @@ body.home .wrap, body.date .wrap {
 	.day {
 		position:relative;
 		z-index:1;
+		display:block;
+		display:-webkit-flex;
+		display:flex;
+		-webkit-align-items:stretch;
+		align-items:stretch;
+		-webkit-justify-content:stretch;
+		justify-content:stretch;
+		-webkit-perspective:80em;
 		perspective:80em;
 	}
 
@@ -231,22 +245,32 @@ body.home .wrap, body.date .wrap {
 		}
 
 	.day-link {
+		display:block;
+		overflow:hidden;
+		display:-webkit-flex;
 		display:flex;
+		-webkit-flex-direction:column;
 		flex-direction:column;
+		min-width:100%;
 		min-height:100%;
 		padding:1em;
 		font-size:1.25em;
 		color:#002c3e;
 		text-decoration:none;
 		word-wrap:break-word;
+		-webkit-transform-origin:50% 0;
 		transform-origin:50% 0;
+		-webkit-transform-style:preserve-3d;
 		transform-style:preserve-3d;
+		-webkit-transform:rotateX(0);
 		transform:rotateX(0);
+		transition:-webkit-transform cubic-bezier(0.5, 1.5, 0.5, 1.5) 0.4s 0.1s;
 		transition:transform cubic-bezier(0.5, 1.5, 0.5, 1.5) 0.4s 0.1s;
 		background-color:#89ab83;
 	}
 
 		.day-link:hover {
+			-webkit-transform:rotateX(20deg);
 			transform:rotateX(20deg);
 		}
 
@@ -271,6 +295,7 @@ body.home .wrap, body.date .wrap {
 	}
 
 	.day-title {
+		-webkit-flex-grow:1;
 		flex-grow:1;
 		position:relative;
 		display:block;
@@ -301,21 +326,28 @@ body.home .wrap, body.date .wrap {
 		}
 
 	.day-off {
+		display:-webkit-flex;
 		display:flex;
+		-webkit-align-items:stretch;
 		align-items:stretch;
+		-webkit-justify-content:center;
 		justify-content:center;
 		min-height:7.5em;
 		color:#c6ccc8;
 	}
 
 		.day-off-cell {
+			display:-webkit-flex;
 			display:flex;
+			-webkit-align-items:center;
 			align-items:center;
+			-webkit-flex-grow:1;
 			flex-grow:1;
 			border:1px dashed #c6ccc8;
 		}
 
 		.day-off-number {
+			-webkit-flex-grow:1;
 			flex-grow:1;
 			vertical-align:middle;
 			font-size:3em;
