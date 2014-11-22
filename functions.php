@@ -66,6 +66,25 @@ function jdw_filter_posts_from_RSS($query) {
 add_filter('pre_get_posts','jdw_filter_posts_from_RSS');
 
 /**
+ * Support de vieux navigateurs sans flex-wrap
+ */
+function jdw_add_legacy_support() {
+	if((is_home() && !is_paged()) || is_year()) {
+?>
+	<script type="text/javascript">
+		(function(d){
+			var s = d.style;
+			if(!(('flexWrap' in s) || ('WebkitFlexWrap' in s) || ('MozFlexWrap' in s) || ('msFlexWrap' in s))) {
+				d.className = 'no-flexwrap';
+			}
+		})(document.documentElement);
+	</script>
+<?php
+	}
+}
+add_action('wp_footer', 'jdw_add_legacy_support');
+
+/**
  * Affichage du <title> de la page.
  */
 function jdw_title() {
