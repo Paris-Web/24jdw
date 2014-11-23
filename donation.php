@@ -29,11 +29,7 @@
 		<?php if(!is_page('merci')): ?>
 		<p>Vous recevrez prochainement par e-mail les informations pour télécharger vos e-books.</p>
 		<?php endif; ?>
-		<?php
-			$kittens = array('chatons1.jpg', 'chatons2.jpg', 'chatons3.jpg', 'chatons4.jpg', 'chatons5.jpg', 'chatons6.jpg');
-			$random_img = $kittens[array_rand($kittens)];
-		?>
-		<img class="ohhai" src="<?php bloginfo('template_url') ?>/images/<?php echo $random_img; ?>" alt="" />
+		<?php jdw_the_kitten(); ?>
 	</div>
 </div>
 <?php endif; ?>

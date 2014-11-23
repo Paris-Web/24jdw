@@ -138,4 +138,13 @@ function jdw_next_post_link() {
 		next_post_link('<span class="posts-nav-link posts-nav-next">%link</span>', $link_text, TRUE);
 	}
 }
+
+/**
+ * Affiche un chaton en remerciement d'un don.
+ */
+function jdw_the_kitten() {
+	$kittens = array('chatons1.jpg', 'chatons2.jpg', 'chatons3.jpg', 'chatons4.jpg', 'chatons5.jpg', 'chatons6.jpg');
+	$random_img = $kittens[array_rand($kittens)];
+	echo '<img class="ohhai" src="'.get_template_directory_uri().'/images/'.$random_img.'" alt="Un chaton" />';
+}
 ?>
