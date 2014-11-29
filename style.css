@@ -42,14 +42,14 @@ a img {
 }
 
 textarea {
-	padding:5px 10px;
+	padding:0.5em 1em;
 	width:100%;
 	color:#777;
-	font:13px 'Lucida grande', sans-serif;
+	font:0.8125em 'Lucida grande', sans-serif;
 	border:1px solid #aaa;
-	border-radius:3px;
+	border-radius:0.25em;
 	resize:vertical;
-	min-height:20px;
+	min-height:2em;
 }
 
 .wrap {
@@ -67,6 +67,7 @@ textarea {
 	/* Header illustré de 2014 */
 	.header--2014 {
 		background:url(images/header/2014/background.png) repeat-x center top;
+		background-size:contain;
 	}
 
 		.header--2014 .wrap {
@@ -122,7 +123,7 @@ textarea {
 			}
 
 			.logo-link:before {
-				content:'‹';
+				content:'\2039';
 				margin-right:0.3em;
 			}
 
@@ -131,7 +132,7 @@ textarea {
 		}
 
 			.comments-link:after {
-				content:'▼';
+				content:'\25BC';
 				margin-left:0.3em;
 				font-size:0.8em;
 			}
@@ -140,8 +141,8 @@ textarea {
  * Footer
  */
 .footer {
-	margin:30px 0;
-	padding:0 20px;
+	margin:2em 0;
+	padding:0 2em;
 	font-size:0.8em;
 	text-align:center;
 }
@@ -160,7 +161,7 @@ textarea {
 		}
 
 		.footer-links a {
-			padding:0 10px;
+			padding:0 0.5em;
 			text-decoration:none;
 			white-space:nowrap;
 		}
@@ -480,6 +481,7 @@ body.home .wrap, body.date .wrap {
 .entry {
 	position:relative;
 	color:#111;
+	font-size:1.1em;
 	word-wrap:break-word;
 	text-align:left;
 }
@@ -520,7 +522,7 @@ body.home .wrap, body.date .wrap {
 /* Auteur */
 .author-donation { clear:both; padding:40px 0; border-top:1px solid #ccc; text-align:justify;  }
 	.author-donation strong { font-weight:bold; }
-.author { clear:both; padding:40px 0; min-height:70px; border-top:1px solid #ccc; }
+.author { clear:both; margin-top:3em; padding:3em 0; min-height:70px; border-top:1px solid #ccc; }
 	.author-avatar { float:left; }
 		.author-avatar img { display:block; }
 	.author-text { padding-left:90px; }
@@ -537,9 +539,9 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 		.box-title { color:#fff; font-weight:normal; font-size:1.5em; line-height:1; text-shadow:2px 2px 0 rgba(0,0,0,0.2); }
 			.box-title a { text-decoration:underline; }
 			.box-title span { display:block; font-size:2em; line-height:1; margin-bottom:0.1em; }
-		.gift-button { position:absolute; right:0; top:30px; }
+		.gift-button { position:absolute; right:0; top:1em; }
 	.description { font-size:15px; line-height:1.4em; text-align:justify; }	
-		.description p { margin-bottom:15px; }
+		.description p { margin-bottom:1.5em; }
 		.description p:last-child { margin-bottom:0; }
 	.gift.box:first-child { border-top:0; padding-top:0; margin-top:0; }
 	.gift.box:only-child { border:0; padding:0; margin:0; }	
