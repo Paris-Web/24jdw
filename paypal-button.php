@@ -12,7 +12,7 @@
 		else if(is_year())
 			$page_type = 'Calendrier';
 	?>
-	<input type="image" onClick="_gaq.push(['_trackEvent', '<?php echo $page_type; ?>', 'Faire un don', '<?php echo addslashes(get_the_title()); ?>']);" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" style="border:0" name="submit" alt="PayPal" />
+	<input type="image" onClick="_gaq.push(['_trackEvent', '<?php echo esc_attr($page_type); ?>', 'Faire un don', '<?php echo esc_attr(get_the_title()); ?>']);" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" style="border:0" name="submit" alt="PayPal" />
 	<input type="hidden" name="lc" value="FR" />
 	<input type="hidden" name="return" value="http://www.24joursdeweb.fr/merci/?ref=pp&t=<?php echo time(); ?>" />
 	<input type="hidden" name="cbt" value="Retour sur 24 jours de web" />
