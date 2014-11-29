@@ -3,14 +3,14 @@
 	<div class="wrap">
 		<?php get_template_part('share'); ?>
 		<div class="gift box">
-			<h3 class="box-title"><span onclick="formPaypal.submit()">Faites un don</span> pour soutenir l'association Handiparentalit&eacute;&nbsp;!</h3>
+			<h3 class="box-title"><span onclick="formPaypal.submit()">Faites un don</span> pour soutenir l'association Un&nbsp;Pas&nbsp;Vers&nbsp;La&nbsp;Vie</h3>
 			<div class="gift-button">
 				<?php get_template_part('paypal-button'); ?>
 			</div>
 		</div>
 		<div class="description">
 			<p>
-				<a href="<?php bloginfo('url'); ?>/2013/association-handiparentalite/">L'association Handiparentalit&eacute;</a> a pour objet d'aider les parents ou futur-parents en situation de handicap, et de faire reconna&icirc;tre le statut de parent handicap&eacute; au niveau des institutions.
+				<a href="<?php bloginfo('url'); ?>/2014/association-un-pas-vers-la-vie/">L'association Un&nbsp;Pas&nbsp;Vers&nbsp;La&nbsp;Vie</a> aide les parents d'enfants autistes.
 			</p>
 			<p>
 				Les fonds r&eacute;colt&eacute;s vont directement sur le compte PayPal de l'association. En cliquant sur le bouton &quot;Faire un don" ci-dessus, vous allez &ecirc;tre redirigé vers PayPal. Vous n'&ecirc;tes pas oblig&eacute;s de cr&eacute;er un compte PayPal pour faire un don.
