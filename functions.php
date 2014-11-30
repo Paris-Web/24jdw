@@ -81,7 +81,7 @@ function jdw_add_body_class($classes) {
 add_filter('body_class', 'jdw_add_body_class');
 
 /**
- * Support de vieux navigateurs sans flex-wrap
+ * Support de vieux navigateurs sans flex-wrap.
  */
 function jdw_add_legacy_support() {
 	if((is_home() && !is_paged()) || is_year()) {
