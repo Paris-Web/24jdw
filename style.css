@@ -501,7 +501,7 @@ body.home .wrap, body.date .wrap {
 			.entry blockquote::before { position:absolute; left:0; top:0; content:'‘‘'; font-size:7.75em; line-height:0.9; color:#eee; letter-spacing:-10px; }
 			.entry blockquote a { color:inherit; }
 			.entry blockquote img { max-width:100%; }
-		.entry code { display:block; overflow:auto; margin:1.5em 0; padding:1.5em 1em; color:#333; font-size:1em; line-height:1.5em; font-family:Menlo,Monaco,Consolas,"Courier New",monospace; border:1px solid #e5e5e5; background:#f5f5f5; word-wrap:normal; tab-size:2; }
+		.entry pre code { display:block; overflow:auto; margin:1.5em 0; padding:1.5em 1em; color:#333; font-size:1em; line-height:1.5em; font-family:Menlo,Monaco,Consolas,"Courier New",monospace; border:1px solid #e5e5e5; background:#f5f5f5; word-wrap:normal; tab-size:2; }
 			.entry code.inline { display:inline; margin:0; padding:0; }
 			.code-comment { color:#208903; }
 		.entry table { min-width:100%; margin:1.5em 0; border:1px solid #E4E4E4; border-collapse:collapse; }
@@ -545,8 +545,7 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 	.gift.box:only-child { border:0; padding:0; margin:0; }	
 		.gift.box:first-child .gift-button,
 		.gift.box:only-child .gift-button { top:0; }
-	#don .wrap { max-width:38em; }
-		
+
 /* Merci bisous */
 .kthxbye { padding:30px 0; color:#fff; text-shadow:1px 1px 0 #6e706e; background:#3d403d; }	
 	.kthxbye .wrap { position:relative; }
@@ -567,9 +566,9 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 	.posts-nav-next { float:right; text-align:right; }
 		.posts-nav-next a { padding-right:35px; }
 		.posts-nav-previous a { padding-left:35px; }
-	.posts-nav-link a:before { position:absolute; top:0; font-size:2em; }
-		.posts-nav-next a:before { content:'»'; right:5px; }
-		.posts-nav-previous a:before { content:'«'; left:5px; }
+	.posts-nav-link a:before { position:absolute; top:0.5em; font-size:2em; }
+		.posts-nav-next a:before { content:'»'; right:0.33em; }
+		.posts-nav-previous a:before { content:'«'; left:0.33em; }
 
 /* Commentaires */
 .comments { margin:40px 0 0; }
@@ -645,6 +644,10 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 	.bundle-list > li {
 		display:block;
 		margin-bottom:3em;
+	}
+
+	.entry .bundle-list {
+		padding-left:0;
 	}
 
 .book {
@@ -735,9 +738,12 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 @media only screen and (max-width:63.125em) {
 	body.home .wrap, body.date .wrap { padding-left:0; padding-right:0; width:auto; }
 	.calendar { margin-top:0; border:3px solid transparent; }
+}
 
+@media only screen and (max-width:43.8em) {
 	.wrap { width:auto; padding-left:20px; padding-right:20px; }
 	.post-title { font-size:2em; }
+	.post-meta { font-size:1em; line-height:1.5; }
 	.list-post-title { width:75%; }
 	.gift-button { position:relative; margin:20px auto 0; top:0; }
 		.box-title { font-size:0.9em; } 
@@ -777,5 +783,5 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 }
 
 @media only screen and (max-width:22.5em) {
-	.book-cover { float:none; }
+	.book-cover { float:none; display:block; max-width:50%; }
 }
