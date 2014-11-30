@@ -13,7 +13,7 @@
 				<a href="<?php bloginfo('url'); ?>/2014/association-un-pas-vers-la-vie/">L'association Un&nbsp;Pas&nbsp;Vers&nbsp;La&nbsp;Vie</a> aide les parents d'enfants autistes.
 			</p>
 			<p>
-				Les fonds r&eacute;colt&eacute;s vont directement sur le compte PayPal de l'association. En cliquant sur le bouton &quot;Faire un don" ci-dessus, vous allez &ecirc;tre redirigé vers PayPal. Vous n'&ecirc;tes pas oblig&eacute;s de cr&eacute;er un compte PayPal pour faire un don.
+				Les fonds r&eacute;colt&eacute;s vont directement sur le compte PayPal de l'association. En cliquant sur le bouton &laquo;&nbsp;Faire un don&nbsp;&raquo; ci-dessus, vous allez &ecirc;tre redirigé vers PayPal. Vous n'&ecirc;tes pas oblig&eacute;s de cr&eacute;er un compte PayPal pour faire un don.
 			</p>
 		</div>
 	</div>
