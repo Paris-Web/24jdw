@@ -454,6 +454,59 @@ body.home .page.wrap, body.date .page.wrap {
 	text-align:center;
 }
 
+/* 2013 */
+.archive--2013 {
+	background-color:#00141c;
+}
+
+	.archive--2013 .baseline,
+	.archive--2013 .archive-title {
+		color:#e6daa8;
+	}
+
+	.archive--2013 .footer {
+		color:#9aafb7;
+	}
+
+	.archive--2013 .calendar {
+		background-color:#fff;
+		border:3px solid #fff;
+	}
+
+	.archive--2013 .day-author:before {
+		background-color:#d9c98c;
+	}
+
+	.archive--2013 .header {
+		background:#002c3e url(images/header/2013/stars.png) repeat-x center top;
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#002c3e), color-stop(99%,#019397));
+		background:-webkit-linear-gradient(top,  #002c3e 0%,#019397 99%);
+		background:url(images/header/2013/stars.png) repeat-x center top, linear-gradient(to bottom,  #002c3e 0%,#019397 99%);
+	}
+
+	.archive--2013 .header .wrap {
+		width:auto;
+		max-width:62.5em;
+		background-image:url(images/header/2013/illustration.png);
+		background-size:contain;
+		background-position:center bottom;
+	}
+
+	.archive--2013 .logo a {
+		display:block;
+		background:url(images/header/2013/logo.png) no-repeat center center;
+		background-size:cover;
+	}
+
+		.archive--2013 .logo img {
+			visibility:hidden;
+		}
+
+		.archive--2013 .day-link { background-color:#d6ceaf; }
+		.archive--2013 .day:nth-child(3n+1) .day-link { background-color:#d6ceaf; }
+		.archive--2013 .day:nth-child(3n+2) .day-link { background-color:#e6e0cd; }
+		.archive--2013 .day:nth-child(3n+3) .day-link { background-color:#bbc8bf; }
+
 /**
  * Article
  */
@@ -780,6 +833,7 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 	.author-avatar { margin-right:20px; }
 	.comment { padding-left:0; }
 		.comment .avatar { position:relative; left:auto; top:auto; float:left; display:block; margin-right:20px; margin-bottom:10px; }
+	.archive--2013 .header .wrap { min-height:15em; }
 }
 
 @media only screen and (max-width:22.5em) {
