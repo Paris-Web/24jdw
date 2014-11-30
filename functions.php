@@ -65,6 +65,21 @@ function jdw_filter_posts_from_RSS($query) {
 }
 add_filter('pre_get_posts','jdw_filter_posts_from_RSS');
 
+/*
+ * Ajoute une classe spécifique avec l'année en page d'archive, et le slug pour une page.
+ */
+function jdw_add_body_class($classes) {
+	if(is_year()) {
+		$classes[] = 'archive--'.get_the_date('Y');
+	}
+	else if(is_page()) {
+		global $post;
+		$classes[] = 'page--'.$post->post_name;
+	}
+	return $classes;
+}
+add_filter('body_class', 'jdw_add_body_class');
+
 /**
  * Support de vieux navigateurs sans flex-wrap
  */
@@ -147,4 +162,15 @@ function jdw_the_kitten() {
 	$random_img = $kittens[array_rand($kittens)];
 	echo '<img class="ohhai" src="'.get_template_directory_uri().'/images/'.$random_img.'" alt="Un chaton" />';
 }
+
+/**
+ * Shortcode pour afficher un bouton de don Paypal.
+ * Utilisé sur la page Bundle.
+ */
+function jdw_paypal_shortcode($attr) {
+	ob_start();
+	get_template_part('paypal-button');
+	return '<div class="bundle-button">'.ob_get_clean().'</div>';
+}
+add_shortcode('paypal-button', 'jdw_paypal_shortcode');
 ?>

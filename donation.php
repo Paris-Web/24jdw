@@ -3,7 +3,7 @@
 	<div class="wrap">
 		<?php get_template_part('share'); ?>
 		<div class="gift box">
-			<h3 class="box-title"><span onclick="formPaypal.submit()">Faites un don</span> pour soutenir l'association Un&nbsp;Pas&nbsp;Vers&nbsp;La&nbsp;Vie</h3>
+			<h3 class="box-title"><span onclick="formPaypal.submit()">Faites un don</span> pour soutenir <a href="<?php bloginfo('url'); ?>/2014/association-un-pas-vers-la-vie/">l'association Un&nbsp;Pas&nbsp;Vers&nbsp;La&nbsp;Vie</a><br />et <a href="<?php bloginfo('url'); ?>/bundle">recevez des e-books</a> pour tout don sup&eacute;rieur &agrave; 15&nbsp;&euro;</h3>
 			<div class="gift-button">
 				<?php get_template_part('paypal-button'); ?>
 			</div>

@@ -24,6 +24,10 @@
 	}
 ?>
 	</div>
-	<?php get_template_part('donation'); ?>
+	<?php
+		if(!is_page('bundle')) {
+			get_template_part('donation');
+		}
+	?>
 	<div class="wrap">
 <?php get_footer(); ?>

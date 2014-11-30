@@ -494,6 +494,7 @@ body.home .wrap, body.date .wrap {
 		.entry img { display:block; margin:1.5em 0; max-width:100%; width:auto; height:auto; border:none; }
 		.entry img.alignleft { float:left; margin:0 1.5em 0.5em 0; max-width:25em; margin-left:-6.25em; }
 		.entry img.alignright { float:right; margin:0 0 0.5em 1.5em; max-width:25em; margin-right:-6.25em; }
+		.entry img.aligncenter { margin-left:auto; margin-right:auto; }
 		.entry object { display:block; margin:1.5em 0; }
 		.entry a { color:#0654a4; }
 		.entry sup { vertical-align:text-top; line-height:0.8em; font-size:0.8em; }
@@ -606,27 +607,108 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 /**
  * Bundle
  */
-.page-template-page-bundle-php .header--back { margin-bottom:0; }
-.bundle { 
-	padding-top:20px; color:#fff; text-align:center; 
-	background:#002c3e url(images/header/stars.png) repeat-x center top;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#022B3D), color-stop(99%,#019397));
-	background:-webkit-linear-gradient(top,  #022B3D 0%,#019397 99%);
-	background:url(images/header/stars.png) repeat-x center top, linear-gradient(to bottom,  #022B3D 0%,#019397 99%);
+.page--bundle {
+	background-image:url(images/header/2014/background.png);
+	background-repeat:repeat-x;
+	background-position:center 3em;
 }
-	.bundle .post-title { color:#e6daa8; }
-.bundle-list { overflow:hidden; list-style:none; }
-	.bundle-list > li { display:block; margin-bottom:2em; }
-	.book { display:block; overflow:hidden; text-decoration:none; line-height:1.5; }
-		.book em { font-style:italic; }
-		.book-cover { float:left; width:95px; text-align:right; margin-right:20px; margin-bottom:10px; }
-			.book-cover img { border:1px solid #ccc; }
-		.book-info { display:block; overflow:hidden; margin-right:20px; }
-			.book-title {  display:block; font-size:1.4em; font-weight:bold; }
-			.book-meta { display:block; font-size:0.8em; margin-bottom:0.5em; }
-			.book-specialoffer { display:block; margin-top:10px; color:#5F3813; padding:10px; background:#D6CEAF; }
-.bundle-button { margin-top:55px; text-align:center; }
-.notice { margin-bottom:1.5em; background:#ffffe0; border:1px solid #e6db55; border-radius:3px; padding:.6em; color:#333; }	
+
+	.page--bundle .header--back {
+		margin-bottom:0;
+		background-color:#dadcdd;
+	}
+
+	.page--bundle .logo-link {
+		color:#AA160E;
+	}
+
+	.page--bundle .intro {
+		text-align:center;
+	}
+
+.bundle-button {
+	margin:1.5em;
+}
+
+	.bundle-button form {
+		max-width:12.25em;
+		margin:0 auto;
+	}
+
+		.bundle-button form img {
+			margin:0;
+		}
+
+.bundle-list {
+	overflow:hidden;
+	list-style:none;
+	margin-top:3em;
+}
+
+	.bundle-list > li {
+		display:block;
+		margin-bottom:3em;
+	}
+
+.book {
+	display:block;
+	overflow:hidden;
+	text-decoration:none;
+}
+
+	.entry .book {
+		color:inherit;
+	}
+
+	.book br { display:none; }
+
+	.book-cover {
+		float:left;
+		width:6em;
+		text-align:right;
+		margin-right:1em;
+		margin-bottom:1em;
+	}
+
+		.book-cover img {
+			margin:0;
+			border:1px solid #ccc;
+		}
+
+	.book-info {
+		display:block;
+		overflow:hidden;
+		margin-right:1em;
+	}
+
+		.book-title {
+			display:block;
+			font-size:1.4em;
+			font-weight:bold;
+		}
+
+		.book-meta {
+			display:block;
+			font-size:0.8em;
+			margin-bottom:0.5em;
+		}
+
+		.book-specialoffer {
+			display:block;
+			margin-top:1em;
+			color:#5F3813;
+			padding:0.75em;
+			background:#D6CEAF;
+		}
+
+.notice {
+	margin-bottom:1.5em;
+	padding:.6em;
+	color:#333;
+	background:#ffffe0;
+	border:1px solid #e6db55;
+	border-radius:3px;
+}
 
 /**
  * Gros Papa Noël
