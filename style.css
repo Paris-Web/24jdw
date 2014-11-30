@@ -584,7 +584,7 @@ body.home .page.wrap, body.date .page.wrap {
 /* Don */
 body.home .donation, body.date .donation,
 body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
-.donation { padding:30px 0 40px 0; color:#fff; text-shadow:1px 1px 0 #b12a2a; background:#990000; }	
+.donation { margin-top:3em; padding:30px 0 40px 0; color:#fff; text-shadow:1px 1px 0 #b12a2a; background:#990000; }	
 	.donation a { color:#fff; }
 	.box { position:relative; padding:20px 0; margin:20px 0; border:1px solid rgba(0,0,0,0.2); border-left:none; border-right:none; }
 		.box-title { color:#fff; font-weight:normal; font-size:1.5em; text-shadow:2px 2px 0 rgba(0,0,0,0.2); }
@@ -600,7 +600,7 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 		.gift.box:only-child .gift-button { top:0; }
 
 /* Merci bisous */
-.kthxbye { padding:30px 0; color:#fff; text-shadow:1px 1px 0 #6e706e; background:#3d403d; }	
+.kthxbye { margin-top:3em; padding:30px 0; color:#fff; text-shadow:1px 1px 0 #6e706e; background:#3d403d; }	
 	.kthxbye .wrap { position:relative; }
 	.kthxbye a { color:#fff; }
 	.thx { padding-bottom:20px; }
