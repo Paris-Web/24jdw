@@ -67,7 +67,6 @@ textarea {
 	/* Header illustré de 2014 */
 	.header--2014 {
 		background:url(images/header/2014/background.png) repeat-x center top;
-		background-size:contain;
 	}
 
 		.header--2014 .wrap {
@@ -151,8 +150,6 @@ textarea {
 		list-style:none;
 		font-size:0;
 	}
-
-	.footer-links:first-line:after { content:'lol'; color:red; }
 
 		.footer-links li {
 			display:inline;
@@ -511,10 +508,10 @@ body.home .wrap, body.date .wrap {
 			.entry table th { padding:2px 10px; color:#fff; border:1px solid #E4E4E4; background:#333; }
 			.entry table td { padding:2px 10px; border:1px solid #E4E4E4; }
 			.entry table tr:nth-child(2n+1) td { background:#f4f4f4; }
-		.entry .footnotes { font-size:0.8em; line-height:1.3em; color:#444; }
+		.entry .footnotes { font-size:0.8em; color:#444; }
 			.entry .footnotes ol { padding-left:0; }
 			.entry .footnotes p { margin-bottom:1.5em; }
-			.entry .footnotes li:target { background:#eee; }
+			.entry .footnotes li:target { background:#ffffe0; }
 		.wp-caption[style] { width:auto !important; }
 		.wp-caption-text { font-size:0.9em; line-height:normal; font-style:italic; color:#666; text-align:left; }
 		.gallery-item { margin-top:0 !important; }
@@ -537,7 +534,7 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 .donation { padding:30px 0 40px 0; color:#fff; text-shadow:1px 1px 0 #b12a2a; background:#990000; }	
 	.donation a { color:#fff; }
 	.box { position:relative; padding:20px 0; margin:20px 0; border:1px solid rgba(0,0,0,0.2); border-left:none; border-right:none; }
-		.box-title { color:#fff; font-weight:normal; font-size:1.5em; line-height:1; text-shadow:2px 2px 0 rgba(0,0,0,0.2); }
+		.box-title { color:#fff; font-weight:normal; font-size:1.5em; text-shadow:2px 2px 0 rgba(0,0,0,0.2); }
 			.box-title a { text-decoration:underline; }
 			.box-title span { display:block; font-size:2em; line-height:1; margin-bottom:0.1em; }
 		.gift-button { position:absolute; right:0; top:1em; }
