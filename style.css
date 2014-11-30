@@ -605,7 +605,7 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 	.kthxbye a { color:#fff; }
 	.thx { padding-bottom:20px; }
 		.thx:first-child { padding-top:0; margin-top:0; border-top:none; }
-	.ohhai { position:absolute; right:0; bottom:-50px; display:block; width:200px; height:200px; border:10px solid #fff; box-shadow:0 0 5px rgba(0,0,0,0.6); -webkit-transform:rotate(3deg); -ms-transform:rotate(3deg); -o-transform:rotate(3deg); transform:rotate(3deg); }
+	.ohhai { position:absolute; right:0; bottom:2em; display:block; width:200px; height:200px; border:10px solid #fff; box-shadow:0 0 5px rgba(0,0,0,0.6); -webkit-transform:rotate(3deg); -ms-transform:rotate(3deg); -o-transform:rotate(3deg); transform:rotate(3deg); }
 	.kthxbye p { max-width:680px; }
 
 /* Navigation entre articles */
