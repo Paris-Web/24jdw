@@ -89,7 +89,7 @@ function jdw_add_legacy_support() {
 	<script type="text/javascript">
 		(function(d){
 			var s = d.style;
-			if(!(('flexWrap' in s) || ('WebkitFlexWrap' in s) || ('MozFlexWrap' in s))) {
+			if(!(('flexWrap' in s) || ('WebkitFlexWrap' in s) || ('MozFlexWrap' in s) || ('msFlexWrap' in s))) {
 				d.className = 'no-flexwrap';
 			}
 		})(document.documentElement);

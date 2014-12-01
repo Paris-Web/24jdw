@@ -262,8 +262,8 @@ body.home .page.wrap, body.date .page.wrap {
 		-webkit-flex-direction:column;
 		-ms-flex-direction:column;
 		flex-direction:column;
-		min-width:100%;
-		min-height:100%;
+		width:100%;
+		height:100%;
 		padding:1em;
 		font-size:1.25em;
 		color:#002c3e;
