@@ -22,16 +22,12 @@
 		</div>
 		<?php endif; ?>
 	</div>
-	<?php
-		if(has_category('articles')) {
-			get_template_part('donation');
-		}
-	?>
+	<?php get_template_part('donation'); ?>
 	<div class="wrap">
 		<?php if(has_category('articles')) : ?>
 			<div class="posts-nav">
 				<?php 
-					jdw_previous_post_link(); 
+					jdw_previous_post_link();
 					jdw_next_post_link();
 				?>
 			</div>
