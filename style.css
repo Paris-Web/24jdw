@@ -565,6 +565,8 @@ body.home .page.wrap, body.date .page.wrap {
 			.entry .footnotes ol { padding-left:0; }
 			.entry .footnotes p { margin-bottom:1.5em; }
 			.entry .footnotes li:target { background:#ffffe0; }
+			.entry .footnotes h1, .entry .footnotes h2 { font-size:1.2em; line-height:1.5; margin-bottom:0.5em; }
+			.entry .footnotes h3, .entry .footnotes h4, .entry .footnotes h5, .entry .footnotes h6 { font-size:1em; line-height:1.5; margin-bottom:0.5em; }
 		.wp-caption[style] { width:auto !important; }
 		.wp-caption-text { font-size:0.9em; line-height:normal; font-style:italic; color:#666; text-align:left; }
 		.gallery-item { margin-top:0 !important; }
