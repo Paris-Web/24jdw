@@ -281,11 +281,6 @@ body.home .page.wrap, body.date .page.wrap {
 		background-color:#89ab83;
 	}
 
-		.day-link:hover {
-			-webkit-transform:rotateX(20deg);
-			transform:rotateX(20deg);
-		}
-
 		.day:nth-child(3n+1) .day-link { background:#c6c095; }
 		.day:nth-child(3n+2) .day-link { background:#b6c194; }
 		.day:nth-child(3n+3) .day-link { background:#dae4ce; }
@@ -416,11 +411,49 @@ body.home .page.wrap, body.date .page.wrap {
 			}
 	}
 
+	@media only screen and (min-width:31.25em) {
+		.day-link:hover {
+			-webkit-transform:rotateX(20deg);
+			transform:rotateX(20deg);
+		}
+	}
+
 	@media only screen and (max-width:31.25em) {
+		.calendar {
+			-webkit-flex-wrap:nowrap;
+			-ms-flex-wrap:nowrap;
+			flex-wrap:nowrap;
+			-webkit-flex-direction:column;
+			-ms-flex-direction:column;
+			flex-direction:column;
+		}
+
+		.home .calendar {
+			-webkit-flex-direction:column-reverse;
+			-ms-flex-direction:column-reverse;
+			flex-direction:column-reverse;
+		}
+
 		.day,
 		.day-off {
 			min-height:0;
+			width:auto;
 		}
+
+		.day-off {
+			display:none;
+		}
+
+		.day-link {
+			display:block;
+			-webkit-transform-origin:center center;
+			transform-origin:center center;
+		}
+
+			.day-link:hover {
+				-webkit-transform:scale(0.98);
+				transform:scale(0.98);
+			}
 	}
 
 	/* Support des vieux navigateurs, sans flex-wrap */
@@ -829,7 +862,6 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 
 @media only screen and (max-width:30em) {
 	.calendar { border:3px solid #fff; }
-	.day-off { display:none; }
 	.logo { font-size:1.8em; }
 	.author-text { padding-left:0; }
 	.author-avatar { margin-right:20px; }
