@@ -446,13 +446,13 @@ body.home .page.wrap, body.date .page.wrap {
 
 		.day-link {
 			display:block;
-			-webkit-transform-origin:center center;
-			transform-origin:center center;
+			-webkit-transform:none;
+			transform:none;
 		}
 
 			.day-link:hover {
-				-webkit-transform:scale(0.98);
-				transform:scale(0.98);
+				-webkit-transform:none;
+				transform:none;
 			}
 	}
 
