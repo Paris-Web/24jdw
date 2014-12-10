@@ -567,6 +567,10 @@ body.home .page.wrap, body.date .page.wrap {
 	color:#111;
 	font-size:1.1em;
 	word-wrap:break-word;
+	-moz-hyphens:auto;
+	-webkit-hyphens:auto;
+	-ms-hyphens:auto;
+	hyphens:auto;
 	text-align:left;
 }
 		.entry > :last-child { margin-bottom:0; }
@@ -865,6 +869,8 @@ body.home .kthxbye, body.date .kthxbye { margin-top:30px; }
 	.logo { font-size:1.8em; }
 	.author-text { padding-left:0; }
 	.author-avatar { margin-right:20px; }
+	.entry h2 { font-size:1.4em; line-height:1.5; }
+	.entry h3 { font-size:1.2em; line-height:1.5; }
 	.comment { padding-left:0; }
 		.comment .avatar { position:relative; left:auto; top:auto; float:left; display:block; margin-right:20px; margin-bottom:10px; }
 	.archive--2013 .header .wrap { min-height:15em; }
