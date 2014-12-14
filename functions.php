@@ -173,4 +173,19 @@ function jdw_paypal_shortcode($attr) {
 	return '<div class="bundle-button">'.ob_get_clean().'</div>';
 }
 add_shortcode('paypal-button', 'jdw_paypal_shortcode');
+
+/*
+ * Ajoute la coloration syntaxique avec Prism.js
+ *
+ * @see http://prismjs.com/
+ */
+function jdw_add_prism() {
+	if(is_single()) {
+		wp_register_style('prismCSS', get_stylesheet_directory_uri().'/css/prism.css');
+		wp_register_script('prismJS', get_stylesheet_directory_uri().'/js/prism.js');
+		wp_enqueue_style('prismCSS');
+		wp_enqueue_script('prismJS');
+	}
+}
+add_action('wp_enqueue_scripts', 'jdw_add_prism');
 ?>
