@@ -14,7 +14,12 @@
 		</div>
 		<?php if(has_category('articles')) : ?>
 		<div class="author">
-			<span class="author-avatar"><?php echo get_avatar(get_the_author_meta('email'), 64, get_the_author_meta('jdwavatar'), get_the_author()); ?></span>
+			<span class="author-avatar">
+				<?php
+					echo get_avatar(get_the_author_meta('email'), 64, get_the_author_meta('jdwavatar'), get_the_author());
+					jdw_multi_author_avatar();
+				?>
+			</span>
 			<div class="author-text">
 				<h3 class="author-title">&Agrave; propos de <?php the_author(); ?></h3>
 				<p class="author-description"><?php the_author_meta('description'); ?></p>

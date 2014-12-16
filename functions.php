@@ -188,4 +188,14 @@ function jdw_add_prism() {
 	}
 }
 add_action('wp_enqueue_scripts', 'jdw_add_prism');
+
+/*
+ * Gestion des avatars multi auteurs
+ * ATTENTION C'EST SUPER DEGUEULASSE
+ */
+function jdw_multi_author_avatar() {
+	if(is_single('859')) {
+		echo '<img alt="Philippe Roser" src="http://media.24joursdeweb.fr/2014/12/philippe.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
+	}
+}
 ?>
