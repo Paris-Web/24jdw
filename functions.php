@@ -197,5 +197,12 @@ function jdw_multi_author_avatar() {
 	if(is_single('859')) {
 		echo '<img alt="Philippe Roser" src="http://media.24joursdeweb.fr/2014/12/philippe.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
 	}
+	elseif(is_single('878')) {
+		echo '<img alt="Matthieu Bu&eacute;" src="http://media.24joursdeweb.fr/2014/12/matthieu.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
+	}
+	elseif(is_single('919')) {
+		echo '<img alt="Juliette Frank de Cuzey" src="http://media.24joursdeweb.fr/2014/12/juliette.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
+	}
+}
 }
 ?>
