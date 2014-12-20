@@ -412,7 +412,8 @@ body.home .page.wrap, body.date .page.wrap {
 	}
 
 	@media only screen and (min-width:31.25em) {
-		.day-link:hover {
+		.day-link:hover,
+		.day-link:focus {
 			-webkit-transform:rotateX(20deg);
 			transform:rotateX(20deg);
 		}
