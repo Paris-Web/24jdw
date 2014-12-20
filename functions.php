@@ -204,5 +204,20 @@ function jdw_multi_author_avatar() {
 		echo '<img alt="Juliette Frank de Cuzey" src="http://media.24joursdeweb.fr/2014/12/juliette.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
 	}
 }
+
+/**
+ * Ajoute le support de gist via oEmbed
+ *
+ * @see http://blackhillswebworks.com/2013/08/03/embed-gists-on-your-wordpress-blog-without-a-plugin/
+ */
+wp_embed_register_handler('gist', '/https?:\/\/gist\.github\.com\/([a-z0-9]+)(\?file=.*)?/i', 'jdw_embed_handler_gist');
+
+function jdw_embed_handler_gist($matches, $attr, $url, $rawattr) {
+	$embed = sprintf(
+			'<script src="https://gist.github.com/%1$s.js%2$s"></script>',
+			esc_attr($matches[1]),
+			esc_attr($matches[2])
+			);
+	return apply_filters('embed_gist', $embed, $matches, $attr, $url, $rawattr);
 }
 ?>
