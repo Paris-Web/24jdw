@@ -3,7 +3,7 @@
 	<div class="wrap">
 		<?php get_template_part('share'); ?>
 		<div class="gift box">
-			<h3 class="box-title"><span onclick="formPaypal.submit()">Faites un don</span> pour soutenir <a href="<?php bloginfo('url'); ?>/2014/association-un-pas-vers-la-vie/">l'association Un&nbsp;Pas&nbsp;Vers&nbsp;La&nbsp;Vie</a><br />et <a href="<?php bloginfo('url'); ?>/bundle">recevez des e-books</a> pour tout don sup&eacute;rieur &agrave; 15&nbsp;&euro;</h3>
+			<h3 class="box-title"><span onclick="formPaypal.submit()">Faites un don</span> pour soutenir <a href="<?php bloginfo('url'); ?>/2014/association-un-pas-vers-la-vie/">l'association Un&nbsp;Pas&nbsp;Vers&nbsp;La&nbsp;Vie</a></h3>
 			<div class="gift-button">
 				<?php get_template_part('paypal-button'); ?>
 			</div>
@@ -26,9 +26,6 @@
 			<h3 class="box-title"><span>Merci beaucoup</span> pour votre générosité.</h3>
 		</div>
 		<p>Pour vous remercier, voici une photo de chaton.</p>
-		<?php if(!is_page('merci')): ?>
-		<p>Vous recevrez prochainement par e-mail les informations pour télécharger vos e-books.</p>
-		<?php endif; ?>
 		<?php jdw_the_kitten(); ?>
 	</div>
 </div>
