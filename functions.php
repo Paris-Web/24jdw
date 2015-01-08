@@ -203,6 +203,9 @@ function jdw_multi_author_avatar() {
 	elseif(is_single('919')) {
 		echo '<img alt="Juliette Frank de Cuzey" src="http://media.24joursdeweb.fr/2014/12/juliette.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
 	}
+	elseif(is_single('931')) {
+		echo '<img alt="Goulven Champenois" src="http://media.24joursdeweb.fr/2014/12/goulven.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
+	}
 }
 
 /**
