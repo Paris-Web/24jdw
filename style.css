@@ -65,40 +65,33 @@ textarea {
 	position:relative;
 }
 
-	/* Header illustré de 2014 */
-	.header--2014 {
-		background:url(images/header/2014/background.png) repeat-x center top;
+	.header .wrap {
+		min-height:21.875em;
 	}
 
-		.header--2014 .wrap {
-			min-height:21.875em;
-			background:url(images/header/2014/illustration.png) no-repeat center top;
-			background-size:cover;
+	.header .logo {
+		width:10em;
+		margin:0 auto 0.5em;
+		padding-top:3em;
+		font-size:1em;
+	}
+
+		.header .logo img {
+			display:block;
+			width:100%;
+			height:auto;
 		}
 
-		.header--2014 .logo {
-			width:10em;
-			margin:0 auto 0.5em;
-			padding-top:3em;
-			font-size:1em;
-		}
-
-			.header--2014 .logo img {
-				display:block;
-				width:100%;
-				height:auto;
-			}
-
-		.header--2014 .baseline {
-			width:16em;
-			margin:0 auto;
-			padding:0 1em;
-			color:#aa160e;
-			font-family:sans-serif;
-			font-size:0.625em;
-			line-height:1.25;
-			text-align:center;
-		}
+	.header .baseline {
+		width:16em;
+		margin:0 auto;
+		padding:0 1em;
+		color:#aa160e;
+		font-family:sans-serif;
+		font-size:0.625em;
+		line-height:1.25;
+		text-align:center;
+	}
 
 	/* Header simple */
 	.header--back {

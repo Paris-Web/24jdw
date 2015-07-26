@@ -17,7 +17,8 @@
 <body <?php body_class(); ?>>
 	<div id="site">
 		<?php if((is_home() && !is_paged()) || is_year()) : ?>
-		<div class="header header--2014">
+		<?php the_date('Y'); ?>
+		<div class="header header--<?php jdw_the_year(); ?>">
 			<div class="wrap">
 				<h1 class="logo"><a href="<?php bloginfo('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/header/2014/logo.png" width="160" height="60" alt="24 jours de web" title="" /></a></h1>
 				<p class="baseline"><?php bloginfo('description'); ?></p>

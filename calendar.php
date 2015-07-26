@@ -2,13 +2,7 @@
 	<?php
 		$number_of_posts = 0;
 
-		if(is_year()) {
-			$year = get_the_time('Y');
-		}
-		else {
-			global $jdw_current_edition;
-			$year = $jdw_current_edition;
-		}
+		$year = jdw_get_the_year();
 
 		query_posts('category_name=articles&posts_per_page=28&monthnum=12&order=asc&year='.$year);
 		while(have_posts()) {

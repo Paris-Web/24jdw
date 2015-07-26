@@ -115,6 +115,27 @@ function jdw_title() {
 }
 
 /**
+ * Récupère l'année en cours
+ */
+function jdw_get_the_year() {
+	if(is_year()) {
+		return get_the_time('Y');
+	}
+	else {
+		return $jdw_current_edition;
+	}
+}
+
+/**
+ * Affiche l'année en cours.
+ *
+ * @see jdw_get_the_year()
+ */
+function jdw_the_year() {
+	echo jdw_get_the_year();
+}
+
+/**
  * Vérifie si un utilisateur a fait un don.
  *
  * @see jdwgift_has_made_gift() dans le plugin 24jdwgift
