@@ -482,6 +482,16 @@ body.home .page.wrap, body.date .page.wrap {
 	text-align:center;
 }
 
+/* 2014 */
+.header--2014 {
+	background:url(images/header/2014/background.png) repeat-x center top;
+}
+
+	.header--2014 .wrap {
+		background:url(images/header/2014/illustration.png) no-repeat center top;
+		background-size:cover;
+	}
+
 /* 2013 */
 .archive--2013 {
 	background-color:#00141c;
