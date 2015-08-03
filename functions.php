@@ -122,6 +122,7 @@ function jdw_get_the_year() {
 		return get_the_time('Y');
 	}
 	else {
+		global $jdw_current_edition;
 		return $jdw_current_edition;
 	}
 }

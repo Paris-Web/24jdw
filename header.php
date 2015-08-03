@@ -20,7 +20,12 @@
 		<?php the_date('Y'); ?>
 		<div class="header header--<?php jdw_the_year(); ?>">
 			<div class="wrap">
-				<h1 class="logo"><a href="<?php bloginfo('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/header/2014/logo.png" width="160" height="60" alt="24 jours de web" title="" /></a></h1>
+				<?php
+					$logo = '<img src="'.get_bloginfo('template_url').'/images/header/2014/logo.png" width="160" height="60" alt="'.get_bloginfo('name').'" title="" />';
+					if(jdw_get_the_year() == 2012)
+						$logo = get_bloginfo('name');
+				?>
+				<h1 class="logo"><a href="<?php bloginfo('home'); ?>"><?php echo $logo; ?></a></h1>
 				<p class="baseline"><?php bloginfo('description'); ?></p>
 			</div>
 		</div>
