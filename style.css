@@ -113,7 +113,7 @@ textarea {
 		}
 
 			.logo-link:hover, .comments-link:hover {
-				color:#c6ccc8;
+				opacity:0.8;
 			}
 
 			.logo-link:before {
@@ -493,6 +493,8 @@ body.home .page.wrap, body.date .page.wrap {
 		background-size:cover;
 	}
 
+	.header--back--2014 { background-color:#4a725b; }
+
 /* 2013 */
 .archive--2013 {
 	background-color:#00141c;
@@ -537,6 +539,8 @@ body.home .page.wrap, body.date .page.wrap {
 		.archive--2013 .day:nth-child(3n+2) .day-link { background-color:#e6e0cd; }
 		.archive--2013 .day:nth-child(3n+3) .day-link { background-color:#bbc8bf; }
 
+	.header--back--2013 { background-color:#00141c; }
+
 /* 2012 */
 .archive--2012 {
 	border-top:5px solid #E13930;
@@ -572,6 +576,8 @@ body.home .page.wrap, body.date .page.wrap {
 		.header--2012 .logo a {
 			text-decoration:none;
 		}
+
+	.header--back--2012 { background-color:#e13930; }
 
 	.archive--2012 .calendar-day--2012:nth-child(5n+1) .calendar-day-link--2012 {
 		background-color:#accbbb;

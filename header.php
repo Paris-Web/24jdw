@@ -29,9 +29,9 @@
 			</div>
 		</div>
 		<?php else : ?>
-		<div class="header header--back">
+		<div class="header header--back header--back--<?php jdw_the_year(); ?>">
 			<div class="wrap">
-				<a href="<?php bloginfo('home'); ?>" class="logo-link" title="Retour &agrave; l'accueil"><?php bloginfo('name'); ?></a>
+				<a href="<?php bloginfo('home'); ?>/<?php jdw_the_year(); ?>" class="logo-link" title="Retour &agrave; l'&eacute;dition <?php jdw_the_year(); ?>"><?php bloginfo('name'); ?></a>
 				<?php if(get_comments_number() > 0): ?>
 				<a href="#commentaires" class="comments-link" onClick="_gaq.push(['_trackEvent', 'Anchor Link', 'Commentaires', '<?php esc_attr(get_the_title()); ?>']);">Commentaires</a>
 				<?php endif; ?>

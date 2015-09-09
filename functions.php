@@ -118,7 +118,7 @@ function jdw_title() {
  * Récupère l'année en cours
  */
 function jdw_get_the_year() {
-	if(is_year()) {
+	if(is_year() || is_single()) {
 		return get_the_time('Y');
 	}
 	else {
