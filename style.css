@@ -602,11 +602,11 @@ body.home .page.wrap, body.date .page.wrap {
 		background-color:#740700;
 	}
 
-.calendar--2012 { position:relative; padding:12px 0 12px 12px; margin:-12px 0 33px -12px; box-sizing:content-box; }
-	.calendar--2012 * { box-sizing:content-box; }
-	.calendar-day--2012 { display:inline-block; padding:6px; width:100px; height:100px; list-style:none; text-align:right; }
-		.calendar-day-link--2012, .calendar-day-off--2012 { display:block; width:100%; height:100%; padding:6px; font-size:32px; color:#fff; text-decoration:none; background:#ccc no-repeat 0 0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-			.calendar-day-link--2012:hover { -ms-transform:scale(1.2); -webkit-transform:scale(1.2); -o-transform:scale(1.2); transform:scale(1.2); }
+.calendar--2012 { position:relative; padding:6px; margin:0; text-align:center; box-sizing:border-box; }
+	.calendar--2012 * { box-sizing:border-box; }
+	.calendar-day--2012 { display:inline-block; padding:6px; width:112px; height:112px; list-style:none; text-align:right; }
+		.calendar-day-link--2012, .calendar-day-off--2012 { display:block; width:100%; height:100%; padding:6px; font-size:32px; color:#fff; text-decoration:none; background:#ccc no-repeat 0 0; box-sizing:border-box; transition:transform linear 0.3s; }
+			.calendar-day-link--2012:hover { -webkit-transform:scale(1.2); transform:scale(1.2); }
 		.calendar-day-01, .calendar-day-06, .calendar-day-11, .calendar-day-16, .calendar-day-21, .calendar-day-26 { background-color:#accbbb; }
 		.calendar-day-02, .calendar-day-07, .calendar-day-12, .calendar-day-17, .calendar-day-22, .calendar-day-27 { background-color:#3e403d; }
 		.calendar-day-03, .calendar-day-08, .calendar-day-13, .calendar-day-18, .calendar-day-23, .calendar-day-28 { background-color:#dad3a7; }
@@ -615,53 +615,28 @@ body.home .page.wrap, body.date .page.wrap {
 		.calendar-day-off { background:#ddd; }
 		.calendar-day-01 { background-image:url(images/calendar/icon01.png); }
 		.calendar-day-02 { background-image:url(images/calendar/icon02.png); }
-		.calendar-day-03 { background-image:url(images/calendar/icon03.png); }
-		.calendar-day-04 { background-image:url(images/calendar/icon04.png); }
-		.calendar-day-05 { background-image:url(images/calendar/icon05.png); }
-		.calendar-day-06 { background-image:url(images/calendar/icon06.png); }
-		.calendar-day-07 { background-image:url(images/calendar/icon07.png); }
-		.calendar-day-08 { background-image:url(images/calendar/icon08.png); }
-		.calendar-day-09 { background-image:url(images/calendar/icon09.png); }
-		.calendar-day-10 { background-image:url(images/calendar/icon10.png); }
-		.calendar-day-11 { background-image:url(images/calendar/icon11.png); }
-		.calendar-day-12 { background-image:url(images/calendar/icon12.png); }
-		.calendar-day-13 { background-image:url(images/calendar/icon13.png); }
-		.calendar-day-14 { background-image:url(images/calendar/icon14.png); }
-		.calendar-day-15 { background-image:url(images/calendar/icon15.png); }
-		.calendar-day-16 { background-image:url(images/calendar/icon16.png); }
-		.calendar-day-17 { background-image:url(images/calendar/icon17.png); }
-		.calendar-day-18 { background-image:url(images/calendar/icon03.png); }
-		.calendar-day-19 { background-image:url(images/calendar/icon04.png); }
-		.calendar-day-20 { background-image:url(images/calendar/icon05.png); }
-		.calendar-day-21 { background-image:url(images/calendar/icon06.png); }
-		.calendar-day-22 { background-image:url(images/calendar/icon07.png); }
-		.calendar-day-23 { background-image:url(images/calendar/icon08.png); }
-		.calendar-day-24 { background-image:url(images/calendar/icon09.png); }
-		.calendar-day-26 { background-image:url(images/calendar/icon10.png); }
-		.calendar-day-27 { background-image:url(images/calendar/icon11.png); }
-		.calendar-day-28 { background-image:url(images/calendar/icon12.png); }
-		.calendar-day-29 { background-image:url(images/calendar/icon13.png); }
+		.calendar-day-03, .calendar-day-18 { background-image:url(images/calendar/icon03.png); }
+		.calendar-day-04, .calendar-day-19 { background-image:url(images/calendar/icon04.png); }
+		.calendar-day-05, .calendar-day-21 { background-image:url(images/calendar/icon05.png); }
+		.calendar-day-06, .calendar-day-22 { background-image:url(images/calendar/icon06.png); }
+		.calendar-day-07, .calendar-day-23 { background-image:url(images/calendar/icon07.png); }
+		.calendar-day-08, .calendar-day-24 { background-image:url(images/calendar/icon08.png); }
+		.calendar-day-09, .calendar-day-25 { background-image:url(images/calendar/icon09.png); }
+		.calendar-day-10, .calendar-day-26 { background-image:url(images/calendar/icon10.png); }
+		.calendar-day-11, .calendar-day-27 { background-image:url(images/calendar/icon11.png); }
+		.calendar-day-12, .calendar-day-28 { background-image:url(images/calendar/icon12.png); }
+		.calendar-day-13, .calendar-day-29 { background-image:url(images/calendar/icon13.png); }
 
-.posts-list--2012 { border-top:1px solid #ccc; font-size:1em; line-height:1.2em; }
-	.list-post--2012 { list-style:none; border-bottom:1px solid #ccc; list-style-position:inside; }	
+.posts-list--2012 { max-width:49.75em; margin:0 auto; border-top:1px solid #ccc; font-size:1em; line-height:1.2em; }
+	.list-post--2012 { list-style:none; border-bottom:1px solid #ccc; list-style-position:inside; }
 	.list-post-link--2012 { position:relative; overflow:hidden; display:block; padding:10px 0; text-decoration:none; }
 		.list-post-link--2012:hover { background:#ddd; }
 		.list-post-day--2012 { float:left; width:5%; min-width:40px; color:#999; }
 		.list-post-title--2012 { float:left; width:90%; }
 		.list-post-author--2012 { color:#999; }
 
-@media screen and (min-width:990px) {
-	.calendar--2012 { width:935px; }
-}
-
-@media screen and (max-width:720px) {
-	.calendar--2012 { width:auto; }
-		.calendar-day--2012 { width:25%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-}
-
-@media screen and (max-width:480px) {
-	.calendar-day--2012 { width:33%; }
-	.calendar-day--2012:nth-child(3n) { width:34%; }
+@media screen and (max-width:49.75em) {
+	.posts-list--2012 { margin:0 12px; }
 }
 
 /**
