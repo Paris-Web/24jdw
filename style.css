@@ -529,17 +529,8 @@ body.home .page.wrap, body.date .page.wrap {
 		background-image:url(images/header/2013/illustration.png);
 		background-size:contain;
 		background-position:center bottom;
+		background-repeat:no-repeat;
 	}
-
-	.archive--2013 .logo a {
-		display:block;
-		background:url(images/header/2013/logo.png) no-repeat center center;
-		background-size:cover;
-	}
-
-		.archive--2013 .logo img {
-			visibility:hidden;
-		}
 
 		.archive--2013 .day-link { background-color:#d6ceaf; }
 		.archive--2013 .day:nth-child(3n+1) .day-link { background-color:#d6ceaf; }

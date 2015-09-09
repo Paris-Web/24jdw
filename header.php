@@ -17,11 +17,10 @@
 <body <?php body_class(); ?>>
 	<div id="site">
 		<?php if((is_home() && !is_paged()) || is_year()) : ?>
-		<?php the_date('Y'); ?>
 		<div class="header header--<?php jdw_the_year(); ?>">
 			<div class="wrap">
 				<?php
-					$logo = '<img src="'.get_bloginfo('template_url').'/images/header/2014/logo.png" width="160" height="60" alt="'.get_bloginfo('name').'" title="" />';
+					$logo = '<img src="'.get_bloginfo('template_url').'/images/header/'.jdw_get_the_year().'/logo.png" width="160" height="60" alt="'.get_bloginfo('name').'" title="" />';
 					if(jdw_get_the_year() == 2012)
 						$logo = get_bloginfo('name');
 				?>
