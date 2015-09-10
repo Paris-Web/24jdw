@@ -30,7 +30,7 @@ body {
 	min-width:17.5em;
 	color:#595959;
 	font:1em/1.5 Georgia, serif;
-	background-color:#fafafb;
+	background-color:#fff;
 	scroll-behavior:smooth;
 }
 
@@ -66,7 +66,8 @@ textarea {
 }
 
 	.header--2013 .wrap,
-	.header--2014 .wrap {
+	.header--2014 .wrap,
+	.header--2015 .wrap {
 		min-height:21.875em;
 	}
 
@@ -272,12 +273,12 @@ body.home .page.wrap, body.date .page.wrap {
 		transform:rotateX(0);
 		transition:-webkit-transform cubic-bezier(0.5, 1.5, 0.5, 1.5) 0.4s 0.1s;
 		transition:transform cubic-bezier(0.5, 1.5, 0.5, 1.5) 0.4s 0.1s;
-		background-color:#89ab83;
+		background-color:#adceb8;
 	}
 
-		.day:nth-child(3n+1) .day-link { background:#c6c095; }
-		.day:nth-child(3n+2) .day-link { background:#b6c194; }
-		.day:nth-child(3n+3) .day-link { background:#dae4ce; }
+		.day:nth-child(3n+1) .day-link { background:#adceb8; }
+		.day:nth-child(3n+2) .day-link { background:#ecc7a1; }
+		.day:nth-child(3n+3) .day-link { background:#caeade; }
 
 	.day-number {
 		display:block;
@@ -483,6 +484,21 @@ body.home .page.wrap, body.date .page.wrap {
 	text-align:center;
 }
 
+/* 2015 */
+.header--2015 {
+	background:url(images/header/2015/animals.png) no-repeat center top, url(images/header/2015/particles.png) repeat-x center top, url(images/header/2015/landscape.jpg) no-repeat center top;
+	animation: particles 120s linear infinite both;
+}
+
+@keyframes particles {
+	from { background-position:center top, center top, center top; }
+	to { background-position:center top, 1595px top, center top; }
+}
+
+.home, .archive--2015 {
+	background-color:#f8f9eb;
+}
+
 /* 2014 */
 .header--2014 {
 	background:url(images/header/2014/background.png) repeat-x center top;
@@ -494,6 +510,19 @@ body.home .page.wrap, body.date .page.wrap {
 	}
 
 	.header--back--2014 { background-color:#4a725b; }
+
+.archive--2014 {
+	background-color:#fafafb;
+}
+
+	.archive--2014 .baseline {
+		color:#aa160e;
+	}
+
+	.archive--2014 .day-link { background-color:#89ab83; }
+	.archive--2014 .day:nth-child(3n+1) .day-link { background-color:#c6c095; }
+	.archive--2014 .day:nth-child(3n+2) .day-link { background-color:#b6c194; }
+	.archive--2014 .day:nth-child(3n+3) .day-link { background-color:#dae4ce; }
 
 /* 2013 */
 .archive--2013 {
