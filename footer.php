@@ -1,6 +1,7 @@
 		</div>
 		<div class="footer">
-			<?php 
+			<?php
+				jdw_the_illustrator();
 				wp_nav_menu(array(
 					'theme_location' => 'footer-menu',
 					'container' => 'false',

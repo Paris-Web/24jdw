@@ -245,4 +245,24 @@ function jdw_embed_handler_gist($matches, $attr, $url, $rawattr) {
 			);
 	return apply_filters('embed_gist', $embed, $matches, $attr, $url, $rawattr);
 }
+
+/*
+ * Retourne le nom de l'illustrateur
+ */
+function jdw_the_illustrator() {
+	if((is_archive() || is_home()) && get_the_time('Y') != '2012') {
+?>
+	<p>
+		Illustration par 
+		<?php if(is_home() || get_the_time('Y') == '2015') { ?>
+		<a href="https://www.twitter.com/reuno">Renaud Foresti&eacute;</a>
+		<?php } elseif(get_the_time('Y') == '2014') { ?>
+		<a href="https://www.twitter.com/mickaelmerley">Micka&euml;l Merley</a>
+		<?php } elseif(get_the_time('Y') == '2013') { ?>
+		<a href="https://www.behance.net/gwenoledeschamps">Gw&eacute;nol&eacute; Deschamps</a>
+		<?php } ?>
+	</p>
+<?php
+	}
+}
 ?>

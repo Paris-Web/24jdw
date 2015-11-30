@@ -142,6 +142,10 @@ textarea {
 	text-align:center;
 }
 
+	.footer > p {
+		margin-bottom: 1em;
+	}
+
 	.footer-links {
 		list-style:none;
 		font-size:0;
