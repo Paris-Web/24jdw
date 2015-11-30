@@ -517,6 +517,45 @@ body.home .page.wrap, body.date .page.wrap {
 		}
 }
 
+.home .day-number,
+.archive--2015 .day-number {
+	position:relative;
+	color:#fff;
+	font-size:0.8em;
+	width:2.5em;
+	height:2.5em;
+	margin-left:-0.25em;
+	background:none;
+}
+
+	.home .day-number:before,
+	.archive--2015 .day-number:before {
+		content:'';
+		position:absolute;
+		background:red;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		z-index:-1;
+		transform:rotate(-14deg);
+	}
+
+	.home .day:nth-child(3n+1) .day-number:before,
+	.archive--2015 .day:nth-child(3n+1) .day-number:before {
+		background:#76927f;
+	}
+
+	.home .day:nth-child(3n+2) .day-number:before,
+	.archive--2015 .day:nth-child(3n+2) .day-number:before {
+		background:#aa5d61;
+	}
+
+	.home .day:nth-child(3n+3) .day-number:before,
+	.archive--2015 .day:nth-child(3n+3) .day-number:before {
+		background:#2d6f8a;
+	}
+
 /* 2014 */
 .header--2014 {
 	background:url(images/header/2014/background.png) repeat-x center top;
