@@ -27,7 +27,7 @@
 		</div>
 		<?php endif; ?>
 	</div>
-	<?php get_template_part('donation'); ?>
+	<?php // get_template_part('donation'); ?>
 	<div class="wrap">
 		<?php if(has_category('articles')) : ?>
 			<div class="posts-nav">
