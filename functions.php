@@ -1,7 +1,7 @@
 <?php
 
 global $jdw_current_edition;
-$jdw_current_edition = "2014";
+$jdw_current_edition = "2015";
 
 /**
  * Personnalisation de WordPress
