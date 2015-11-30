@@ -490,17 +490,31 @@ body.home .page.wrap, body.date .page.wrap {
 
 /* 2015 */
 .header--2015 {
-	background:url(images/header/2015/animals.png) no-repeat center top, url(images/header/2015/particles.png) repeat-x center top, url(images/header/2015/landscape.jpg) no-repeat center top;
+	background:url(images/header/2015/animals.png) no-repeat center bottom, url(images/header/2015/particles.png) repeat-x left bottom, url(images/header/2015/landscape.jpg) no-repeat center bottom;
+	background-size:60em, 99.6875em, 106.25em;
 	animation: particles 120s linear infinite both;
 }
 
 @keyframes particles {
-	from { background-position:center top, center top, center top; }
-	to { background-position:center top, 1595px top, center top; }
+	from { background-position:center bottom, left bottom, center bottom; }
+	to { background-position:center bottom, 99.6875em bottom, center bottom; }
 }
 
 .home, .archive--2015 {
 	background-color:#f8f9eb;
+}
+
+	.header--back--2015 { background-color:#4896a4; }
+
+@media only screen and (max-width:30em) {
+	.header--2015 {
+		font-size:0.5em;
+		background-size:70em, 199.75em, 212.5em;
+	}
+
+		.header--2015 .wrap {
+			font-size:2em;
+		}
 }
 
 /* 2014 */
