@@ -8,7 +8,7 @@
 	</p>
 	<?php elseif(!jdw_has_made_gift()): ?>
 	<p>
-		Si vous aimez ce projet, aidez-nous en faisant un don pour <a href="<?php bloginfo('url'); ?>/2014/association-un-pas-vers-la-vie/">l'association Un&nbsp;Pas&nbsp;Vers&nbsp;La&nbsp;Vie</a>.
+		Si vous aimez ce projet, aidez-nous en faisant un don pour <a href="<?php bloginfo('url'); ?>/2015/association-les-b-a-des-satellites/">l'association Les&nbsp;B-A&nbsp;des&nbsp;Satellites</a>.
 	</p>
 	<?php endif; ?>
 <?php endif; ?>
