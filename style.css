@@ -755,9 +755,9 @@ body.home .page.wrap, body.date .page.wrap {
 }
 		.entry > :last-child { margin-bottom:0; }
 		.entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 { margin-bottom:24px; margin-bottom:1.5rem; font-size:1em; }
-		.entry h1 { font-size:3em; }
-		.entry h2 { font-size:2em; }
-		.entry h3 { font-size:1.5em; line-height:2; }
+		.entry h1 { font-size:1.5em; }
+		.entry h2 { font-size:1.5em; }
+		.entry h3 { font-size:1.25em; }
 		.entry p { margin:0 0 1.5em; }
 		.entry img, .entry figure { display:block; margin:1.5em 0; max-width:100%; width:auto; height:auto; border:none; }
 		.entry img.alignleft { float:left; margin:0 1.5em 0.5em 0; max-width:25em; margin-left:-6.25em; }
@@ -776,6 +776,7 @@ body.home .page.wrap, body.date .page.wrap {
 			.entry code.inline { display:inline; margin:0; padding:0; }
 			.code-comment { color:#4a725b; }
 			.entry pre[class] code { margin:0; padding:0; color:inherit; border:none; background:none; }
+			.entry p > code[class*="language-"] { white-space:normal; }
 		.entry table { min-width:100%; margin:1.5em 0; border:1px solid #E4E4E4; border-collapse:collapse; }
 			.entry table th { padding:2px 10px; color:#fff; border:1px solid #E4E4E4; background:#333; }
 			.entry table td { padding:2px 10px; border:1px solid #E4E4E4; }
@@ -786,6 +787,7 @@ body.home .page.wrap, body.date .page.wrap {
 			.entry .footnotes li:target { background:#ffffe0; }
 			.entry .footnotes h1, .entry .footnotes h2 { font-size:1.2em; line-height:1.5; margin-bottom:0.5em; }
 			.entry .footnotes h3, .entry .footnotes h4, .entry .footnotes h5, .entry .footnotes h6 { font-size:1em; line-height:1.5; margin-bottom:0.5em; }
+		.entry abbr[title] { border-bottom:1px dotted; text-decoration:none; }
 		.wp-caption[style] { width:auto !important; }
 		.wp-caption-text, figcaption { font-size:0.9em; line-height:normal; font-style:italic; color:#666; text-align:left; }
 		.gallery-item { margin-top:0 !important; }
