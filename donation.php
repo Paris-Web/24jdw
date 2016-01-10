@@ -3,7 +3,7 @@
 	<div class="wrap">
 		<?php get_template_part('share'); ?>
 		<div class="gift box">
-			<h3 class="box-title"><span onclick="formPaypal.submit()">Faites un don</span> pour soutenir <a href="<?php bloginfo('url'); ?>/2015/association-les-b-a-des-satellites/">l'association Les&nbsp;B-A&nbsp;des&nbsp;Satellites</a><br>et <a href="<?php bloginfo('url'); ?>/bundle/">recevez des e-books</a> pour tout don sup&eacute;rieur &agrave; 10&nbsp;€</h3>
+			<h3 class="box-title"><span onclick="formPaypal.submit()">Faites un don</span> pour soutenir <a href="<?php bloginfo('url'); ?>/2015/association-les-b-a-des-satellites/">l'association Les&nbsp;B-A&nbsp;des&nbsp;Satellites</a></h3>
 			<div class="gift-button">
 				<?php get_template_part('paypal-button'); ?>
 			</div>
