@@ -17,6 +17,7 @@
 <body <?php body_class(); ?>>
 	<div id="site">
 		<?php if((is_home() && !is_paged()) || is_year()) : ?>
+		<?php include_once('message-nowwwel.php'); ?>
 		<div class="header header--<?php jdw_the_year(); ?>">
 			<div class="wrap">
 				<?php
