@@ -1,6 +1,10 @@
 <?php
 include_once('functions-wp-crap.php');
 
+/*
+ * Shortcode de section
+ * (Ex: [section]…[/section])
+ */
 function jdw_section_shortcode( $atts, $content = null ) {
 	return '<div class="section">' . $content . '</div>';
 }
