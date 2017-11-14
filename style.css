@@ -163,13 +163,16 @@ a img {
 	}
 }
 
+.entry a {
+	color: #6f232b;
+}
+
 .entry p:first-of-type:first-letter {
 	float: left;
 	display: inline-block;
 	font-size: 4.5em;
-	line-height: 50px;
-	height: 50px;
-	background:red;
+	line-height: 3.75rem;
+	height: 3.75rem;
 	overflow: hidden;
 }
 
@@ -222,6 +225,26 @@ a img {
 
 	.entry li:not(:last-child) {
 		margin-bottom: 1rem;
+	}
+
+.entry ul {
+	list-style: none;
+}
+
+	.entry ul li {
+		position: relative;
+	}
+
+	.entry ul li:before {
+		content: '';
+		position: absolute;
+		left: -1.3125rem;
+		top: 0.625rem;
+		display: block;
+		background: #be3745;
+		width: 0.625rem;
+		height: 0.625rem;
+		border-radius: 50%;
 	}
 
 .entry pre code {
