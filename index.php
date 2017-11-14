@@ -14,7 +14,7 @@
 			<p class="post-metas">
 				<span class="post-meta post-meta--author"><?php the_author(); ?></span>
 				<time class="post-meta post-meta--date"><?php the_time('j F Y') ?></time>
-				<span class="post-meta post-meta--length">~ 15 minutes</span>
+				<span class="post-meta post-meta--length"><span aria-label="Temps de lecture&nbsp;: environ">~</span> <?php jdw_the_reading_duration(); ?> minutes</span>
 			</p>
 			<?php endif; ?>
 			<div class="entry">
