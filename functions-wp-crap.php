@@ -1,7 +1,7 @@
 <?php
 /*
  * WordPress Crap
- * Removes all the crap added by Wordpress.
+ * Removes all the crap added by WordPress.
  */
 // Remove various meta
 remove_action('wp_head', 'rsd_link');
@@ -34,7 +34,7 @@ if(function_exists('register_sidebar'))
  * What a load of crap introduced in WordPress 4.2.
  *
  * Original code from Ryan Hellyer and the Disable Emojis plugin.
- * https://geek.hellyer.kiwi/plugins/disable-emojis/
+ * @see https://geek.hellyer.kiwi/plugins/disable-emojis/
  */
 function jdw_disable_emojis() {
 	remove_action('wp_head', 'print_emoji_detection_script', 7);
@@ -56,4 +56,13 @@ function jdw_disable_emojis_tinymce($plugins) {
 		return array();
 	}
 }
+
+/**
+ * Remove empty paragraphs generated inside shortcodes
+ *
+ * @see https://stackoverflow.com/questions/13510131/remove-empty-p-tags-from-wordpress-shortcodes-via-a-php-functon
+ */
+remove_filter( 'the_content', 'wpautop' );
+add_filter( 'the_content', 'wpautop', 99 );
+add_filter( 'the_content', 'shortcode_unautop', 100 );
 ?>

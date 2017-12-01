@@ -1,4 +1,41 @@
+		</main>
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-column footer-column--logo">
+					<a href="<?php bloginfo('home'); ?>" class="footer-logo"><img class="footer-logo-img" src="<?php bloginfo('template_url') ?>/images/footer/logo.png" alt="<?php get_bloginfo('name') ?>" /></a>
+				</div>
+				<div class="footer-column footer-column--text">
+					<p class="footer-baseline"><b>24 Jours de web</b>, le calendrier de l’avent des gens qui font le web d’après.</p>
+					<p>2012-<?php echo date("Y"); ?>, tous droits r&eacute;serv&eacute;s.</p>
+					<?php jdw_the_illustrator(); ?>
+				</div>
+				<div class="footer-column footer-column--links">
+					<ul class="footer-links">
+						<li><a href="<?php bloginfo('url'); ?>/a-propos/">&Agrave; Propos</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/mentions-legales/">Mentions l&eacute;gales</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/remerciements/">Remerciements</a></li>
+						<li class="footer-link--twitter"><a href="https://www.twitter.com/24joursdeweb">@24joursdeweb sur Twitter</a></li>
+					</ul>
+				</div>
+				<div class="footer-archives">
+					<strong class="footer-archives-title">24 jours d&rsquo;archives</strong>
+					<ul class="footer-archives-links">
+						<li><a href="<?php bloginfo('url'); ?>/2015/">&Eacute;dition 2015</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/2014/">&Eacute;dition 2014</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/2013/">&Eacute;dition 2013</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/2012/">&Eacute;dition 2012</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</div>
 	<?php wp_footer(); ?>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4722865-4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-4722865-4', { 'anonymize_ip': true });
+	</script>
 </body>
 </html>
