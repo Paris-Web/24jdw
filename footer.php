@@ -20,6 +20,7 @@
 				<div class="footer-archives">
 					<strong class="footer-archives-title">24 jours d&rsquo;archives</strong>
 					<ul class="footer-archives-links">
+						<li><a href="<?php bloginfo('url'); ?>/2016/">&Eacute;dition 2016</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/2015/">&Eacute;dition 2015</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/2014/">&Eacute;dition 2014</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/2013/">&Eacute;dition 2013</a></li>
