@@ -459,10 +459,13 @@ a:focus, button:focus {
 .post-entry pre code {
 	display: block;
 	padding: 1em;
-	color: #fff;
 	font-size: 0.8em;
-	background: #333;
 	overflow: auto;
+}
+
+.post-entry pre code:not([class*="lang"]) {
+	color: #fff;
+	background: #333;
 }
 
 @media only screen and (min-width: 78.75em) { /* 750 + (175 + 50x2)x2 */
