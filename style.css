@@ -1216,6 +1216,7 @@ a:focus, button:focus {
 	min-height: 36.875rem;
 	text-align: center;
 	background: #e3f1f5 url(images/header/2017/background.jpg) no-repeat center top;
+	background-size: 125rem 33.0625rem;
 }
 
 	.home--2017 .hero-content {
@@ -1224,6 +1225,7 @@ a:focus, button:focus {
 		padding-right: 1rem;
 		min-height: 33.125rem;
 		background: url(images/header/2017/characters.png) no-repeat center bottom;
+		background-size: 125rem 21.875rem;
 	}
 
 	@media only screen and (max-width: 56.25rem) {
@@ -1287,7 +1289,7 @@ a:focus, button:focus {
 .home--2017 .calendar {
 	position: relative;
 	grid-gap: 0;
-	padding: 2px;
+	padding: 0.125rem;
 	margin-top: -10rem;
 	border-top: 0.25rem solid #de362c;
 	background-color: #e2e8e9;
@@ -1298,11 +1300,12 @@ a:focus, button:focus {
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: -19px;
+		top: -1.125rem;
 		display: block;
 		width: 100%;
-		height: 19px;
+		height: 1.125rem;
 		background: url(images/header/2017/pin.png) no-repeat center top;
+		background-size: 75.125rem 1.25rem;
 	}
 
 	.home--2017 .day-off {
