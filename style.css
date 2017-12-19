@@ -972,7 +972,7 @@ a:focus, button:focus {
 	padding: 2rem 1.5rem 4.5rem;
 	color: #fff;
 	background: url(images/footer/ribbon.png) no-repeat 0 0;
-	background-size: contain;
+	background-size: 100% 100%;
 }
 
 	.footer-archives-links li {
@@ -1010,7 +1010,7 @@ a:focus, button:focus {
 			transform: rotate(180deg);
 			display: block;
 			background: url(images/footer/ribbon.png) no-repeat 0 0;
-			background-size: contain;
+			background-size: 100% 100%;
 		}
 }
 
