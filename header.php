@@ -12,7 +12,6 @@
 	<meta property="og:description" content="<?php bloginfo('name'); ?> : <?php bloginfo('description'); ?>" />
 	<?php endif; ?>
 	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/og.jpg" />
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet" />
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
