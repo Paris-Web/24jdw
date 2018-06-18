@@ -1071,6 +1071,7 @@ a:focus, button:focus {
 /**
  * Thème 2012
  */
+.home--2012 .hero-content { min-height: 0; }
 .home--2012 .day-link { background-color: #d6ceaf; }
 .home--2012 .day:nth-child(5n+1) .day-link { background-color: #accbbb; }
 .home--2012 .day:nth-child(5n+2) .day-link { color: #ddd; color: rgba(255,255,255,0.85); background-color: #3e403d; }
