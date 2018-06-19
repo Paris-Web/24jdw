@@ -768,7 +768,6 @@ a:focus, button:focus {
 		.posts-nav-next a:before { content:'\00BB'; right:0.33em; }
 		.posts-nav-previous a:before { content:'\00AB'; left:0.33em; }
 
-/* Commentaires */
 /**
  * Commentaires
  */
@@ -856,6 +855,81 @@ a:focus, button:focus {
 			border: none;
 		}
 
+/* Formulaire de commentaires */
+.comments-publish {
+	color: #2c3d44;
+	font-family: Raleway, sans-serif;
+}
+
+.comment-form {
+	padding: 1.625rem;
+	background: #ecf6f6;
+}
+
+	.comment-field--row {
+		margin-bottom: 1.5rem;
+	}
+
+		.comment-field--row .comment-label {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+
+	@media only screen and (min-width: 30em) {
+		.comment-field--row {
+			display: flex;
+			margin-bottom: 0.5rem;
+			align-items: center;
+		}
+
+			.comment-field--row .comment-label {
+				min-width: 10rem;
+				margin-right: 1rem;
+				margin-bottom: 0;
+			}
+	}
+
+	.comment-field--column {
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+
+	.comment-textbox,
+	.comment-textarea {
+		width: 100%;
+		padding: 0.3125em 1em;
+		font-size: 1em;
+		font-family: Georgia, serif;
+		line-height: 1.5;
+		background: #fff;
+		border: none;
+		border-bottom: 1px solid #d3c1bd;
+		outline: none;
+		box-shadow: none;
+		box-sizing: border-box;
+	}
+
+	.comment-textarea {
+		resize: vertical;
+		min-height: 5.75em;
+		padding-top: 0.625em;
+		padding-bottom: 0.625em;
+	}
+
+	.comment-field--column .comment-label {
+		display: block;
+		margin-bottom: 0.5em;
+	}
+
+	.comment-actions {
+		text-align: right;
+	}
+
+.comment-warning {
+	padding: 1.625rem;
+	font-size: 0.875rem;
+}
+
 			/*.comment-meta { color:#666; font-size:0.95em; }
 				.comment-meta a { color:#666; }
 			.comment .avatar { position:absolute; left:0; top:15px; }
@@ -866,7 +940,7 @@ a:focus, button:focus {
 			.comment-moderation { display:block; margin:0 0 4px; font-style:normal; font-weight:bold; }
 			.comment-button { font-size:16px; }*/
 	/* Formulaire */
-	.comment-field { margin:0 0 15px; }
+	/*.comment-field { margin:0 0 15px; }
 		.comment-form label { display:block; margin:0 0 3px; }
 			.comment-form label em { color:#666; }
 		.comment-textbox { display:block; width:100%; padding:2px 10px; color:#333; font:1em Georgia, serif; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
@@ -884,7 +958,7 @@ a:focus, button:focus {
 	@media only screen and (max-width:30em) {
 		.comments .comment { padding-left:0; }
 			.comment .avatar { position:relative; left:auto; top:auto; float:left; display:block; margin-right:20px; margin-bottom:10px; }
-	}
+	}*/
 
 /**
  * Header

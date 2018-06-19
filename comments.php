@@ -29,44 +29,38 @@
 			  <?php 
 			endforeach; ?>
 		</ol>
-	<?php endif; ?>		
-		
-	<?php if ('open' == $post->comment_status) : ?>
+	<?php endif; ?>
+	<?php if ( $post->comment_status == 'open' ) : ?>
+	<div class="comments-publish">
 		<h2 class="comments-title">Laisser un commentaire </h2>
 		<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" class="comment-form">
-		
 			<?php if ( $user_ID ) : ?>
-			
-			<p class="user">Connect&eacute; en tant que <strong><a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></strong>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Se d&eacute;connecter du site.">Se d&eacute;connecter  &raquo;</a></p>
-			
+			<p class="user">Connect&eacute; en tant que <strong><a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></strong>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Se d&eacute;connecter du site.">Se d&eacute;connecter &raquo;</a></p>
 			<?php else : ?>
-			
-				<div class="comment-field">
-					<label for="comment-author">Nom</label>
+				<div class="comment-field comment-field--row">
+					<label class="comment-label" for="comment-author">Nom&nbsp;:</label>
 					<input class="comment-textbox" type="text" name="author" id="comment-author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" required="required" />
 				</div>
-					
-				<div class="comment-field">
-					<label for="comment-email">E-mail</label>
+				<div class="comment-field comment-field--row">
+					<label class="comment-label" for="comment-email">E-mail&nbsp;:</label>
 					<input class="comment-textbox" type="email" name="email" id="comment-email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" required="required" />
 				</div>
-					
-				<div class="comment-field">
-					<label for="comment-url">Site web <em>(facultatif)</em></label>
+				<div class="comment-field comment-field--row">
+					<label class="comment-label" for="comment-url">Site web <em>(facultatif)</em>&nbsp;:</label>
 					<input class="comment-textbox" type="url" name="url" id="comment-url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
 				</div>
-				
 			<?php endif; ?>
-			<div class="comment-field">
-				<label for="comment">Votre commentaire</label>
-				<textarea class="comment-textbox" name="comment" id="comment" cols="80" rows="5" tabindex="4" required="required"></textarea>
-				<small class="comment-warning">Les commentaires sont mod&eacute;r&eacute;s manuellement. Merci de respecter l'auteur de l'article, les autres participants &agrave; la discussion, et la langue fran&ccedil;aise. Vous pouvez <a href="<?php the_permalink(); ?>feed">suivre les réponses par flux RSS</a>.</small>
+			<div class="comment-field comment-field--column">
+				<label class="comment-label" for="comment">Votre commentaire&nbsp;:</label>
+				<textarea class="comment-textarea" name="comment" id="comment" cols="80" rows="5" tabindex="4" required="required"></textarea>
 			</div>
-			
-			<p><input class="comment-button" name="submit" type="submit" id="submit" tabindex="5" value="Ajouter ce commentaire" />
-				<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></p>
-				
+			<div class="comment-actions">
+				<input class="comment-button" name="submit" type="submit" id="submit" tabindex="5" value="Poster mon commentaire" />
+				<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
+			</div>
 			<?php do_action('comment_form', $post->ID); ?>
 		</form>
+		<p class="comment-warning">Les commentaires sont mod&eacute;r&eacute;s manuellement. Merci de respecter la personne qui a &eacute;crit l'article, les autres participant(e)s &agrave; la discussion, et la langue fran&ccedil;aise. Vous pouvez <a href="<?php the_permalink(); ?>feed">suivre les r&eacute;ponses par flux RSS</a>.</p>
+	</div>
 	<?php endif; ?>
 </div>
