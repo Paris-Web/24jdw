@@ -2,33 +2,31 @@
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-				printf( _n( 'Un commentaire sur &ldquo;%2$s&rdquo;', '%1$s commentaires sur &ldquo;%2$s&rdquo;', get_comments_number()),
+				printf( _n( 'Un commentaire sur cet article', '%1$s commentaires sur cet article', get_comments_number()),
 					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
 		<ol class="comments-list">
 			<?php foreach ($comments as $comment) : ?>
-				<?php 
-					if($oddcomment) {
-						$commentclass .= " alt-comment"; 
-					}
-				?>
-				<li class="comment<?php if($commentclass != '') echo $commentclass; ?>" id="comment-<?php comment_ID() ?>">
-					<?php echo get_avatar($comment, 64); ?>
-					<p class="comment-meta"><strong class="comment-author"><?php comment_author_link() ?></strong>, le <span class="date"><?php comment_date('l j F Y') ?> à <?php comment_time('H:i') ?></span></p>
-					<?php if ($comment->comment_approved == '0') : ?>
-					<em class="moderation">Votre commentaire est en attente de mod&eacute;ration. C'est triste mais c'est comme &ccedil;a. </em>
-					<?php endif; ?>
-					<div class="comment-entry">
-						<?php comment_text() ?>
+				<li class="comment-item" id="comment-<?php comment_ID() ?>">
+					<div class="comment-avatar">
+						<?php echo get_avatar($comment, 74); ?>
 					</div>
-					<div class="reply">
-						<?php comment_reply_link('', get_comment_ID()); ?>
+					<div class="comment-body">
+						<p class="comment-meta"><strong class="comment-author"><?php comment_author_link() ?></strong>, le <span class="comment-date"><?php comment_date('l j F Y') ?> à <?php comment_time('H:i') ?></span></p>
+						<div class="comment-entry">
+							<?php comment_text() ?>
+						</div>
+						<?php if ($comment->comment_approved == '0') : ?>
+						<p class="comment-moderation">Votre commentaire est en attente de mod&eacute;ration.</p>
+						<?php endif; ?>
+						<div class="comment-reply">
+							<?php comment_reply_link('', get_comment_ID()); ?>
+						</div>
+						<?php edit_comment_link('&Eacute;diter'); ?>
 					</div>
-					<?php edit_comment_link('&Eacute;diter'); ?>
 				</li>
 			  <?php 
-				$oddcomment = !$oddcomment;
 			endforeach; ?>
 		</ol>
 	<?php endif; ?>		
