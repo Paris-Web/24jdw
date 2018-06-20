@@ -1460,6 +1460,7 @@ button::-moz-focus-inner {
 		font-family: Arial, sans-serif;
 		font-size: 0.75rem;
 		background: #de362c;
+		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
 	}
 
