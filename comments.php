@@ -35,7 +35,7 @@
 		<h2 class="comments-title">Laisser un commentaire </h2>
 		<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" class="comment-form">
 			<?php if ( $user_ID ) : ?>
-			<p class="user">Connect&eacute; en tant que <strong><a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></strong>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Se d&eacute;connecter du site.">Se d&eacute;connecter &raquo;</a></p>
+			<p class="user">Connect&eacute; en tant que <strong><a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a></strong>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Se d&eacute;connecter du site.">Se d&eacute;connecter&nbsp;&raquo;</a></p>
 			<?php else : ?>
 				<div class="comment-field comment-field--row">
 					<label class="comment-label" for="comment-author">Nom&nbsp;:</label>
