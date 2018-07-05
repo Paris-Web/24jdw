@@ -11,6 +11,11 @@
 	<meta property="og:title" content="<?php the_title(); ?>" />
 	<meta property="og:description" content="<?php bloginfo('name'); ?> : <?php bloginfo('description'); ?>" />
 	<?php endif; ?>
+	<?php if((is_home() && !is_paged()) || (is_year() && get_the_time('Y') != 2016)) : ?>
+	<meta property="og:title" content="<?php bloginfo('name'); ?>" />
+	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+	<meta name="description" content="<?php bloginfo('description'); ?>" />
+	<?php endif; ?>
 	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/og.jpg" />
 	<?php wp_head(); ?>
 </head>
