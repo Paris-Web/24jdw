@@ -19,7 +19,7 @@
 		<?php if((is_home() && !is_paged()) || (is_year() && get_the_time('Y') != 2016)) : ?>
 		<header class="hero">
 			<div class="hero-content">
-				<a href="<?php bloginfo('home'); ?>" class="hero-logo"><?php jdw_the_logo(); ?></a>
+				<h1 class="hero-h1"><a href="<?php bloginfo('home'); ?>" class="hero-logo"><?php jdw_the_logo(); ?></a></h1>
 				<p class="hero-baseline"><?php bloginfo('description'); ?></p>
 			</div>
 		</header>

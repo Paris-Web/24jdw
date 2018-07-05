@@ -1047,6 +1047,11 @@ button::-moz-focus-inner {
 		min-height: 21.875rem;
 	}
 
+	.hero-h1 {
+		font-size: 1em;
+		font-weight: normal;
+	}
+
 	.hero-logo {
 		text-align: center;
 	}
