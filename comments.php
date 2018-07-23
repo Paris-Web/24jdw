@@ -9,9 +9,7 @@
 		<ol class="comments-list">
 			<?php foreach ($comments as $comment) : ?>
 				<li class="comment-item" id="comment-<?php comment_ID() ?>">
-					<div class="comment-avatar">
-						<?php echo get_avatar($comment, 74); ?>
-					</div>
+					<div class="comment-avatar"></div>
 					<div class="comment-body">
 						<p class="comment-meta"><strong class="comment-author"><?php comment_author_link() ?></strong>, le <span class="comment-date"><?php comment_date('l j F Y') ?> à <?php comment_time('H:i') ?></span></p>
 						<div class="comment-entry">

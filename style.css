@@ -808,7 +808,8 @@ button::-moz-focus-inner {
 			margin: 0 1.5em 1.5em 0;
 		}
 
-			.comment-item .avatar {
+			.comment-avatar::before {
+				content: '';
 				display: block;
 				width: 4.625rem;
 				height: 4.625rem;
