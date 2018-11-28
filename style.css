@@ -1090,7 +1090,7 @@ button::-moz-focus-inner {
  */
 .donation {
 	position: relative;
-	margin-top: 3rem;
+	margin-top: 5.5rem;
 	padding: 1.5rem 1rem 4.5rem;
 	font-family: Raleway, sans-serif;
 	background-color: #faf8eb;
@@ -1176,16 +1176,14 @@ button::-moz-focus-inner {
 			min-width: 50%;
 		}
 
-	.page .footer,
-	.single .footer {
-		margin-top: 0;
+	.single .donation {
+		margin-top: 3rem;
 	}
 
 /**
  * Footer
  */
 .footer {
-	margin-top: 5.5rem;
 	padding: 1.5rem 1rem 2rem;
 	color: #2c3d44;
 	font-family: Raleway, sans-serif;
