@@ -164,7 +164,7 @@ button::-moz-focus-inner {
 		font-style: italic;
 	}
 
-		.day-author:before {
+		.day-author::before {
 			content: '';
 			position: absolute;
 			left: 0;
@@ -285,9 +285,9 @@ button::-moz-focus-inner {
 		margin-bottom: 0.5rem;
 	}
 
-	.post-meta:before,
-	.post-share-link:before,
-	.post-comments-link:after {
+	.post-meta::before,
+	.post-share-link::before,
+	.post-comments-link::after {
 		content: '';
 		display: inline-block;
 		width: 1.25rem;
@@ -296,41 +296,41 @@ button::-moz-focus-inner {
 		background: no-repeat left center;
 	}
 
-		.post-meta--share:before,
-		.post-meta--comments:before {
+		.post-meta--share::before,
+		.post-meta--comments::before {
 			display: none;
 		}
 
-		.post-meta:before,
-		.post-share-link:before {
+		.post-meta::before,
+		.post-share-link::before {
 			margin-right: 0.25rem;
 		}
 
-		.post-comments-link:after {
+		.post-comments-link::after {
 			margin-left: 0.25rem;
 		}
 
-		.post-meta--author:before {
+		.post-meta--author::before {
 			background-image: url(images/icon-feather.png);
 		}
 
-		.post-meta--date:before {
+		.post-meta--date::before {
 			background-image: url(images/icon-calendar.png);
 		}
 
-		.post-meta--length:before {
+		.post-meta--length::before {
 			background-image: url(images/icon-clock.png);
 		}
 
-		.post-share-link--facebook:before {
+		.post-share-link--facebook::before {
 			background-image: url(images/icon-facebook.png);
 		}
 
-		.post-share-link--twitter:before {
+		.post-share-link--twitter::before {
 			background-image: url(images/icon-twitter.png);
 		}
 
-		.post-comments-link:after {
+		.post-comments-link::after {
 			background-image: url(images/icon-arrow.png);
 		}
 
@@ -340,7 +340,7 @@ button::-moz-focus-inner {
 		vertical-align: middle;
 	}
 
-		.post-share-link:before {
+		.post-share-link::before {
 			width: 1.875rem;
 			height: 1.875rem;
 		}
@@ -489,7 +489,7 @@ button::-moz-focus-inner {
 		position: relative;
 	}
 
-	.post-entry ul li:before {
+	.post-entry ul li::before {
 		content: '';
 		position: absolute;
 		left: -1em;
@@ -618,10 +618,10 @@ button::-moz-focus-inner {
 		margin-bottom: 1.5rem;
 	}
 
-	.post-entry .section:before,
-	.post-entry .section:after,
-	.post-footer:before,
-	.post-footer:after {
+	.post-entry .section::before,
+	.post-entry .section::after,
+	.post-footer::before,
+	.post-footer::after {
 		content: '';
 		display: block;
 		position: absolute;
@@ -632,13 +632,13 @@ button::-moz-focus-inner {
 		box-sizing: border-box;
 	}
 
-	.post-entry .section:before,
-	.post-footer:before {
+	.post-entry .section::before,
+	.post-footer::before {
 		left: calc((100vw - 100%) / 2 * -1 + 0.5rem);
 	}
 
-	.post-entry .section:after,
-	.post-footer:after {
+	.post-entry .section::after,
+	.post-footer::after {
 		right: calc((100vw - 100%) / 2 * -1 + 0.5rem);
 	}
 
@@ -703,11 +703,11 @@ button::-moz-focus-inner {
 	background-color: #ecf6f6;
 }
 
-	.post-footer:before {
+	.post-footer::before {
 		background-color: #ecf6f6;
 	}
 
-	.post-footer:after {
+	.post-footer::after {
 		background-color: #d9ecec;
 	}
 
@@ -770,16 +770,16 @@ button::-moz-focus-inner {
 	.posts-nav-next { float:right; text-align:right; }
 		.posts-nav-next a { padding-right:35px; }
 		.posts-nav-previous a { padding-left:35px; }
-	.posts-nav-link a:before { position:absolute; top:0.5em; font-size:2em; }
-		.posts-nav-next a:before { content:'\00BB'; right:0.33em; }
-		.posts-nav-previous a:before { content:'\00AB'; left:0.33em; }
+	.posts-nav-link a::before { position:absolute; top:0.5em; font-size:2em; }
+		.posts-nav-next a::before { content:'\00BB'; right:0.33em; }
+		.posts-nav-previous a::before { content:'\00AB'; left:0.33em; }
 
 /**
  * Commentaires
  */
 .comments {
 	margin: 4rem auto 0;
-	max-width: 48.25rem;
+	max-width: 48.875rem;
 	padding: 0 1rem;
 }
 
@@ -791,6 +791,12 @@ button::-moz-focus-inner {
 		line-height: 1.25;
 		text-transform: uppercase;
 		margin-bottom: 1rem;
+	}
+
+	@media only screen and (max-width: 48em) {
+		.comments-title {
+			font-size: 1.25rem;
+		}
 	}
 
 	.comments-list {
@@ -964,7 +970,7 @@ button::-moz-focus-inner {
 	background: #f8f9eb;
 }
 
-.header:after {
+.header::after {
 	content: '';
 	display: block;
 	width: 100%;
@@ -1124,7 +1130,7 @@ button::-moz-focus-inner {
 		margin-top: 1.5rem;
 	}
 
-		.footer-link--twitter a:before {
+		.footer-link--twitter a::before {
 			content: '';
 			display: inline-block;
 			margin-right: 0.25rem;
@@ -1195,7 +1201,7 @@ button::-moz-focus-inner {
 			z-index: 1;
 		}
 
-		.footer-archives:before {
+		.footer-archives::before {
 			content: '';
 			position: absolute;
 			left: 0;
@@ -1272,7 +1278,7 @@ button::-moz-focus-inner {
 	background: url(images/header/2013/stars.png) repeat-x center top, linear-gradient(to bottom,  #002c3e 0%,#019397 99%);
 }
 
-	.edition--2013 .header:after {
+	.edition--2013 .header::after {
 		background-color: #e6e0cd;
 	}
 
@@ -1309,7 +1315,7 @@ button::-moz-focus-inner {
 	background-size: auto 110px;
 }
 
-	.edition--2014 .header:after {
+	.edition--2014 .header::after {
 		background-color: #dae4ce;
 	}
 
@@ -1355,7 +1361,7 @@ button::-moz-focus-inner {
 		background: none;
 	}
 
-		.home--2015 .day-number:before {
+		.home--2015 .day-number::before {
 			content: '';
 			position: absolute;
 			background: red;
@@ -1367,15 +1373,15 @@ button::-moz-focus-inner {
 			transform: rotate(-14deg);
 		}
 
-	.home--2015 .day:nth-child(3n+1) .day-number:before {
+	.home--2015 .day:nth-child(3n+1) .day-number::before {
 		background: #76927f;
 	}
 
-	.home--2015 .day:nth-child(3n+2) .day-number:before {
+	.home--2015 .day:nth-child(3n+2) .day-number::before {
 		background: #aa5d61;
 	}
 
-	.home--2015 .day:nth-child(3n+3) .day-number:before {
+	.home--2015 .day:nth-child(3n+3) .day-number::before {
 		background: #2d6f8a;
 	}
 
@@ -1389,7 +1395,7 @@ button::-moz-focus-inner {
 		}
 	}
 
-	.edition--2015 .header:after {
+	.edition--2015 .header::after {
 		background-color: #c3e2e2;
 		border-top: 1px solid #d3c1bd;
 	}
@@ -1430,7 +1436,7 @@ button::-moz-focus-inner {
 		}
 	}
 
-	.home--2017 .hero:after {
+	.home--2017 .hero::after {
 		content: '';
 		display: block;
 		height: 0.25rem;
@@ -1492,7 +1498,7 @@ button::-moz-focus-inner {
 	background-color: #e2e8e9;
 }
 
-	.home--2017 .calendar:before {
+	.home--2017 .calendar::before {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -1567,7 +1573,7 @@ button::-moz-focus-inner {
 	background: linear-gradient(to bottom, #86c1d8 0%, #a3e8f9 100%);
 }
 
-	.edition--2017 .header:after {
+	.edition--2017 .header::after {
 		background-color: #de362c;
 	}
 
