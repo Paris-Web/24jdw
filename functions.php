@@ -193,9 +193,7 @@ function jdw_the_illustrator_name() {
 function jdw_previous_post_link() {
 	$current_day = get_the_time('d');
 	if($current_day > 1) {
-		$current_year = get_the_time('Y');
-		$day = mktime(0, 0, 0, 12, $current_day - 1, $current_year);
-		$link_text = '<span class="posts-nav-date">le '.date_i18n('l j F Y', $day).'</span>';
+		$link_text = '<span class="posts-nav-date">Article pr&eacute;c&eacute;dent&nbsp;:</span>';
 		$link_text .= '<span class="posts-nav-title">%title</span>';
 		previous_post_link('<span class="posts-nav-link posts-nav-previous">%link</span>', $link_text, TRUE);
 	}
@@ -207,9 +205,7 @@ function jdw_previous_post_link() {
 function jdw_next_post_link() {
 	$current_day = get_the_time('d');
 	if($current_day < 24) {
-		$current_year = get_the_time('Y');
-		$day = mktime(0, 0, 0, 12, $current_day + 1, $current_year);
-		$link_text = '<span class="posts-nav-date">le '.date_i18n('l j F Y', $day).'</span>';
+		$link_text = '<span class="posts-nav-date">Article suivant&nbsp;:</span>';
 		$link_text .= '<span class="posts-nav-title">%title</span>';
 		next_post_link('<span class="posts-nav-link posts-nav-next">%link</span>', $link_text, TRUE);
 	}
