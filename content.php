@@ -49,6 +49,11 @@
 	</footer>
 	<?php endif; ?>
 </article>
+<?php
+	if(is_single()) {
+		get_template_part('donation');
+	}
+?>
 <?php if(has_category('articles')) : ?>
 	<div class="posts-nav">
 		<?php

@@ -1,4 +1,9 @@
 		</main>
+		<?php
+			if(!is_single()) {
+				get_template_part('donation');
+			}
+		?>
 		<footer class="footer">
 			<div class="footer-content">
 				<div class="footer-column footer-column--logo">
