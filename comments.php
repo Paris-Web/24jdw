@@ -58,7 +58,7 @@
 			</div>
 			<?php do_action('comment_form', $post->ID); ?>
 		</form>
-		<p class="comment-warning">Les commentaires sont mod&eacute;r&eacute;s manuellement. Merci de respecter la personne qui a &eacute;crit l'article, les autres participant(e)s &agrave; la discussion, et la langue fran&ccedil;aise. Vous pouvez <a href="<?php the_permalink(); ?>feed">suivre les r&eacute;ponses par flux RSS</a>.</p>
+		<p class="comment-warning">Les commentaires sont mod&eacute;r&eacute;s manuellement. Merci de respecter&nbsp;: la personne qui a &eacute;crit l'article, les autres participant(e)s &agrave; la discussion, et la langue fran&ccedil;aise. Vous pouvez <a href="<?php the_permalink(); ?>feed">suivre les r&eacute;ponses par flux RSS</a>.</p>
 	</div>
 	<?php endif; ?>
 </div>
