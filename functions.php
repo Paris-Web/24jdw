@@ -234,6 +234,14 @@ function jdw_the_year() {
 }
 
 /**
+ * Affiche la première lettre du nom de l'auteur(trice) d'un commentaire
+ *
+ */
+function jdw_comment_author_initial($author_name) {
+	echo substr($author_name, 0, 1);
+}
+
+/**
  * Gestion des avatars multi auteurs.
  * ATTENTION C'EST SUPER DÉGUEULASSE !
  * (Un jour, je ferais mieux que ça. Un jour.)

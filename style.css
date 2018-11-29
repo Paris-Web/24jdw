@@ -540,6 +540,11 @@ button::-moz-focus-inner {
 		margin-bottom: 1.5em;
 	}
 
+	.post-entry img.aligncenter {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	@media only screen and (min-width: 78.75em) { /* 750 + (175 + 50x2)x2 */
 		.post-entry img.alignleft {
 			margin-left: -13.75em; /* -220px */
@@ -856,14 +861,28 @@ button::-moz-focus-inner {
 
 		.comment-avatar {
 			margin: 0 1.5em 1.5em 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-shrink: 0;
+			flex-grow: 0;
+			width: 4.625rem;
+			height: 4.625rem;
+			font-family: Raleway, sans-serif;
+			font-weight: 900;
+			background: #ecf6f6;
+			overflow: hidden;
 		}
 
-			.comment-avatar::before {
-				content: '';
-				display: block;
-				width: 4.625rem;
-				height: 4.625rem;
-				background: #ecf6f6;
+			.comment-avatar span {
+				color: #d9ecec;
+				font-size: 8em;
+				text-transform: uppercase;
+				transform: rotate(12deg);
+			}
+
+			.comment-item:nth-child(even) .comment-avatar span {
+				transform: rotate(-12deg);
 			}
 
 			@media only screen and (max-width: 30em) {
