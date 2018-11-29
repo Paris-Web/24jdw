@@ -1743,3 +1743,80 @@ button::-moz-focus-inner {
 	background: #deecf0;
 	border-top-color: #7b8f96;
 }
+
+/**
+ * Thème 2018
+ */
+.home--2018 .site {
+	background-color: #fff;
+	background-image: linear-gradient(45deg, #f2f2f2 25%, transparent 25%, transparent 75%, #f2f2f2 75%, #f2f2f2),
+	linear-gradient(45deg, #f2f2f2 25%, transparent 25%, transparent 75%, #f2f2f2 75%, #f2f2f2);
+	background-size: 2rem 2rem;
+	background-position: 0 0, 1rem 1rem;
+	background-attachment: fixed;
+	/* @see https://leaverou.github.io/css3patterns/#checkerboard */
+}
+
+	.home--2018 .hero-content {
+		min-height: 0;
+		text-align: center;
+	}
+
+	.home--2018 .hero-baseline {
+		display: inline;
+		padding: 0.5rem 1.5rem;
+		width: auto;
+		max-width: 80%;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: Arial, sans-serif;
+		font-size: 0.75rem;
+		background: #000;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+	}
+
+	.home--2018 .hero-h1 {
+		margin-bottom: 0.75rem;
+		font-size: 0;
+	}
+
+	.home--2018 .hero-logo {
+		display: inline-block;
+	}
+
+	.home--2018 .hero-logo img {
+		width: 15rem;
+		height: 5.625rem;
+	}
+
+	@media only screen and (max-width: 31.25em) {
+		.home--2018 .hero-logo img {
+			max-width: 60%;
+			height: auto;
+		}
+	}
+
+.home--2018 .calendar {
+	background-color: #fff;
+	box-shadow: 0 0 4rem rgba(0, 0, 0, 0.125);
+}
+
+.home--2018 .donation,
+.home--2018 .footer {
+	filter: grayscale(1);
+}
+
+.edition--2018 .header {
+	background: #f7f7f7;
+}
+
+.edition--2018 .header::after {
+	background: #dbdbdb;
+}
+
+.edition--2018 .footer {
+	background: #f7f7f7;
+	border-top-color: #dbdbdb;
+}

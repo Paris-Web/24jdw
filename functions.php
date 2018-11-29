@@ -219,7 +219,7 @@ function jdw_get_the_year() {
 		return get_the_time('Y');
 	}
 	else {
-		$jdw_current_edition = 2017;
+		$jdw_current_edition = 2018;
 		return $jdw_current_edition;
 	}
 }
