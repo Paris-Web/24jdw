@@ -22,7 +22,7 @@
 					En cliquant sur le bouton &laquo;&nbsp;Faire un don&nbsp;&raquo; vous allez &ecirc;tre redirig&eacute; vers www.helloasso.com.
 				</p>
 				<p>
-					<a class="jdw-button" href="https://www.helloasso.com/utilisateurs/don-24joursdeweb-fr/collectes/24-jours-de-web-soutient-le-refuge">Faire un don</a>
+					<a class="jdw-button" href="https://www.helloasso.com/utilisateurs/don-24joursdeweb-fr/collectes/24-jours-de-web-soutient-l-auberge-des-migrants">Faire un don</a>
 				</p>
 			</div>
 		</div>
