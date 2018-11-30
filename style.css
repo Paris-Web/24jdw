@@ -844,13 +844,35 @@ button::-moz-focus-inner {
 	}
 
 	.posts-nav-link a {
+		position: relative;
+		overflow: hidden;
 		display: flex;
 		flex-grow: 1;
 		flex-direction: column;
+		justify-content: center;
 		padding: 1rem 1.5rem;
+		min-height: 6.875rem;
 		text-decoration: none;
 		background: #ecf6f6;
 	}
+
+		.posts-nav-link a::before {
+			content: '';
+			position: absolute;
+			width: 3rem;
+			height: 5.5rem;
+			background: url(images/arrow.png) no-repeat 0 0;
+			background-size: cover;
+		}
+
+		.posts-nav-previous a::before {
+			right: 25rem;
+		}
+
+		.posts-nav-next a::before {
+			left: 25rem;
+			transform: rotate(180deg);
+		}
 
 		.posts-nav-link a:active {
 			transform: translateY(2px);
@@ -858,9 +880,11 @@ button::-moz-focus-inner {
 
 	.posts-nav-date,
 	.posts-nav-title {
+		position: relative;
+		z-index: 1;
 		display: block;
 		width: 100%;
-		max-width: 23rem;
+		max-width: 18.75rem;
 	}
 
 	.posts-nav-date {
