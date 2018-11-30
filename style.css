@@ -425,7 +425,7 @@ button::-moz-focus-inner {
 	color: #6f232b;
 }
 
-.post-entry > p:first-of-type:first-letter {
+.single .post-entry > p:first-of-type:first-letter {
 	float: left;
 	display: inline-block;
 	margin-right: 0.055555em; /* (1 / 4.5) / 4 */
@@ -436,8 +436,19 @@ button::-moz-focus-inner {
 }
 
 	@media only screen and (max-width: 47.9375em) {
-		.post-entry > p:first-of-type:first-letter {
+		.single .post-entry > p:first-of-type:first-letter {
 			font-size: 3em;
+		}
+	}
+
+	@supports (initial-letter: 3.0 2) or (-webkit-initial-letter: 3.0 2) {
+		.single .post-entry > p:first-of-type:first-letter {
+			float: none;
+			margin-right: 0;
+			height: auto;
+			overflow: visible;
+			-webkit-initial-letter: 3.0 2;
+			initial-letter: 3.0 2;
 		}
 	}
 
