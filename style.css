@@ -1775,6 +1775,10 @@ button::-moz-focus-inner {
 		}
 	}
 
+.home--2017 .donation {
+	margin-top: 0;
+}
+
 .edition--2017 .header {
 	background: linear-gradient(to bottom, #86c1d8 0%, #a3e8f9 100%);
 }
@@ -1845,11 +1849,6 @@ button::-moz-focus-inner {
 .home--2018 .calendar {
 	background-color: #fff;
 	box-shadow: 0 0 4rem rgba(0, 0, 0, 0.125);
-}
-
-.home--2018 .donation,
-.home--2018 .footer {
-	filter: grayscale(1);
 }
 
 .edition--2018 .header {
