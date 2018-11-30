@@ -19,7 +19,7 @@
 			</div>
 			<div class="donation-body-column">
 				<p>
-					En cliquant sur le bouton &laquo;&nbsp;Faire un don&nbsp;&raquo; vous allez &ecirc;tre redirig&eacute; vers www.helloasso.com.
+					En cliquant sur le bouton &laquo;&nbsp;Faire un don&nbsp;&raquo; vous allez &ecirc;tre redirig&eacute; vers le site www.helloasso.com.
 				</p>
 				<p>
 					<a class="jdw-button" href="https://www.helloasso.com/utilisateurs/don-24joursdeweb-fr/collectes/24-jours-de-web-soutient-l-auberge-des-migrants">Faire un don</a>
