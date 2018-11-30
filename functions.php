@@ -174,7 +174,9 @@ function jdw_the_illustrator() {
 function jdw_the_illustrator_name() {
 	$year = jdw_get_the_year();
 
-	if($year == '2017') {
+	if($year == '2018') {
+		echo 'le menu &laquo;&nbsp;Fichier&nbsp;&gt;&nbsp;Nouveau&hellip;&nbsp;&raquo; de Photoshop (c\'est temporaire, okay&nbsp;?)';
+	} elseif($year == '2017') {
 		echo '<a href="http://www.stpo.fr/">Christophe Andrieu</a>';
 	} elseif($year == '2015') {
 		echo '<a href="http://www.reuno.net/">Renaud Foresti&eacute;</a>';
