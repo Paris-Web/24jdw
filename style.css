@@ -93,6 +93,43 @@ button::-moz-focus-inner {
 }
 
 /**
+ * Animation tada (from Animate.css)
+ * @see https://daneden.github.io/animate.css/
+ */
+@keyframes tada {
+	from {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+
+	10%,
+	20% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+	}
+
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	}
+
+	40%,
+	60%,
+	80% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	}
+
+	to {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+/**
  * Calendrier
  */
 .calendar {
@@ -1237,6 +1274,13 @@ button::-moz-focus-inner {
 
 		.donation .jdw-button {
 			min-width: 50%;
+			font-size: 1.5rem;
+			outline-color: rgba(255, 255, 255, 0.5);
+			outline-width: 1px;
+		}
+
+		.donation .jdw-button:hover {
+			animation: tada 1s both;
 		}
 
 	.single .donation {
