@@ -455,7 +455,11 @@ button::-moz-focus-inner {
 .post-entry p,
 .post-entry ul,
 .post-entry ol,
-.post-entry pre {
+.post-entry pre,
+.post-entry h4,
+.post-entry h5,
+.post-entry h6,
+.post-entry .wp-video {
 	margin-bottom: 1.25em;
 }
 
@@ -562,12 +566,13 @@ button::-moz-focus-inner {
 }
 
 @media only screen and (min-width: 78.75em) { /* 750 + (175 + 50x2)x2 */
-	.post-entry pre code {
+	.post-entry pre:not([class*="lang"]) code {
 		margin-right: -13.75em; /* -220px */
 	}
 }
 
-.post-entry img {
+.post-entry img,
+.post-entry .wp-video {
 	display: block;
 	width: auto;
 	height: auto;
@@ -1004,6 +1009,9 @@ button::-moz-focus-inner {
 			text-align: center;
 			background: #be3745;
 			border: none;
+			border-radius: 0;
+			appearance: none;
+			-webkit-appearance: none;
 		}
 
 		.jdw-button:active,
