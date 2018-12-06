@@ -10,7 +10,7 @@
 					<a href="<?php bloginfo('home'); ?>" class="footer-logo"><img class="footer-logo-img" src="<?php bloginfo('template_url') ?>/images/footer/logo.png" alt="<?php get_bloginfo('name') ?>" /></a>
 				</div>
 				<div class="footer-column footer-column--text">
-					<p class="footer-baseline"><b>24 Jours de web</b>, le calendrier de l&rsquo;avent des gens qui font le web d&rsquo;après.</p>
+					<p class="footer-baseline"><b>24 jours de web</b>, le calendrier de l&rsquo;avent des gens qui font le web d&rsquo;après.</p>
 					<p>2012-<?php echo date("Y"); ?>, tous droits r&eacute;serv&eacute;s.</p>
 					<?php jdw_the_illustrator(); ?>
 				</div>

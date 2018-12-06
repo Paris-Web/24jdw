@@ -56,9 +56,15 @@ add_filter('pre_get_posts','jdw_filter_posts_from_RSS');
  * Ajoute une classe spécifique avec l'année en page d'archive, et le slug pour une page.
  */
 function jdw_add_body_class($classes) {
-	$classes[] = 'edition--'.jdw_get_the_year();
+	$year = jdw_get_the_year();
+	$classes[] = 'edition--'.$year;
 	if(is_year() || is_home()) {
-		$classes[] = 'home--'.jdw_get_the_year();
+		$classes[] = 'home--'.$year;
+		if($year < 2017) {
+			$classes[] = 'home--old';
+		} else {
+			$classes[] = 'home--new';
+		}
 	}
 	else if(is_page()) {
 		global $post;
@@ -175,7 +181,7 @@ function jdw_the_illustrator_name() {
 	$year = jdw_get_the_year();
 
 	if($year == '2018') {
-		echo 'le menu &laquo;&nbsp;Fichier&nbsp;&gt;&nbsp;Nouveau&hellip;&nbsp;&raquo; de Photoshop (c\'est temporaire, okay&nbsp;?)';
+		echo '<a href="https://www.cabaroc.com/">Jean-Philippe Cabaroc</a>';
 	} elseif($year == '2017') {
 		echo '<a href="http://www.stpo.fr/">Christophe Andrieu</a>';
 	} elseif($year == '2015') {

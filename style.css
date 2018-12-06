@@ -1740,13 +1740,16 @@ button::-moz-focus-inner {
 	}
 
 .home--2017 .calendar {
-	position: relative;
-	grid-gap: 0;
-	padding: 0.125rem;
 	margin-top: -10rem;
 	border-top: 0.25rem solid #de362c;
-	background-color: #e2e8e9;
 }
+
+	.home--new .calendar {
+		position: relative;
+		grid-gap: 0;
+		padding: 0.125rem;
+		background-color: #e2e8e9;
+	}
 
 	.home--2017 .calendar::before {
 		content: '';
@@ -1761,37 +1764,47 @@ button::-moz-focus-inner {
 		background-size: 75.125rem 1.25rem;
 	}
 
+	.home--new .day-off {
+		background-color: #f6f6f6;
+	}
+
 	.home--2017 .day-off {
 		background: #e2e8e9;
 	}
 
-	.home--2017 .day-off-cell {
+	.home--new .day-off-cell {
 		align-items: flex-start;
 		margin: -1px;
-		border: 2px solid #a2dbe9;
+		border: 2px solid currentColor;
+	}
+
+	.home--2017 .day-off-cell {
+		border-color: #a2dbe9;
 	}
 
 	@media only screen and (min-width: 31.25em) {
-		.home--2017 .day-off-cell {
+		.home--new .day-off-cell {
 			min-height: 15rem;
 		}
 	}
-
-	.home--2017 .day-link {
+	.home--new .day-link {
 		margin: -1px;
 		padding: 1.5rem;
-		color: #26271f;
 		font-size: 1.125rem;
+		border: 2px solid currentColor;
+	}
+
+	.home--2017 .day-link {
 		background-color: #eff1db;
-		border: 2px solid #a2dbe9;
+		border-color: #a2dbe9;
 	}
 
 	.home--2017 .day:nth-child(2n+1) .day-link {
 		background-color: #d1eef5;
 	}
 
-	.home--2017 .day-number,
-	.home--2017 .day-off-number {
+	.home--new .day-number,
+	.home--new .day-off-number {
 		flex-grow: 0;
 		margin-left: -0.25rem;
 		margin-top: -1rem;
@@ -1802,18 +1815,23 @@ button::-moz-focus-inner {
 		font-size: 1.25rem;
 		font-weight: 700;
 		line-height: 2.5rem;
+		background: #333;
 		letter-spacing: 0;
-		background: #de362c;
 		border-radius: 50%;
 	}
 
+	.home--2017 .day-number,
 	.home--2017 .day-off-number {
+		background-color: #de362c;
+	}
+
+	.home--new .day-off-number {
 		margin: 1rem;
 		background: #666;
 	}
 
 	@media only screen and (min-width: 90rem) {
-		.home--2017 .calendar {
+		.home--new .calendar {
 			max-width: 90rem;
 			grid-template-columns: repeat(6, 1fr);
 		}
@@ -1840,13 +1858,7 @@ button::-moz-focus-inner {
  * Thème 2018
  */
 .home--2018 .site {
-	background-color: #fff;
-	background-image: linear-gradient(45deg, #f2f2f2 25%, transparent 25%, transparent 75%, #f2f2f2 75%, #f2f2f2),
-	linear-gradient(45deg, #f2f2f2 25%, transparent 25%, transparent 75%, #f2f2f2 75%, #f2f2f2);
-	background-size: 2rem 2rem;
-	background-position: 0 0, 1rem 1rem;
-	background-attachment: fixed;
-	/* @see https://leaverou.github.io/css3patterns/#checkerboard */
+	background-color: #f6f8f7;
 }
 
 	.home--2018 .hero-content {
@@ -1891,9 +1903,45 @@ button::-moz-focus-inner {
 	}
 
 .home--2018 .calendar {
-	background-color: #fff;
-	box-shadow: 0 0 4rem rgba(0, 0, 0, 0.125);
+	background-color: transparent;
+	padding: 7px;
+	grid-gap: 7px;
 }
+
+	.home--2018 .day-link {
+		color: rgba(255, 255, 255, 0.85);
+	}
+
+	.home--2018 .day-number {
+		background-color: #fff;
+	}
+
+	.home--2018 .day:nth-child(3n+1) .day-link {
+		border-color: #8acac0;
+		background-color: #8acac0;
+	}
+
+	.home--2018 .day:nth-child(3n+1) .day-number {
+		color: #8acac0;
+	}
+
+	.home--2018 .day:nth-child(3n+2) .day-link {
+		border-color: #fbaa32;
+		background-color: #fbaa32;
+	}
+
+	.home--2018 .day:nth-child(3n+2) .day-number {
+		color: #fbaa32;
+	}
+
+	.home--2018 .day:nth-child(3n+3) .day-link {
+		border-color: #e35b4a;
+		background-color: #e35b4a;
+	}
+
+	.home--2018 .day:nth-child(3n+3) .day-number {
+		color: #e35b4a;
+	}
 
 .edition--2018 .header {
 	background: #f7f7f7;
