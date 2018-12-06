@@ -565,7 +565,8 @@ button::-moz-focus-inner {
 	background: #333;
 }
 
-@media only screen and (min-width: 78.75em) { /* 750 + (175 + 50x2)x2 */
+@media only screen and (min-width: 81.25em) { /* 750 + (175 + 50x2)x2 */
+	.post-entry pre[class*="lang"],
 	.post-entry pre:not([class*="lang"]) code {
 		margin-right: -13.75em; /* -220px */
 	}
