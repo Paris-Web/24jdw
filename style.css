@@ -1862,8 +1862,11 @@ button::-moz-focus-inner {
 }
 
 	.home--2018 .hero-content {
-		min-height: 0;
+		min-height: 390px;
+		padding: 0;
 		text-align: center;
+		background: url(images/header/2018/perso.svg) no-repeat center top, url(images/header/2018/sol.svg) repeat-x center top, url(images/header/2018/ciel.svg) repeat-x center top;
+		background-size: auto 100%;
 	}
 
 	.home--2018 .hero-baseline {
@@ -1906,13 +1909,20 @@ button::-moz-focus-inner {
 	background-color: transparent;
 	padding: 7px;
 	grid-gap: 7px;
+	margin-top: 0;
 }
 
+	.home--2018 .day-title {
+		font-family: Raleway, sans-serif;
+		font-weight: bold;
+	}
+
 	.home--2018 .day-link {
-		color: rgba(255, 255, 255, 0.85);
+		color: rgba(0, 0, 0, 0.85);
 	}
 
 	.home--2018 .day-number {
+		color: #e35a48;
 		background-color: #fff;
 	}
 
@@ -1921,26 +1931,14 @@ button::-moz-focus-inner {
 		background-color: #8acac0;
 	}
 
-	.home--2018 .day:nth-child(3n+1) .day-number {
-		color: #8acac0;
-	}
-
 	.home--2018 .day:nth-child(3n+2) .day-link {
 		border-color: #fbaa32;
 		background-color: #fbaa32;
 	}
 
-	.home--2018 .day:nth-child(3n+2) .day-number {
-		color: #fbaa32;
-	}
-
 	.home--2018 .day:nth-child(3n+3) .day-link {
 		border-color: #e35b4a;
 		background-color: #e35b4a;
-	}
-
-	.home--2018 .day:nth-child(3n+3) .day-number {
-		color: #e35b4a;
 	}
 
 .edition--2018 .header {
