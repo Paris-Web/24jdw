@@ -1862,47 +1862,114 @@ button::-moz-focus-inner {
 }
 
 	.home--2018 .hero-content {
-		min-height: 390px;
+		min-height: calc(250rem / 16);
 		padding: 0;
-		text-align: center;
-		background: url(images/header/2018/perso.svg) no-repeat center top, url(images/header/2018/sol.svg) repeat-x center top, url(images/header/2018/ciel.svg) repeat-x center top;
-		background-size: auto 100%;
+		transition: background 200ms;
+		will-change: background; 
+		background-color: #082637;
+		background-image: url(images/header/2018/perso.svg),
+						  url(images/header/2018/sol.svg),
+						  url(images/header/2018/etoiles.svg),
+						  url(images/header/2018/etoiles.svg),
+						  url(images/header/2018/etoiles.svg),
+						  linear-gradient(#082637 20%, #18474b 65%, #3e997c);
+		background-size: auto 55%,
+						 auto 95%,
+						 auto 40%,
+						 auto 50%,
+						 auto 60%,
+						 auto 100%;
+		background-repeat: no-repeat,
+						   repeat-x,
+						   repeat-x,
+						   repeat-x,
+						   repeat-x,
+						   no-repeat;
+		background-position: calc(50% - 10px) 90%,
+							 50% 100%,
+							 50% 0%,
+							 50% 20%,
+							 50% 10%,
+							 50% 100%;
+		
+		position: relative;
 	}
 
-	.home--2018 .hero-baseline {
-		display: inline;
-		padding: 0.5rem 1.5rem;
-		width: auto;
-		max-width: 80%;
-		color: #fff;
-		text-transform: uppercase;
-		font-weight: bold;
-		font-family: Arial, sans-serif;
-		font-size: 0.75rem;
-		background: #000;
-		-webkit-box-decoration-break: clone;
-		box-decoration-break: clone;
+	@media (min-width: calc(628em / 16)) {
+		.home--2018 .hero-content {
+			min-height: calc(300rem / 16);
+			background-size: auto 70%,
+						 auto 95%,
+						 auto 40%,
+						 auto 50%,
+						 auto 60%,
+						 auto 100%;
+			background-position: 50% 90%,
+								calc(50% - 80px) 100%,
+								calc(50% - 80px) 0%,
+								calc(50% - 80px) 20%,
+								calc(50% - 80px) 10%,
+								50% 100%;
+		}
+	}
+
+	@media (min-width: calc(835em / 16)) {
+		.home--2018 .hero-content {
+			min-height: calc(400rem / 16);
+			text-align: center;
+			background-position: calc(50% - 180px) 90%,
+							 50% 100%,
+							 50% 0%,
+							 50% 20%,
+							 50% 10%,
+							 50% 100%;
+			background-size: auto 70%,
+						 auto 95%,
+						 auto 40%,
+						 auto 50%,
+						 auto 60%,
+						 auto 100%;
+		}
+	}
+
+	.home--2018 .hero-content::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background-color:#f6f8f7;
 	}
 
 	.home--2018 .hero-h1 {
-		margin-bottom: 0.75rem;
-		font-size: 0;
+		display: inline-block;
+		width: calc(200rem / 16);
+	}
+
+	@media (min-width: calc(835em / 16)) {
+		.home--2018 .hero-h1 {
+			width: calc(250rem / 16);
+			margin-right: calc(250rem / 16);
+		}
 	}
 
 	.home--2018 .hero-logo {
-		display: inline-block;
+		display: block;
+		padding: calc(12rem / 16);
+	}
+
+	@media (min-width: calc(835em / 16)) {
+		.home--2018 .hero-logo {
+			padding: calc(24rem / 16);
+		}
 	}
 
 	.home--2018 .hero-logo img {
-		width: 15rem;
-		height: 5.625rem;
-	}
-
-	@media only screen and (max-width: 31.25em) {
-		.home--2018 .hero-logo img {
-			max-width: 60%;
-			height: auto;
-		}
+		width: 100%;
+		height: auto;
+		margin: 0;
+		display: block;
 	}
 
 .home--2018 .calendar {
