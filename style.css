@@ -1861,182 +1861,63 @@ button::-moz-focus-inner {
 	background-color: #f6f8f7;
 }
 
-	.home--2018 .hero-content {
-		min-height: calc(250rem / 16);
-		padding: 0;
-		transition: background 200ms;
-		will-change: background; 
+	.home--2018 .hero {
+		overflow: hidden;
 		background-color: #082637;
-		background-image: url(images/header/2018/perso.svg),
-						  url(images/header/2018/sol.svg),
+		background-image: url(images/header/2018/etoiles.svg),
 						  url(images/header/2018/etoiles.svg),
 						  url(images/header/2018/etoiles.svg),
-						  url(images/header/2018/etoiles.svg),
-						  linear-gradient(#082637 20%, #18474b 65%, #3e997c);
-		background-size: auto 55%,
-						 auto 95%,
-						 auto 40%,
-						 auto 50%,
-						 auto 60%,
-						 auto 100%;
-		background-repeat: no-repeat,
-						   repeat-x,
-						   repeat-x,
-						   repeat-x,
-						   repeat-x,
-						   no-repeat;
-		background-position: calc(50% - 10px) 90%,
-							 50% 100%,
-							 50% 0%,
+						  linear-gradient(#082637 18%, #18474b 58%, #3e997c 90%, #f6f8f7 91%);
+		background-repeat: repeat-x;
+		background-position: 50% 0%,
 							 50% 20%,
 							 50% 10%,
-							 50% 100%;
-		
-		position: relative;
-	}
-
-	@media (min-width: calc(628em / 16)) {
-		.home--2018 .hero-content {
-			min-height: calc(300rem / 16);
-			background-size: auto 70%,
-						 auto 95%,
-						 auto 40%,
+							 0 0;
+		background-size: auto 40%,
 						 auto 50%,
 						 auto 60%,
 						 auto 100%;
-			background-position: 50% 90%,
-								calc(50% - 80px) 100%,
-								calc(50% - 80px) 0%,
-								calc(50% - 80px) 20%,
-								calc(50% - 80px) 10%,
-								50% 100%;
-		}
 	}
-
-	@media (min-width: calc(835em / 16)) {
-		.home--2018 .hero-content {
-			min-height: calc(400rem / 16);
-			text-align: center;
-			background-position: calc(50% - 180px) 90%,
-							 50% 100%,
-							 50% 0%,
-							 50% 20%,
-							 50% 10%,
-							 50% 100%;
-			background-size: auto 70%,
-						 auto 95%,
-						 auto 40%,
-						 auto 50%,
-						 auto 60%,
-						 auto 100%;
-		}
-.home--2018 .site {
-	background-color: #f6f8f7;
-}
 
 	.home--2018 .hero-content {
+		min-height: calc(400rem / 16);
+		padding: 0;
+		background-image: url(images/header/2018/perso.svg),
+						  url(images/header/2018/sol.svg);
 		text-align: center;
-		min-height: calc(250rem / 16);
-		padding: 0;
-		transition: background 200ms;
-		will-change: background; 
-		background-color: #082637;
-		background-image: url(images/header/2018/perso.svg),
-						  url(images/header/2018/sol.svg),
-						  url(images/header/2018/etoiles.svg),
-						  url(images/header/2018/etoiles.svg),
-						  url(images/header/2018/etoiles.svg),
-						  linear-gradient(#082637 20%, #18474b 65%, #3e997c);
-		background-size: auto 55%,
-						 auto 95%,
-						 auto 40%,
-						 auto 50%,
-						 auto 60%,
-						 auto 100%;
 		background-repeat: no-repeat,
-						   repeat-x,
-						   repeat-x,
-						   repeat-x,
-						   repeat-x,
-						   no-repeat;
-		background-position: calc(50% - 10px) 90%,
-							 50% 100%,
-							 50% 0%,
-							 50% 20%,
-							 50% 10%,
-							 50% 100%;
-		
+						   repeat-x;
+		background-position: left calc(50% - 8.4375rem) bottom 2rem,
+							 left calc(50% - 0.125rem) bottom 0.75rem;
+		background-size: auto 66.5%,
+					 auto 91.2%;
 		position: relative;
 	}
 
-	@media (min-width: calc(628em / 16)) {
+	@media (max-width: calc(600em / 16)) {
 		.home--2018 .hero-content {
-			min-height: calc(300rem / 16);
-			background-size: auto 70%,
-						 auto 95%,
-						 auto 40%,
-						 auto 50%,
-						 auto 60%,
-						 auto 100%;
-			background-position: 50% 90%,
-								50% 100%,
-								50% 0%,
-								50% 20%,
-								50% 10%,
-								50% 100%;
+			background-position: left -15.125rem bottom 2rem,
+								 left -41.375rem bottom 0.75rem;
 		}
 	}
 
-	@media (min-width: calc(835em / 16)) {
+	@media (max-width: calc(360em / 16)) {
 		.home--2018 .hero-content {
-			min-height: calc(400rem / 16);
-			
-			background-position: calc(50% - 180px) 90%,
-							 50% 100%,
-							 50% 0%,
-							 50% 20%,
-							 50% 10%,
-							 50% 100%;
-			background-size: auto 70%,
-						 auto 95%,
-						 auto 40%,
-						 auto 50%,
-						 auto 60%,
-						 auto 100%;
+			background-position: right -13.25rem bottom 2rem,
+								 right -56.0625rem bottom 0.75rem;
 		}
-	}
-
-	.home--2018 .hero-content::after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 2px;
-		background-color:#f6f8f7;
 	}
 
 	.home--2018 .hero-h1 {
 		display: inline-block;
-		width: calc(200rem / 16);
-	}
-
-	@media (min-width: calc(835em / 16)) {
-		.home--2018 .hero-h1 {
-			width: calc(250rem / 16);
-			margin-right: calc(250rem / 16);
-		}
+		width: calc(250rem / 16);
+		margin-right: calc(250rem / 16);
+		color: #84cac1;
 	}
 
 	.home--2018 .hero-logo {
 		display: block;
-		padding: calc(12rem / 16);
-	}
-
-	@media (min-width: calc(835em / 16)) {
-		.home--2018 .hero-logo {
-			padding: calc(24rem / 16);
-		}
+		padding: calc(24rem / 16);
 	}
 
 	.home--2018 .hero-logo img {
@@ -2048,9 +1929,9 @@ button::-moz-focus-inner {
 
 .home--2018 .calendar {
 	background-color: transparent;
-	padding: 7px;
-	grid-gap: 7px;
-	margin-top: 0;
+	padding: 0.4375rem;
+	grid-gap: 0.4375rem;
+	margin-top: -0.75rem;
 }
 
 	.home--2018 .day-title {
@@ -2083,11 +1964,12 @@ button::-moz-focus-inner {
 	}
 
 .edition--2018 .header {
-	background: #f7f7f7;
+	background: url(images/header/2018/etoiles.svg), #082637 linear-gradient(#082637 18%, #18474b);
+	background-size: auto 150%, auto;
 }
 
 .edition--2018 .header::after {
-	background: #dbdbdb;
+	background: #84cac1;
 }
 
 .edition--2018 .footer {

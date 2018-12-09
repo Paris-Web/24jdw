@@ -157,7 +157,11 @@ function jdw_the_logo() {
 	if($year == 2012 || $year == 2016) {
 		$year = 2017;
 	}
-	$logo = '<img src="'.get_bloginfo('template_url').'/images/header/'.$year.'/logo.svg" width="160" height="60" alt="'.get_bloginfo('name').'" title="" />';
+	$extension = '.png';
+	if($year == 2018) {
+		$extension = '.svg';
+	}
+	$logo = '<img src="'.get_bloginfo('template_url').'/images/header/'.$year.'/logo'.$extension.'" width="160" height="60" alt="'.get_bloginfo('name').'" title="" />';
 	echo $logo;
 }
 
