@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="apple-mobile-web-app-title" content="24j de web" />
 	<?php if(is_single() || is_page()) : ?>
-	<meta property="og:title" content="<?php the_title(); ?>" />
+	<meta property="og:title" content="<?php the_title_attribute(); ?>" />
 	<meta property="og:description" content="<?php bloginfo('name'); ?> : <?php bloginfo('description'); ?>" />
 	<?php endif; ?>
 	<?php if((is_home() && !is_paged()) || (is_year() && get_the_time('Y') != 2016)) : ?>
