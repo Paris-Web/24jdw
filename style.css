@@ -501,6 +501,11 @@ button::-moz-focus-inner {
 		}
 	}
 
+.post-entry .question {
+	font-family: Raleway, sans-serif;
+	font-weight: bold;
+}
+
 .post-entry blockquote,
 .post-entry .answer {
 	margin-top: 1.5em;
