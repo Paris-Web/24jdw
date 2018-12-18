@@ -560,6 +560,11 @@ button::-moz-focus-inner {
 		border-radius: 50%;
 	}
 
+.post-entry pre,
+.post-entry .side-by-side-code {
+	margin-bottom: 1.5em;
+}
+
 .post-entry pre code {
 	display: block;
 	padding: 1em;
@@ -574,8 +579,19 @@ button::-moz-focus-inner {
 
 @media only screen and (min-width: 81.25em) { /* 750 + (175 + 50x2)x2 */
 	.post-entry pre[class*="lang"],
-	.post-entry pre:not([class*="lang"]) code {
+	.post-entry pre:not([class*="lang"]) code,
+	.post-entry .side-by-side-code {
 		margin-right: -13.75em; /* -220px */
+	}
+
+	.post-entry .side-by-side-code {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.post-entry .side-by-side-code pre {
+		margin-right: 0;
+		width: calc(50% - 0.75em);
 	}
 }
 
