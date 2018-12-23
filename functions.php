@@ -118,7 +118,12 @@ function jdw_get_reading_time() {
 }
 
 function jdw_the_reading_time() {
-	echo jdw_get_reading_time();
+	$unit = 'minute';
+	$time = jdw_get_reading_time();
+	if($time > 1) {
+		$unit .= 's';
+	}
+	echo $time.' '.$unit;
 }
 
 /**
