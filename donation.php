@@ -19,10 +19,13 @@
 			</div>
 			<div class="donation-body-column">
 				<p>
-					En cliquant sur le bouton &laquo;&nbsp;Faire un don&nbsp;&raquo; vous allez &ecirc;tre redirig&eacute; vers le site www.helloasso.com.
+					En cliquant sur le bouton &laquo;&nbsp;Faire un don&nbsp;&raquo; vous allez &ecirc;tre redirig&eacute; vers le site www.laubergedesmigrants.fr.
 				</p>
 				<p>
-					<a class="jdw-button" href="https://www.helloasso.com/utilisateurs/don-24joursdeweb-fr/collectes/24-jours-de-web-soutient-l-auberge-des-migrants">Faire un don</a>
+					<a class="jdw-button" href="https://www.laubergedesmigrants.fr/fr/faire-un-don/">Faire un don</a>
+				</p>
+				<p>
+					En d&eacute;cembre 2018, <a href="https://www.helloasso.com/utilisateurs/don-24joursdeweb-fr/collectes/24-jours-de-web-soutient-l-auberge-des-migrants">680&nbsp;&euro; ont &eacute;t&eacute; r&eacute;colt&eacute;s</a> pour l'Auberge des Migrants. Merci &agrave; vous&nbsp;!
 				</p>
 			</div>
 		</div>
