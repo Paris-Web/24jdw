@@ -39,12 +39,5 @@
 		</footer>
 	</div>
 	<?php wp_footer(); ?>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4722865-4"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-4722865-4', { 'anonymize_ip': true });
-	</script>
 </body>
 </html>
