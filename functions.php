@@ -176,11 +176,13 @@ function jdw_the_logo() {
  * @see jdw_the_illustrator_name()
  */
 function jdw_the_illustrator() {
+	if(jdw_get_the_year() <= $jdw_current_edition) {
 ?>
 	<p>
 		Illustration <?php jdw_the_year(); ?> par <?php echo jdw_the_illustrator_name(); ?>.
 	</p>
 <?php
+	}
 }
 
 /**
@@ -189,18 +191,20 @@ function jdw_the_illustrator() {
 function jdw_the_illustrator_name() {
 	$year = jdw_get_the_year();
 
-	if($year == '2018') {
+	if($year == '2019') {
+		echo '<a href="https://www.redisdead.net/">Laurence Vagner</a>';
+	} elseif($year == '2018') {
 		echo '<a href="https://www.cabaroc.com/">Jean-Philippe Cabaroc</a>';
 	} elseif($year == '2017') {
-		echo '<a href="http://www.stpo.fr/">Christophe Andrieu</a>';
+		echo '<a href="https://www.stpo.fr/">Christophe Andrieu</a>';
 	} elseif($year == '2015') {
-		echo '<a href="http://www.reuno.net/">Renaud Foresti&eacute;</a>';
+		echo '<a href="https://www.reuno.net/">Renaud Foresti&eacute;</a>';
 	} elseif($year == '2014') {
 		echo '<a href="http://www.mickaelmerley.com/">Micka&euml;l Merley</a>';
 	} elseif($year == '2013') {
 		echo '<a href="https://www.behance.net/gwenoledeschamps">Gw&eacute;nol&eacute; Deschamps</a>';
 	} elseif($year == '2012') {
-		echo '<a href="http://www.charleslp.com/">Charles Le Pr&eacute;vost</a>';
+		echo '<a href="https://www.charleslp.com/">Charles Le Pr&eacute;vost</a>';
 	}
 }
 
