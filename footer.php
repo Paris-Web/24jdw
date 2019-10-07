@@ -16,6 +16,7 @@
 				</div>
 				<div class="footer-column footer-column--links">
 					<ul class="footer-links">
+						<li><a href="https://www.24joursdeweb.fr/2019/lancement/">Appel à articles 2019</a></li>						
 						<li><a href="<?php bloginfo('url'); ?>/a-propos/">&Agrave; Propos</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/mentions-legales/">Mentions l&eacute;gales</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/remerciements/">Remerciements</a></li>
