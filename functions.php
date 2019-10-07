@@ -163,7 +163,7 @@ function jdw_the_logo() {
 		$year = 2017;
 	}
 	$extension = '.png';
-	if($year == 2018) {
+	if($year >= 2018) {
 		$extension = '.svg';
 	}
 	$logo = '<img src="'.get_bloginfo('template_url').'/images/header/'.$year.'/logo'.$extension.'" width="160" height="60" alt="'.get_bloginfo('name').'" title="" />';

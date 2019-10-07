@@ -1999,3 +1999,40 @@ button::-moz-focus-inner {
 	background: #f7f7f7;
 	border-top-color: #dbdbdb;
 }
+
+/**
+ * Thème 2019
+ */
+.home--2019 .hero {
+	background: url(images/header/2019/background.jpg) no-repeat center top, url(images/header/2019/pattern.jpg) repeat-x center top;
+}
+
+	.home--2019 .hero-content {
+		min-height: 30rem;
+	}
+
+	.home--2019 .hero-h1 {
+		text-align: center;
+	}
+
+	.home--2019 .hero-logo {
+		position: relative;
+		top: -1.375rem;
+		left: -6.25rem;
+		display: inline-block;
+		transform: rotate(-5deg);
+	}
+
+	.home--2019 .hero-logo img {
+		width: 22.5rem;
+		height: 8.4375rem;
+	}
+
+.edition--2018 .header::after {
+	background: #84cac1;
+}
+
+.edition--2018 .footer {
+	background: #f7f7f7;
+	border-top-color: #dbdbdb;
+}
