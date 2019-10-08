@@ -2028,6 +2028,40 @@ button::-moz-focus-inner {
 		height: 8.4375rem;
 	}
 
+	.home--2019 .calendar {
+		background-color: transparent;
+		padding: 0.4375rem;
+		grid-gap: 0.4375rem;
+		margin-top: -0.75rem;
+	}
+
+	.home--2019 .day:nth-child(5n+1) .day-link {
+		color: #fff;
+		border-color: #59457d;
+		background-color: #59457d;
+	}
+
+	.home--2019 .day:nth-child(5n+2) .day-link {
+		border-color: #ffbf4e;
+		background-color: #ffbf4e;
+	}
+
+	.home--2019 .day:nth-child(5n+3) .day-link {
+		color: #fff;
+		border-color: #dd3a63;
+		background-color: #dd3a63;
+	}
+
+	.home--2019 .day:nth-child(5n+4) .day-link {
+		border-color: #9adbd5;
+		background-color: #9adbd5;
+	}
+
+	.home--2019 .day:nth-child(5n+5) .day-link {
+		border-color: #ff7d55;
+		background-color: #ff7d55;
+	}
+
 .edition--2018 .header::after {
 	background: #84cac1;
 }
