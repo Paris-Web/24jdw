@@ -2005,10 +2005,11 @@ button::-moz-focus-inner {
  */
 .home--2019 .hero {
 	background: url(images/header/2019/background.jpg) no-repeat center top, url(images/header/2019/pattern.jpg) repeat-x center top;
+	background-size: auto 100%;
 }
 
 	.home--2019 .hero-content {
-		min-height: 30rem;
+		min-height: 25rem;
 	}
 
 	.home--2019 .hero-h1 {
