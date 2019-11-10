@@ -32,7 +32,7 @@ function jdw_embed_handler_gist($matches, $attr, $url, $rawattr) {
  * @see http://prismjs.com/
  */
 function jdw_add_prism() {
-	if(is_single()) {
+	if(is_single() || is_page()) {
 		wp_register_style('prismCSS', get_stylesheet_directory_uri().'/css/prism.css');
 		wp_register_script('prismJS', get_stylesheet_directory_uri().'/js/prism.js');
 		wp_enqueue_style('prismCSS');
