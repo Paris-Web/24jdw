@@ -2,7 +2,7 @@
 Theme Name: 24 jours de web 2019
 Theme URI: https://www.24joursdeweb.fr
 Description: Thème de 24 jours de web, édition 2019
-Version: 6.0.0
+Version: 7.0.0
 Author: Rémi
 Author URI: https://www.hteumeuleu.fr
 */
@@ -1260,7 +1260,7 @@ button::-moz-focus-inner {
 	margin-top: 5.5rem;
 	padding: 1.5rem 1rem 4.5rem;
 	font-family: Raleway, sans-serif;
-	background-color: #faf8eb;
+	background-color: #eae7ee;
 }
 
 	.donation::before {
@@ -1270,19 +1270,19 @@ button::-moz-focus-inner {
 		right: 0;
 		top: -1.5rem;
 		display: block;
-		border-bottom: 1px solid #d3c1c0;
+		border-bottom: 1px solid #eae7ee;
 	}
 
 	@media only screen and (min-width: 60rem) {
 		.donation::after {
 			content: '';
 			position: absolute;
-			left: calc(50% - 53.125rem);
+			left: calc(50% - 60rem);
 			top: -6.875rem;
 			display: block;
-			width: 24.375rem;
-			height: 29.375rem;
-			background: url(images/footer/gifts.png) no-repeat 0 0;
+			width: 40rem;
+			height: 30rem;
+			background: url(images/header/2019/dino.png) no-repeat 0 0;
 			background-size: cover;
 		}
 	}
@@ -1298,7 +1298,7 @@ button::-moz-focus-inner {
 	}
 
 	.donation-title {
-		color: #6f232b;
+		color: #59457b;
 		font-size: 1.875rem;
 		line-height: 1.3333;
 		font-weight: inherit;
@@ -1306,13 +1306,13 @@ button::-moz-focus-inner {
 	}
 
 	.donation-subtitle {
-		color: #be3745;
+		color: #817197;
 		font-size: 1.375rem;
 		line-height: 1.363636;
 	}
 
 		.donation-subtitle strong {
-			color: #6f232b;
+			color: #59457b;
 		}
 
 		.donation-subtitle a {
@@ -1325,7 +1325,7 @@ button::-moz-focus-inner {
 		flex-wrap: wrap;
 		color: #f8fafa;
 		font-size: 1rem;
-		background-color: rgba(111, 35, 43, 0.75);
+		background-color: #817197;
 	}
 
 		.donation-body p:not(:last-child) {
@@ -1344,6 +1344,7 @@ button::-moz-focus-inner {
 			font-size: 1.5rem;
 			outline-color: rgba(255, 255, 255, 0.5);
 			outline-width: 1px;
+			background-color: #dd3a63;
 		}
 
 		.donation .jdw-button:hover {
@@ -1362,8 +1363,8 @@ button::-moz-focus-inner {
 	color: #2c3d44;
 	font-family: Raleway, sans-serif;
 	font-weight: 500;
-	background: #f6f8eb;
-	border-top: 0.625rem solid #d3c1bd;
+	background: #f7f7f7;
+	border-top: 0.625rem solid #dbdbdb;
 }
 
 	.footer-content {
@@ -1864,6 +1865,43 @@ button::-moz-focus-inner {
 	margin-top: 0;
 }
 
+.edition--2017 .donation {
+	background-color: #faf8eb;
+}
+
+.edition--2017 .donation::before {
+	border-bottom-color: #d3c1c0;
+}
+
+@media only screen and (min-width: 60rem) {
+	.edition--2017 .donation::after {
+		left: calc(50% - 53.125rem);
+		width: 24.375rem;
+		height: 29.375rem;
+		background-image: url(images/footer/gifts.png);
+	}
+}
+
+.edition--2017 .donation-title {
+	color: #6f232b;
+}
+
+.edition--2017 .donation-subtitle {
+	color: #be3745;
+}
+
+.edition--2017 .donation-subtitle strong {
+	color: #6f232b;
+}
+
+.edition--2017 .donation-body {
+	background-color: rgba(111, 35, 43, 0.75);
+}
+
+.edition--2017 .donation .jdw-button {
+	background-color: #be3745;
+}
+
 .edition--2017 .header {
 	background: linear-gradient(to bottom, #86c1d8 0%, #a3e8f9 100%);
 }
@@ -1995,11 +2033,6 @@ button::-moz-focus-inner {
 	background: #84cac1;
 }
 
-.edition--2018 .footer {
-	background: #f7f7f7;
-	border-top-color: #dbdbdb;
-}
-
 /**
  * Thème 2019
  */
@@ -2018,15 +2051,15 @@ button::-moz-focus-inner {
 
 	.home--2019 .hero-logo {
 		position: relative;
-		top: -1.375rem;
-		left: -6.25rem;
+		top: -0.5rem;
+		left: 1rem;
 		display: inline-block;
 		transform: rotate(-5deg);
 	}
 
 	.home--2019 .hero-logo img {
-		width: 22.5rem;
-		height: 8.4375rem;
+		width: 13.75rem;
+		height: 5.146875rem;
 	}
 
 	.home--2019 .calendar {
@@ -2063,11 +2096,6 @@ button::-moz-focus-inner {
 		background-color: #ff7d55;
 	}
 
-.edition--2018 .header::after {
-	background: #84cac1;
-}
-
-.edition--2018 .footer {
-	background: #f7f7f7;
-	border-top-color: #dbdbdb;
+.edition--2019 .header::after {
+	background: #59457b;
 }
