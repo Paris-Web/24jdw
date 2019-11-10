@@ -2096,6 +2096,10 @@ button::-moz-focus-inner {
 		background-color: #ff7d55;
 	}
 
+.edition--2019 .header {
+	background-color: #eae7ee;
+}
+
 .edition--2019 .header::after {
-	background: #59457b;
+	background: #817197;
 }
