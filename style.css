@@ -456,6 +456,7 @@ button::-moz-focus-inner {
 .post-entry ul,
 .post-entry ol,
 .post-entry pre,
+.post-entry pre[class*="lang"],
 .post-entry h4,
 .post-entry h5,
 .post-entry h6,
@@ -561,6 +562,7 @@ button::-moz-focus-inner {
 	}
 
 .post-entry pre,
+.post-entry pre[class*="lang"],
 .post-entry .side-by-side-code {
 	margin-bottom: 1.5em;
 }
