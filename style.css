@@ -217,8 +217,10 @@ button::-moz-focus-inner {
 		grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
 	}
 
-	.day {
-		min-height: 15.15625rem;
+	@supports (display: grid) {
+		.day {
+			min-height: 15.15625rem;
+		}
 	}
 
 	.day:hover {
@@ -1945,7 +1947,7 @@ button::-moz-focus-inner {
 	}
 
 	.home--2018 .hero-content {
-		min-height: calc(400rem / 16);
+		height: 25rem;
 		padding: 0;
 		background-image: url(images/header/2018/perso.svg),
 						  url(images/header/2018/sol.svg);
@@ -1959,14 +1961,14 @@ button::-moz-focus-inner {
 		position: relative;
 	}
 
-	@media (max-width: calc(600em / 16)) {
+	@media (max-width: 37.5rem) {
 		.home--2018 .hero-content {
 			background-position: left -15.125rem bottom 2rem,
 								 left -41.375rem bottom 0.75rem;
 		}
 	}
 
-	@media (max-width: calc(360em / 16)) {
+	@media (max-width: 22.5rem) {
 		.home--2018 .hero-content {
 			background-position: right -13.25rem bottom 2rem,
 								 right -56.0625rem bottom 0.75rem;
@@ -1975,14 +1977,14 @@ button::-moz-focus-inner {
 
 	.home--2018 .hero-h1 {
 		display: inline-block;
-		width: calc(250rem / 16);
-		margin-right: calc(250rem / 16);
+		width: 15.625rem;
+		margin-right: 15.625rem;
 		color: #84cac1;
 	}
 
 	.home--2018 .hero-logo {
 		display: block;
-		padding: calc(24rem / 16);
+		padding: 1.5rem;
 	}
 
 	.home--2018 .hero-logo img {
