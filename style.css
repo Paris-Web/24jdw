@@ -2043,12 +2043,12 @@ button::-moz-focus-inner {
  * Thème 2019
  */
 .home--2019 .hero {
-	background: url(images/header/2019/background.jpg) no-repeat center top, url(images/header/2019/pattern.jpg) repeat-x center top;
+	background: url(images/header/2019/background@96dpi.jpg) no-repeat center top, url(images/header/2019/pattern.jpg) repeat-x center top;
 	background-size: auto 100%;
 }
 
 	.home--2019 .hero-content {
-		min-height: 25rem;
+		min-height: 21.8125rem;
 	}
 
 	.home--2019 .hero-h1 {
@@ -2057,15 +2057,15 @@ button::-moz-focus-inner {
 
 	.home--2019 .hero-logo {
 		position: relative;
-		top: -0.5rem;
-		left: 1rem;
+		top: -1rem;
+		left: 1.25rem;
 		display: inline-block;
 		transform: rotate(-5deg);
 	}
 
 	.home--2019 .hero-logo img {
-		width: 13.75rem;
-		height: 5.146875rem;
+		width: 12.5rem;
+		height: 4.6875rem;
 	}
 
 	.home--2019 .calendar {
