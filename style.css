@@ -2072,7 +2072,7 @@ button::-moz-focus-inner {
 		background-color: transparent;
 		padding: 0.4375rem;
 		grid-gap: 0.4375rem;
-		margin-top: -0.75rem;
+		margin-top: 1rem;
 	}
 
 	.home--2019 .day:nth-child(5n+1) .day-link {
