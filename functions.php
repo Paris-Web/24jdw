@@ -176,7 +176,7 @@ function jdw_the_logo() {
  * @see jdw_the_illustrator_name()
  */
 function jdw_the_illustrator() {
-	if(jdw_get_the_year() <= $jdw_current_edition) {
+	if(jdw_get_the_year() <= jdw_get_the_edition()) {
 ?>
 	<p>
 		Illustration <?php jdw_the_year(); ?> par <?php echo jdw_the_illustrator_name(); ?>.
@@ -233,6 +233,13 @@ function jdw_next_post_link() {
 }
 
 /**
+ * Récupère l'édition en cours
+ */
+function jdw_get_the_edition() {
+	return 2019;
+}
+
+/**
  * Récupère l'année en cours
  */
 function jdw_get_the_year() {
@@ -240,8 +247,7 @@ function jdw_get_the_year() {
 		return get_the_time('Y');
 	}
 	else {
-		$jdw_current_edition = 2018;
-		return $jdw_current_edition;
+		return jdw_get_the_edition();
 	}
 }
 
