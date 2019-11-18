@@ -2143,5 +2143,6 @@ button::-moz-focus-inner {
 	}
 
 	.edition--2019 .donation .jdw-button {
-		background-color: #dd3a63;
+		color: #333;
+		background-color: #ffbf4e;
 	}
