@@ -11,15 +11,18 @@
 		<div class="donation-body">
 			<div class="donation-body-column">
 				<p>
-					Depuis 2007, la <a href="https://www.fondationpierredeniker.org">Fondation Pierre Deniker</a> soutient la recherche et informe contre les maladies mentales. Cette ann&eacute;e, la fondation a sorti &laquo;&nbsp;<a href="https://www.youtube.com/watch?v=2YR8J1xqDNs">Et toi, ça va&nbsp;?</a>&nbsp;&raquo;, un court-m&eacute;trage illustrant la d&eacute;pression.
+					Reconnue d&rsquo;utilit&eacute; publique, la <a href="https://www.fondationpierredeniker.org">Fondation Pierre Deniker</a> a pour mission de soutenir la recherche en sant&eacute; mentale et d'informer l&rsquo;opinion sur le sujet pour combattre la stigmatisation et changer le regard port&eacute; par la soci&eacute;t&eacute; sur les troubles mentaux.
 				</p>
 				<p>
-					Les fonds r&eacute;colt&eacute;s vont directement sur le compte de la fondation.
+					En 2019, la Fondation a produit le court-m&eacute;trage &laquo;&nbsp;<a href="https://www.fondationpierredeniker.org/campagne-depression-2019">Et toi, &ccedil;a va&nbsp;?</a>&nbsp;&raquo; pour montrer la r&eacute;alit&eacute; de la d&eacute;pression et briser le tabou qui entoure la maladie.
 				</p>
 			</div>
 			<div class="donation-body-column">
 				<p>
 					En cliquant sur le bouton &laquo;&nbsp;Faire un don&nbsp;&raquo; vous allez &ecirc;tre redirig&eacute; vers le site www.fondationpierredeniker.org.
+				</p>
+				<p>
+					Les fonds r&eacute;colt&eacute;s vont directement sur le compte de la fondation.
 				</p>
 				<p>
 					<a class="jdw-button" href="https://www.fondationpierredeniker.org/don/">Faire un don</a>
