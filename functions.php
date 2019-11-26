@@ -287,4 +287,20 @@ function jdw_multi_author_avatar() {
 		echo '<img alt="Goulven Champenois" src="http://media.24joursdeweb.fr/2014/12/goulven.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
 	}
 }
+
+/**
+ * Ajoute des sidebars administrables
+ */
+add_action('widgets_init', 'jdw_widgets_init');
+function jdw_widgets_init() {
+    register_sidebar(array(
+		'name' => 'Footer Sidebar',
+		'id' => 'jdw-footer-sidebar',
+		'description' => 'Des widgets générés après le footer. Utile pour des scripts tiers par exemple.',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<!--',
+		'after_title'   => '-->'
+    ));
+}
 ?>

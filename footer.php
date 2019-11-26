@@ -40,6 +40,9 @@
 			</div>
 		</footer>
 	</div>
+	<?php if(is_active_sidebar('jdw-footer-sidebar')): ?>
+		<?php dynamic_sidebar('jdw-footer-sidebar'); ?>
+	<?php endif; ?>
 	<?php wp_footer(); ?>
 </body>
 </html>
