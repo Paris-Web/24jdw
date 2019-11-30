@@ -2043,7 +2043,7 @@ button::-moz-focus-inner {
  * Thème 2019
  */
 .home--2019 .hero {
-	background: url(images/header/2019/background@96dpi.jpg) no-repeat center top, url(images/header/2019/pattern.jpg) repeat-x center top;
+	background: url(images/header/2019/background.jpg) no-repeat center top, url(images/header/2019/pattern.jpg) repeat-x center top;
 	background-size: auto 100%;
 }
 
