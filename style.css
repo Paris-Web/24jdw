@@ -2111,6 +2111,10 @@ button::-moz-focus-inner {
 	background: #817197;
 }
 
+.edition--2019 .header-archive {
+	filter: hue-rotate(-90deg);
+}
+
 /* Encart de don */
 .edition--2019 .donation {
 	background-color: #eae7ee;
