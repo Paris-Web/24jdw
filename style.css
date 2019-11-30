@@ -273,6 +273,7 @@ button::-moz-focus-inner {
 	max-width: 48.25rem;
 	color: #2c3d44;
 	font-size: 1.25rem;
+	min-height: 20rem;
 }
 
 	@media only screen and (max-width: 47.9375em) {
