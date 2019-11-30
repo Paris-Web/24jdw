@@ -978,6 +978,7 @@ button::-moz-focus-inner {
 			font-weight: 900;
 			background: #ecf6f6;
 			overflow: hidden;
+			user-select: none;
 		}
 
 			.comment-avatar span {
