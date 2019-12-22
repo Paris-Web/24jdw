@@ -35,7 +35,11 @@
 		<div class="post-author">
 			<div class="post-author-avatar">
 				<?php
-					echo get_avatar(get_the_author_meta('email'), 150, get_the_author_meta('jdwavatar'), get_the_author());
+					if(get_the_author_meta('jdwavatar') != "") {
+						echo '<img src="'.get_the_author_meta('jdwavatar').'" alt="'.get_the_author().'" width="150" height="150" />';
+					} else {
+						echo get_avatar(get_the_author_meta('email'), 150, get_the_author_meta('jdwavatar'), get_the_author());
+					}
 					jdw_multi_author_avatar();
 				?>
 			</div>
