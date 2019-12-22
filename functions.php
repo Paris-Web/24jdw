@@ -286,6 +286,9 @@ function jdw_multi_author_avatar() {
 	elseif(is_single('931')) {
 		echo '<img alt="Goulven Champenois" src="http://media.24joursdeweb.fr/2014/12/goulven.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
 	}
+	elseif(is_single('3300')) {
+		echo '<img alt="Nina (LaPalice)" src="https://media.24joursdeweb.fr/2019/12/nina.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
+	}
 }
 
 /**
