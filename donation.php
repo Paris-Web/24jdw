@@ -27,6 +27,9 @@
 				<p>
 					<a class="jdw-button" href="https://www.fondationpierredeniker.org/don/">Faire un don</a>
 				</p>
+				<p>
+					En d&eacute;cembre 2019, 1455&nbsp;&euro; ont &eacute;t&eacute; r&eacute;colt&eacute;s pour la Fondation Pierre Deniker. Merci &agrave; vous&nbsp;!
+				</p>
 			</div>
 		</div>
 	</div>
