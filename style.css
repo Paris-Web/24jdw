@@ -1,8 +1,8 @@
 /*
-Theme Name: 24 jours de web 2019
+Theme Name: 24 jours de web 2020
 Theme URI: https://www.24joursdeweb.fr
-Description: Thème de 24 jours de web, édition 2019
-Version: 7.0.0
+Description: Thème de 24 jours de web, édition 2020
+Version: 8.0.0
 Author: Rémi
 Author URI: https://www.hteumeuleu.fr
 */
@@ -2157,4 +2157,87 @@ button::-moz-focus-inner {
 	.edition--2019 .donation .jdw-button {
 		color: #333;
 		background-color: #ffbf4e;
+	}
+
+/**
+ * Thème 2020
+ */
+.home--2020 .hero {
+	background: #000405 url(images/header/2020/background.jpg) no-repeat center top;
+	background-size: auto 100%;
+}
+
+	.home--2020 .hero-content {
+		padding-top: 2rem;
+		min-height: 30rem;
+	}
+
+	.home--2020 .hero-logo img {
+		width: 12rem;
+		height: 4.5rem;
+	}
+
+.home--2020 .site {
+	background-color: #000405;
+}
+
+.home--2020 .calendar {
+	background-color: transparent;
+	padding: 0.4375rem;
+	grid-gap: 0.4375rem;
+	margin-top: 1rem;
+}
+
+	.home--2020 .day:nth-child(5n+1) .day-link {
+		border-color: #fbb7ff;
+		background-color: #fbb7ff;
+	}
+
+	.home--2020 .day:nth-child(5n+2) .day-link {
+		color: #fff;
+		border-color: #b121ff;
+		background-color: #b121ff;
+	}
+
+	.home--2020 .day:nth-child(5n+3) .day-link {
+		color: #fff;
+		border-color: #0f6a5f;
+		background-color: #0f6a5f;
+	}
+
+	.home--2020 .day:nth-child(5n+4) .day-link {
+		color: #fff;
+		border-color: #3b45ff;
+		background-color: #3b45ff;
+	}
+
+	.home--2020 .day:nth-child(5n+5) .day-link {
+		color: #fff;
+		border-color: #173767;
+		background-color: #173767;
+	}
+
+.edition--2020 .donation {
+	background: #000405 url(images/header/2020/footer.jpg) no-repeat center top;
+	background-size: auto 100%;
+	background-color: #000405;
+}
+
+	.edition--2020 .donation-title {
+		color:#0de5e0;
+	}
+
+	.edition--2020 .donation-subtitle,
+	.edition--2020 .donation-subtitle strong {
+		color:#de34fd;
+	}
+
+	.edition--2020 .donation::after {
+		left: calc(50% - 550px);
+		top: auto;
+		bottom: 4.5rem;
+		width: 5.75rem;
+		height: 5.75rem;
+		background-image: url(images/header/2020/perso.png);
+		background-color: transparent;
 	}

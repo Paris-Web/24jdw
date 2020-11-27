@@ -191,7 +191,9 @@ function jdw_the_illustrator() {
 function jdw_the_illustrator_name() {
 	$year = jdw_get_the_year();
 
-	if($year == '2019') {
+	if($year == '2020') {
+		echo '<a href="https://www.instagram.com/maela_cosson/">Ma&euml;la Cosson</a>';
+	} elseif($year == '2019') {
 		echo '<a href="https://www.redisdead.net/">Laurence Vagner</a>';
 	} elseif($year == '2018') {
 		echo '<a href="https://www.cabaroc.com/">Jean-Philippe Cabaroc</a>';
