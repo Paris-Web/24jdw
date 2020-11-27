@@ -16,12 +16,15 @@ Author URI: https://www.hteumeuleu.fr
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	min-width: 17.5em;
 	color: #595959;
 	font: 1em/1.5 Georgia, serif;
 	background-color: #fff;
-	scroll-behavior: smooth;
 }
 
 .site {
@@ -51,6 +54,10 @@ input[type="submit"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 button::-moz-focus-inner {
 	border: 0;
+}
+
+body.admin-bar :target {
+	scroll-margin-top: 2rem;
 }
 
 /**
@@ -2163,9 +2170,20 @@ button::-moz-focus-inner {
  * Thème 2020
  */
 .home--2020 .hero {
+	margin-bottom: 3rem;
 	background: #000405 url(images/header/2020/background.jpg) no-repeat center top;
-	background-size: auto 100%;
+	background-size: auto 30rem;
 }
+
+	.home--2020 .hero::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 3rem;
+		background: url(images/header/2020/pattern.png) repeat-x center top;
+		background-size: auto 3rem;
+	}
 
 	.home--2020 .hero-content {
 		padding-top: 2rem;
@@ -2219,17 +2237,31 @@ button::-moz-focus-inner {
 
 .edition--2020 .donation {
 	background: #000405 url(images/header/2020/footer.jpg) no-repeat center top;
-	background-size: auto 100%;
+	background-size: auto 30rem;
 	background-color: #000405;
+	padding-bottom: 2.375rem;
 }
 
+	.edition--2020 .donation::before {
+		display: none;
+	}
+
+	.edition--2020 .donation-body {
+		background-color: rgba(86, 170, 255, 0.2); /*rgba(33, 255, 228, 0.27)*/
+	}
+
+	.edition--2020 .donation .jdw-button {
+		color: #005ba2;
+		background-color: #85ffd5;
+	}
+
 	.edition--2020 .donation-title {
-		color:#0de5e0;
+		color:#85ffd5;
 	}
 
 	.edition--2020 .donation-subtitle,
 	.edition--2020 .donation-subtitle strong {
-		color:#de34fd;
+		color:#fbb7ff;
 	}
 
 	.edition--2020 .donation::after {
@@ -2241,3 +2273,19 @@ button::-moz-focus-inner {
 		background-image: url(images/header/2020/perso.png);
 		background-color: transparent;
 	}
+
+.edition--2020 .header {
+	background: #000405 url(images/header/2020/footer.jpg) no-repeat 70% 40%;
+}
+
+	.edition--2020 .header::after {
+		background-color: #173767;
+	}
+
+	.edition--2020 .header-archive {
+		filter: hue-rotate(-90deg);
+	}
+
+.edition--2020 .post-title {
+	color: #173767;
+}

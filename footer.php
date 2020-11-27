@@ -7,7 +7,7 @@
 		<footer class="footer">
 			<div class="footer-content">
 				<div class="footer-column footer-column--logo">
-					<a href="<?php bloginfo('home'); ?>" class="footer-logo"><img class="footer-logo-img" src="<?php bloginfo('template_url') ?>/images/footer/logo.png" alt="<?php get_bloginfo('name') ?>" /></a>
+					<a href="<?php bloginfo('home'); ?>" class="footer-logo"><img class="footer-logo-img" src="<?php bloginfo('template_url') ?>/images/footer/logo.png" alt="<?php echo get_bloginfo('name') ?>" /></a>
 				</div>
 				<div class="footer-column footer-column--text">
 					<p class="footer-baseline"><b>24 jours de web</b>, le calendrier de l&rsquo;avent des gens qui font le web d&rsquo;après.</p>
@@ -26,6 +26,7 @@
 				<div class="footer-archives">
 					<strong class="footer-archives-title">24 jours d&rsquo;archives</strong>
 					<ul class="footer-archives-links">
+						<li><a href="<?php bloginfo('url'); ?>/2019/">&Eacute;dition 2019</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/2018/">&Eacute;dition 2018</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/2017/">&Eacute;dition 2017</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/2016/">#nowwwel 2016</a></li>
