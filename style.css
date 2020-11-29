@@ -571,6 +571,13 @@ body.admin-bar :target {
 		border-radius: 50%;
 	}
 
+.post-entry p > code {
+	padding: 0.125rem 0.25rem;
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 0.125rem;
+	font-size: 0.85em;
+}
+
 .post-entry pre,
 .post-entry pre[class*="lang"],
 .post-entry .side-by-side-code {
@@ -2240,6 +2247,7 @@ body.admin-bar :target {
 	background-size: auto 30rem;
 	background-color: #000405;
 	padding-bottom: 2.375rem;
+	border-top: 0.625rem solid #173767;
 }
 
 	.edition--2020 .donation::before {
@@ -2286,6 +2294,17 @@ body.admin-bar :target {
 		filter: hue-rotate(-90deg);
 	}
 
-.edition--2020 .post-title {
+.edition--2020 .post-title,
+.edition--2020 .post-entry h2,
+.edition--2020 .post-entry a,
+.edition--2020 .comments-title {
 	color: #173767;
+}
+
+.post-entry ul li::before {
+	background-color: #3b45ff;
+}
+
+.edition--2020 .post-entry h3 {
+	color: #3b45ff;
 }
