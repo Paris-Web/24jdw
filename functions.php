@@ -238,7 +238,7 @@ function jdw_next_post_link() {
  * Récupère l'édition en cours
  */
 function jdw_get_the_edition() {
-	return 2019;
+	return 2020;
 }
 
 /**

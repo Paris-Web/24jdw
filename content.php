@@ -55,7 +55,7 @@
 </article>
 <?php
 	if(is_single()) {
-		get_template_part('donation');
+		//get_template_part('donation');
 	}
 ?>
 <?php if(has_category('articles')) : ?>

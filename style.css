@@ -2210,7 +2210,7 @@ body.admin-bar :target {
 	background-color: transparent;
 	padding: 0.4375rem;
 	grid-gap: 0.4375rem;
-	margin-top: 1rem;
+	margin-top: 0;
 }
 
 	.home--2020 .day:nth-child(5n+1) .day-link {
@@ -2242,12 +2242,30 @@ body.admin-bar :target {
 		background-color: #173767;
 	}
 
+	.home--2020 .day-off {
+		background-color: #191d1e;
+	}
+
+	.home--2020 .day-off-cell {
+		border-color: #191d1e;
+	}
+
+	.home--2020 .day-number,
+	.home--2020 .day-off-number {
+		background-color: #000405;
+	}
+
+	.home--2020 .day-author::before {
+		background-color: currentColor;
+	}
+
 .edition--2020 .donation {
 	background: #000405 url(images/header/2020/footer.jpg) no-repeat center top;
 	background-size: auto 30rem;
 	background-color: #000405;
 	padding-bottom: 2.375rem;
 	border-top: 0.625rem solid #173767;
+	margin-top: 0;
 }
 
 	.edition--2020 .donation::before {
@@ -2255,7 +2273,7 @@ body.admin-bar :target {
 	}
 
 	.edition--2020 .donation-body {
-		background-color: rgba(86, 170, 255, 0.2); /*rgba(33, 255, 228, 0.27)*/
+		background-color: rgba(86, 170, 255, 0.2);
 	}
 
 	.edition--2020 .donation .jdw-button {

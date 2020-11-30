@@ -1,7 +1,7 @@
 		</main>
 		<?php
 			if(!is_single()) {
-				get_template_part('donation');
+				//get_template_part('donation');
 			}
 		?>
 		<footer class="footer">
