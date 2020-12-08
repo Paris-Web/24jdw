@@ -624,6 +624,10 @@ body.admin-bar :target {
 	border: 0.3125em solid #ecf6f6;
 }
 
+	.post-entry .wp-video br {
+		display: none;
+	}
+
 .post-entry iframe {
 	max-width: 100%;
 	font-size: 0.8em;
