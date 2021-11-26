@@ -191,7 +191,9 @@ function jdw_the_illustrator() {
 function jdw_the_illustrator_name() {
 	$year = jdw_get_the_year();
 
-	if($year == '2020') {
+	if($year == '2021') {
+		echo '<a href="https://sara-h.ch/">Sara Hernandez</a>';
+	} elseif($year == '2020') {
 		echo '<a href="https://www.instagram.com/maela_cosson/">Ma&euml;la Cosson</a>';
 	} elseif($year == '2019') {
 		echo '<a href="https://www.redisdead.net/">Laurence Vagner</a>';
@@ -238,7 +240,7 @@ function jdw_next_post_link() {
  * Récupère l'édition en cours
  */
 function jdw_get_the_edition() {
-	return 2020;
+	return 2021;
 }
 
 /**
