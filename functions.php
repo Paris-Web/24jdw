@@ -180,7 +180,13 @@ function jdw_the_logo() {
 	if($year >= 2018) {
 		$extension = '.svg';
 	}
-	$logo = '<img src="'.get_bloginfo('template_url').'/images/header/'.$year.'/logo'.$extension.'" width="160" height="60" alt="'.get_bloginfo('name').'" title="" />';
+	$filename = 'logo';
+	if(is_singular() && $year == 2021) {
+		$filename = 'logo-alt';
+	}
+
+	$logo = '<img src="'.get_bloginfo('template_url').'/images/header/'.$year.'/'.$filename.$extension.'" width="160" height="60" alt="'.get_bloginfo('name').'" title="" />';
+
 	echo $logo;
 }
 

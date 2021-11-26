@@ -3,11 +3,17 @@
 			if(!is_single()) {
 				//get_template_part('donation');
 			}
+			$logo_path = '/images/footer/logo.png';
+			if($year == 2021) {
+				$logo_path = '/images/header/2021/logo-alt.svg';
+			}
 		?>
 		<footer class="footer">
 			<div class="footer-content">
 				<div class="footer-column footer-column--logo">
-					<a href="<?php bloginfo('home'); ?>" class="footer-logo"><img class="footer-logo-img" src="<?php bloginfo('template_url') ?>/images/footer/logo.png" alt="<?php echo get_bloginfo('name') ?>" /></a>
+					<a href="<?php bloginfo('home'); ?>" class="footer-logo">
+						<img class="footer-logo-img" src="<?php bloginfo('template_url'); echo $logo_path; ?>" alt="<?php echo get_bloginfo('name') ?>" />
+					</a>
 				</div>
 				<div class="footer-column footer-column--text">
 					<p class="footer-baseline"><b>24 jours de web</b>, le calendrier de l&rsquo;avent des gens qui font le web d&rsquo;après.</p>
