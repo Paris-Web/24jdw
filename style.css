@@ -2558,7 +2558,11 @@ body.admin-bar :target {
 
 .edition--2021 .footer {
 	margin-top: 2rem;
-	background: #2b1047 url(images/header/2021/pattern.jpg) repeat;
+	background: #2b1047 url(images/header/2021/footer-pattern.jpg) repeat;
 	color: #fffaeb;
 	border-top-color: #6abebf;
+}
+
+.edition--2021 .footer-link--twitter a::before {
+	background-image: url(images/header/2021/icon-twitter.png);
 }
