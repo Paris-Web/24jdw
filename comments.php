@@ -37,23 +37,23 @@
 			<?php else : ?>
 				<div class="comment-field comment-field--row">
 					<label class="comment-label" for="comment-author">Nom&nbsp;:</label>
-					<input class="comment-textbox" type="text" name="author" id="comment-author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" required="required" />
+					<input class="comment-textbox" type="text" name="author" id="comment-author" value="<?php echo $comment_author; ?>" size="22" required="required" />
 				</div>
 				<div class="comment-field comment-field--row">
 					<label class="comment-label" for="comment-email">E-mail&nbsp;:</label>
-					<input class="comment-textbox" type="email" name="email" id="comment-email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" required="required" />
+					<input class="comment-textbox" type="email" name="email" id="comment-email" value="<?php echo $comment_author_email; ?>" size="22" required="required" />
 				</div>
 				<div class="comment-field comment-field--row">
 					<label class="comment-label" for="comment-url">Site web <em>(facultatif)</em>&nbsp;:</label>
-					<input class="comment-textbox" type="url" name="url" id="comment-url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
+					<input class="comment-textbox" type="url" name="url" id="comment-url" value="<?php echo $comment_author_url; ?>" size="22" />
 				</div>
 			<?php endif; ?>
 			<div class="comment-field comment-field--column">
 				<label class="comment-label" for="comment">Votre commentaire&nbsp;:</label>
-				<textarea class="comment-textarea" name="comment" id="comment" cols="80" rows="5" tabindex="4" required="required"></textarea>
+				<textarea class="comment-textarea" name="comment" id="comment" cols="80" rows="5" required="required"></textarea>
 			</div>
 			<div class="comment-actions">
-				<input class="comment-button" name="submit" type="submit" id="submit" tabindex="5" value="Poster mon commentaire" />
+				<input class="comment-button" name="submit" type="submit" id="submit" value="Poster mon commentaire" />
 				<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 			</div>
 			<?php do_action('comment_form', $post->ID); ?>
