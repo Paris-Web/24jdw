@@ -531,6 +531,14 @@ body.admin-bar :target {
 	border-left: 0.5em solid #d9ecec;
 }
 
+@media only screen and (max-width: 47.9375rem) {
+	.post-entry blockquote,
+	.post-entry .answer {
+		padding-left: 1em;
+		border-width: 0.35em;
+	}
+}
+
 .post-entry blockquote > *:last-child,
 .post-entry .answer > *:last-child {
 	margin-bottom: 0;
