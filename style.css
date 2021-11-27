@@ -2552,24 +2552,64 @@ body.admin-bar :target {
 }
 
 .edition--2021 .header-archive,
-.edition--2021 .footer-archives {
+.edition--2021 .footer-archives,
+.edition--2021 .jdw-button,
+.edition--2021 .comment-button,
+.edition--2021 .comment-edit-link {
 	filter: hue-rotate(200deg);
 }
 
 .edition--2021 .post-title,
 .edition--2021 .post-entry h2,
+.edition--2021 .post-entry h3,
+.edition--2021 .post-entry h4,
 .edition--2021 .post-entry a,
 .edition--2021 .comments-title,
 .edition--2021 .post-author-title {
-	color: #2c1253;
+	color: #2b1047;
 }
 
 .post-entry ul li::before {
-	background-color: #460d42;
+	background-color: #2b1047;
 }
 
-.edition--2021 .post-entry h3 {
-	color: #460d42;
+.edition--2021 .post-entry blockquote,
+.edition--2021 .post-entry .answer {
+	border-color: #6abebf;
+}
+
+.edition--2021 .post-entry .section,
+.edition--2021 .post-entry .section::before,
+.edition--2021 .post-entry .section::after,
+.edition--2021 .post-footer,
+.edition--2021 .post-footer::before,
+.edition--2021 .post-footer::after,
+.edition--2021 .posts-nav-link a,
+.edition--2021 .comment-form,
+.edition--2021 .comment-avatar {
+	background: #f2f0ea;
+}
+
+.edition--2021 .post-footer::after {
+	background: #eee8d5;
+}
+
+.edition--2021 .comment-avatar span {
+	color: #eee8d5;
+}
+
+.edition--2021 .posts-nav-link a::before {
+	background-image: url(images/header/2021/arrow.png);
+}
+
+.edition--2021 .comment-item,
+.edition--2021 .comment-textbox,
+.edition--2021 .comment-textarea {
+	border-color: #6abebf;
+}
+
+.edition--2021 .post-aside {
+	color: #367385;
 }
 
 .edition--2021 .footer {
