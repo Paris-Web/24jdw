@@ -2392,8 +2392,8 @@ body.admin-bar :target {
 
 .home--2021 .hero {
 	margin-bottom: 2rem;
-	background: transparent url(images/header/2021/background.jpg) no-repeat center
-		top;
+	background: transparent url(images/header/2021/background.jpg) no-repeat
+		center top;
 }
 
 .home--2021 .hero-content {
@@ -2404,6 +2404,34 @@ body.admin-bar :target {
 .home--2021 .hero-logo img {
 	width: 12rem;
 	height: 4.5rem;
+	transform: translateX(0.4rem);
+}
+
+@media only screen and (max-width: 31.25em) {
+	.home--2021 .hero {
+		margin-bottom: 1rem;
+		background-size: 800px;
+	}
+
+	.home--2021 .hero-content {
+		padding-top: 2.5rem;
+		min-height: 20rem;
+	}
+
+	.home--2021 .hero-logo img {
+		width: 8rem;
+		height: 6.75rem;
+	}
+}
+
+@media only screen and (max-width: 20em) {
+	.home--2021 .hero {
+		background-position: -320px;
+	}
+
+	.home--2021 .hero-logo img {
+		margin-left: 1rem;
+	}
 }
 
 .home--2021 .calendar {
