@@ -2,6 +2,22 @@
 include_once('functions-wp-crap.php');
 
 /**
+ * Ajoute les styles du thème
+ */
+function jdw_theme_styles() {
+	wp_register_style(
+		'styles',
+		get_bloginfo('stylesheet_url'),
+		array(),
+		'9.0.0',
+		'all'
+	);
+	
+	wp_enqueue_style('styles');
+}
+add_action( 'wp_enqueue_scripts', 'jdw_theme_styles' );
+
+/**
  * Ajoute le support d'iframe dans le contenu d'articles
  */
 function jdw_add_iframe($initArray) {
