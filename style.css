@@ -2544,7 +2544,11 @@ body.admin-bar :target {
 }
 
 .edition--2021 .header-archive {
-	filter: hue-rotate(-90deg);
+	filter: hue-rotate(200deg);
+}
+
+.edition--2021 .header-archive-year {
+	color: #2b1047;
 }
 
 .edition--2021 .post-title,
