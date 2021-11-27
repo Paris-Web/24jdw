@@ -2451,62 +2451,61 @@ body.admin-bar :target {
 
 .home--2021 .day {
 	position: relative;
-	background-color: #fffaeb;
+	background-color: #fff6da;
 }
 .home--2021 .day::before {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* box-shadow: rgba(178, 170, 147, 0.6) 0 0 0 0, rgba(178, 170, 147, 0.6) 0 0 0 0; */
 	box-shadow: rgba(178, 170, 147, 0.3) 0px 30px 60px -12px,
 		rgba(178, 170, 147, 0.3) 0px 18px 36px -18px;
-		opacity: 0;
+	/* Transition box-shadow performante : https://alligator.io/css/transition-box-shadows/ */
+	opacity: 0;
 	transition-property: opacity;
 	transition-duration: 0.4s;
 	transition-delay: 0.1s;
 	transition-timing-function: ease-in-out;
 }
 
-/* Transition performante : https://alligator.io/css/transition-box-shadows/ */
 .home--2021 .day:hover::before,
 .home--2021 .day:focus-within::before {
 	opacity: 1;
 }
 
 .home--2021 .day:nth-child(5n + 1) .day-link {
-	color: #fffaeb;
+	color: #fff6da;
 	border-color: #460d42;
 	background-color: #460d42;
 }
 
 .home--2021 .day:nth-child(5n + 2) .day-link {
-	color: #000;
-	border-color: #c77d7a;
-	background-color: #c77d7a;
+	color: #190537;
+	border-color: #c37578;
+	background-color: #c37578;
 }
 
 .home--2021 .day:nth-child(5n + 3) .day-link {
-	color: #fffaeb;
-	border-color: #2c1253;
-	background-color: #2c1253;
+	color: #fff6da;
+	border-color: #440166;
+	background-color: #440166;
 }
 
 .home--2021 .day:nth-child(5n + 4) .day-link {
-	color: #000;
-	border-color: #d45489;
-	background-color: #d45489;
+	color: #190537;
+	border-color: #c8978c;
+	background-color: #c8978c;
 }
 
 .home--2021 .day:nth-child(5n + 5) .day-link {
-	color: #fffaeb;
+	color: #fff6da;
 	border-color: #6a2449;
 	background-color: #6a2449;
 }
 
 .home--2021 .day:nth-child(5n + 6) .day-link {
-	color: #000;
-	border-color: #c0756f;
-	background-color: #c0756f;
+	color: #190537;
+	border-color: #e370a0;
+	background-color: #e370a0;
 }
 
 .home--2021 .day-off {
@@ -2519,7 +2518,7 @@ body.admin-bar :target {
 
 .home--2021 .day-number,
 .home--2021 .day-off-number {
-	margin-bottom: .75em;
+	margin-bottom: 0.75em;
 	width: 2rem;
 	height: 2rem;
 	font-size: 1rem;
@@ -2527,8 +2526,8 @@ body.admin-bar :target {
 }
 
 .home--2021 .day-number {
-	background-color: #fffaeb;
-	color: #2c1253;
+	background-color: #fff6da;
+	color: #2b1047;
 }
 
 .home--2021 .day-off-number {
