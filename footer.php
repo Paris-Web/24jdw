@@ -4,7 +4,7 @@
 				//get_template_part('donation');
 			}
 			$logo_path = '/images/footer/logo.png';
-			if($year == 2021) {
+			if(is_home() || is_page() || $year == 2021) {
 				$logo_path = '/images/header/2021/logo-alt.svg';
 			}
 		?>
