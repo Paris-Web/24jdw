@@ -1402,7 +1402,7 @@ body.admin-bar :target {
  * Footer
  */
 .footer {
-	padding: 1.5rem 1rem 2rem;
+	padding: 1.5rem 1rem 4.5rem;
 	color: #2c3d44;
 	font-family: Raleway, sans-serif;
 	font-weight: 500;
@@ -1484,13 +1484,24 @@ body.admin-bar :target {
 }
 
 .footer-archives {
+	position: relative;
 	flex-grow: 0;
 	flex-shrink: 0;
 	width: 12.5rem;
-	padding: 2rem 1.5rem 4.5rem;
+	padding: 2rem 1.5rem 1rem;
 	color: #fff;
-	background: url(images/footer/ribbon.png) no-repeat 0 0;
+	background: url(images/footer/ribbon-bg.png) repeat-y 0 0;
 	background-size: 100% 100%;
+}
+
+.footer-archives::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	height: 40px;
+	background: url(images/footer/ribbon-bottom.png) no-repeat;
 }
 
 .footer-archives-links li {
@@ -1507,10 +1518,9 @@ body.admin-bar :target {
 	}
 
 	.footer-archives {
-		position: relative;
-		margin-top: 3rem;
-		padding: 4.5rem 1.5rem 2rem;
-		background: none;
+		margin-top: 5rem;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
 	}
 
 	.footer-archives > * {
@@ -1518,17 +1528,10 @@ body.admin-bar :target {
 		z-index: 1;
 	}
 
-	.footer-archives::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 0;
-		right: 0;
-		bottom: 0;
+	.footer-archives::after {
+		top: auto;
+		bottom: 100%;
 		transform: rotate(180deg);
-		display: block;
-		background: url(images/footer/ribbon.png) no-repeat 0 0;
-		background-size: 100% 100%;
 	}
 }
 
@@ -1538,6 +1541,7 @@ body.admin-bar :target {
 		right: 1rem;
 		top: -2.125rem;
 		border-left: none;
+		margin-bottom: 3rem;
 	}
 }
 
@@ -2543,12 +2547,13 @@ body.admin-bar :target {
 	background-color: #6abebf;
 }
 
-.edition--2021 .header-archive {
-	filter: hue-rotate(200deg);
-}
-
 .edition--2021 .header-archive-year {
 	color: #2b1047;
+}
+
+.edition--2021 .header-archive,
+.edition--2021 .footer-archives {
+	filter: hue-rotate(200deg);
 }
 
 .edition--2021 .post-title,
