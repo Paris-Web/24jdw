@@ -5,6 +5,14 @@
 	<title><?php jdw_title(); ?></title>
 	<link rel="alternate" type="application/rss+xml" title="Le flux RSS de <?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2021">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2021">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2021">
+	<link rel="manifest" href="/site.webmanifest?v=2021">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2021" color="#2b1047">
+	<link rel="shortcut icon" href="/favicon.ico?v=2021">
+	<meta name="msapplication-TileColor" content="#2b1047">
+	<meta name="theme-color" content="#2b1047">
 	<meta name="apple-mobile-web-app-title" content="24j de web" />
 	<?php if(is_single() || is_page()) : ?>
 	<meta property="og:title" content="<?php the_title_attribute(); ?>" />
