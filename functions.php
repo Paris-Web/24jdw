@@ -9,7 +9,7 @@ function jdw_theme_styles() {
 		'styles',
 		get_bloginfo('stylesheet_url'),
 		array(),
-		'9.0.0',
+		'9.0.1',
 		'all'
 	);
 	
