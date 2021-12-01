@@ -2422,6 +2422,11 @@ body.admin-bar :target {
 	width: 12rem;
 	height: 4.5rem;
 	margin-left: 0.5rem;
+	filter: drop-shadow(0px 0px 25px rgb(170, 170, 147));
+}
+
+.home--2021 .hero-logo:focus img {
+	filter: drop-shadow(0px 0px 25px rgb(247, 247, 226));
 }
 
 @media only screen and (max-width: 31.25em) {
