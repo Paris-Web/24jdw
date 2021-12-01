@@ -1270,10 +1270,11 @@ body.admin-bar :target {
 .hero-h1 {
 	font-size: 1em;
 	font-weight: normal;
+	text-align: center;
 }
 
 .hero-logo {
-	text-align: center;
+	display: inline-block;
 }
 
 .hero-logo img {
@@ -2413,10 +2414,14 @@ body.admin-bar :target {
 	min-height: 31rem;
 }
 
+.home--2021 .hero-logo:focus {
+	outline-color: #2b1047;
+}
+
 .home--2021 .hero-logo img {
 	width: 12rem;
 	height: 4.5rem;
-	transform: translateX(0.4rem);
+	margin-left: 0.5rem;
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -2617,6 +2622,10 @@ body.admin-bar :target {
 	background: #2b1047 url(images/header/2021/footer-pattern.jpg) repeat;
 	color: #fffaeb;
 	border-top-color: #6abebf;
+}
+
+.edition--2021 .footer a:focus {
+	outline-color: #fffaeb;
 }
 
 .edition--2021 .footer-link--twitter a::before {
