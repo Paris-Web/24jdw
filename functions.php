@@ -53,7 +53,7 @@ function jdw_add_prism() {
 			'prismCSS',
 			get_stylesheet_directory_uri().'/css/prism.css',
 			array(),
-			'1.25.0',
+			'1.25.0.20211204',
 			'all'
 		);
 
@@ -61,7 +61,7 @@ function jdw_add_prism() {
 			'prismJS',
 			get_stylesheet_directory_uri().'/js/prism.js',
 			array(),
-			'1.25.0',
+			'1.25.0.20211204',
 			false
 		);
 
