@@ -9,7 +9,7 @@ function jdw_theme_styles() {
 		'styles',
 		get_bloginfo('stylesheet_url'),
 		array(),
-		'9.0.2',
+		'10.0.0',
 		'all'
 	);
 	
@@ -189,14 +189,19 @@ function jdw_get_post_reading_time( $post_id, $words_per_minute ){
  */
 function jdw_the_logo() {
 	$year = jdw_get_the_year();
-	if($year == 2012 || $year == 2016) {
+
+	if($year == 2012 || $year == 2016 || $year == 2022) {
 		$year = 2017;
 	}
+
 	$extension = '.png';
+
 	if($year >= 2018) {
 		$extension = '.svg';
 	}
+
 	$filename = 'logo';
+
 	if(is_singular() && $year == 2021) {
 		$filename = 'logo-alt';
 	}
@@ -276,7 +281,7 @@ function jdw_next_post_link() {
  * Récupère l'édition en cours
  */
 function jdw_get_the_edition() {
-	return 2021;
+	return 2022;
 }
 
 /**

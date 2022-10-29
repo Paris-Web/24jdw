@@ -1,8 +1,8 @@
 /*
-Theme Name: 24 jours de web 2021
+Theme Name: 24 jours de web 2022
 Theme URI: https://www.24joursdeweb.fr
-Description: Thème de 24 jours de web, édition 2021
-Version: 9.0.2
+Description: Thème de 24 jours de web, édition 2022
+Version: 10.0.0
 Author: Paris Web
 Author URI: https://www.paris-web.fr
 */
@@ -2635,4 +2635,15 @@ body.admin-bar :target {
 
 .edition--2021 .footer-link--twitter a::before {
 	background-image: url(images/header/2021/icon-twitter.png);
+}
+
+/**
+ * Thème 2022
+ */
+.edition--2022 .hero-content {
+	min-height: 7.875rem;
+}
+
+.edition--2022 .footer {
+	margin-top: 2rem;
 }

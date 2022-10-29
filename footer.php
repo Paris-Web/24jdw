@@ -3,8 +3,10 @@
 			if(!is_single()) {
 				//get_template_part('donation');
 			}
+
 			$logo_path = '/images/footer/logo.png';
-			if(is_home() || is_page() || $year == 2021) {
+			
+			if($year == 2021) {
 				$logo_path = '/images/header/2021/logo-alt.svg';
 			}
 		?>
@@ -32,6 +34,7 @@
 				<div class="footer-archives">
 					<strong class="footer-archives-title">24 jours d&rsquo;archives</strong>
 					<ul class="footer-archives-links">
+						<li><a href="<?php bloginfo('url'); ?>/2021/">&Eacute;dition 2021</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/2020/">&Eacute;dition 2020</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/2019/">&Eacute;dition 2019</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/2018/">&Eacute;dition 2018</a></li>
