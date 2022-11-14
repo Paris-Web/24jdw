@@ -190,7 +190,7 @@ function jdw_get_post_reading_time( $post_id, $words_per_minute ){
 function jdw_the_logo() {
 	$year = jdw_get_the_year();
 
-	if($year == 2012 || $year == 2016 || $year == 2022) {
+	if($year == 2012 || $year == 2016) {
 		$year = 2017;
 	}
 
@@ -232,7 +232,9 @@ function jdw_the_illustrator() {
 function jdw_the_illustrator_name() {
 	$year = jdw_get_the_year();
 
-	if($year == '2021') {
+	if($year == '2022') {
+		echo '<a href="https://shop.cecillie.fr/">C&eacute;cile Ricordeau</a>';
+	} elseif($year == '2021') {
 		echo '<a href="https://sara-h.ch/">Sara Hernandez</a>';
 	} elseif($year == '2020') {
 		echo '<a href="https://www.instagram.com/maela_cosson/">Ma&euml;la Cosson</a>';
