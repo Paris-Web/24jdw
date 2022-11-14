@@ -50,7 +50,7 @@ function jdw_embed_handler_gist($matches, $attr, $url, $rawattr) {
 function jdw_add_prism() {
 	if(is_single() || is_page()) {
 		wp_register_style(
-			'prismCSS',
+			'prism',
 			get_stylesheet_directory_uri().'/css/prism.css',
 			array(),
 			'1.25.0.20211204',
@@ -58,18 +58,43 @@ function jdw_add_prism() {
 		);
 
 		wp_register_script(
-			'prismJS',
+			'prism',
 			get_stylesheet_directory_uri().'/js/prism.js',
 			array(),
 			'1.25.0.20211204',
 			false
 		);
 
-		wp_enqueue_style('prismCSS');
-		wp_enqueue_script('prismJS');
+		wp_enqueue_style('prism');
+		wp_enqueue_script('prism');
 	}
 }
 add_action('wp_enqueue_scripts', 'jdw_add_prism');
+
+/**
+ * Ajoute la gestion des onglets ARIA
+ * pour l'article d'Emmanuelle Aboaf en 2022
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role
+ */
+function jdw_add_tabs() {
+	if(
+		is_single() 
+		&& '73' === get_post_field( 'post_author', $post_id )
+		&& '2022' === get_the_time( 'Y', $post_id )
+	){
+		wp_register_script(
+			'tabs',
+			get_stylesheet_directory_uri().'/js/tabs.js',
+			array(),
+			'1.0.1',
+			false
+		);
+
+		wp_enqueue_script('tabs');
+	}
+}
+add_action('wp_enqueue_scripts', 'jdw_add_tabs');
 
 /**
  * Affiche uniquement les articles des 24 jours dans le flux RSS
