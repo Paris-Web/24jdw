@@ -27,7 +27,7 @@
 						<li><a href="<?php bloginfo('url'); ?>/a-propos/">&Agrave; Propos</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/mentions-legales/">Mentions l&eacute;gales</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/remerciements/">Remerciements</a></li>
-						<li><a href="https://github.com/hteumeuleu/24jdw/issues">Signaler un probl&egrave;me</a></li>
+						<li><a href="https://github.com/kloh-fr/24jdw/issues">Signaler un probl&egrave;me</a></li>
 						<li class="footer-link--twitter"><a href="https://www.twitter.com/24joursdeweb">@24joursdeweb sur Twitter</a></li>
 					</ul>
 				</div>
