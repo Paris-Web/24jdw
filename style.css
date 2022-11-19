@@ -2,7 +2,7 @@
 Theme Name: 24 jours de web 2022
 Theme URI: https://www.24joursdeweb.fr
 Description: Thème de 24 jours de web, édition 2022
-Version: 10.1.1
+Version: 10.1.2
 Author: Paris Web
 Author URI: https://www.paris-web.fr
 */
@@ -2745,4 +2745,40 @@ body.admin-bar :target {
 
 .edition--2022 .post-entry ul li::before {
 	background-color: #095b9a;
+}
+
+/*
+ * Styles pour les onglets
+ * Article d'Emmanuelle Aboaf en 2022
+ */
+.tabs {
+	margin: 1em 0;
+	border: 0.3125em solid #d9ecec;
+}
+
+.tabs [role="tablist"] {
+	background-color: #d9ecec;
+}
+
+.tabs [role="tab"] {
+	padding: .5em .8em;
+	font-family: inherit;
+	font-size: 0.8em;
+	background-color: #d9ecec;
+	border-width: 2px 2px 0 0;
+	border-style: solid;
+	border-color: #fff;
+	cursor: pointer;
+}
+
+.tabs [role="tab"]:first-child {
+	border-left-width: 2px;
+}
+
+.tabs [role="tab"][aria-selected="true"] {
+	background-color: #fff;
+}
+
+.tabs [role="tabpanel"] {
+	padding: .75em;
 }
