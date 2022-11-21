@@ -87,7 +87,7 @@ function jdw_add_tabs() {
 			'tabs',
 			get_stylesheet_directory_uri().'/js/tabs.js',
 			array(),
-			'1.0.3',
+			'1.0.4',
 			false
 		);
 
