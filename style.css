@@ -521,6 +521,7 @@ body.admin-bar :target {
 }
 
 .post-entry blockquote,
+.post-entry .pullquote,
 .post-entry .answer {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
@@ -533,6 +534,7 @@ body.admin-bar :target {
 
 @media only screen and (max-width: 47.9375rem) {
 	.post-entry blockquote,
+	.post-entry .pullquote,
 	.post-entry .answer {
 		padding-left: 1em;
 		border-width: 0.35em;
@@ -540,6 +542,7 @@ body.admin-bar :target {
 }
 
 .post-entry blockquote > *:last-child,
+.post-entry .pullquote > *:last-child,
 .post-entry .answer > *:last-child {
 	margin-bottom: 0;
 }
@@ -2585,6 +2588,7 @@ body.admin-bar :target {
 }
 
 .edition--2021 .post-entry blockquote,
+.edition--2021 .post-entry .pullquote,
 .edition--2021 .post-entry .answer {
 	border-color: #6abebf;
 }
