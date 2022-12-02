@@ -9,7 +9,7 @@ function jdw_theme_styles() {
 		'styles',
 		get_bloginfo('stylesheet_url'),
 		array(),
-		'10.1.3',
+		'10.1.6',
 		'all'
 	);
 	
@@ -87,7 +87,7 @@ function jdw_add_tabs() {
 			'tabs',
 			get_stylesheet_directory_uri().'/js/tabs.js',
 			array(),
-			'1.0.5',
+			'1.0.3',
 			false
 		);
 
