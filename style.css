@@ -620,7 +620,8 @@ body.admin-bar :target {
 	/* 750 + (175 + 50x2)x2 */
 	.post-entry pre[class*="lang"],
 	.post-entry pre:not([class*="lang"]) code,
-	.post-entry .side-by-side-code {
+	.post-entry .side-by-side-code,
+	.post-entry .tabs {
 		margin-right: -13.75em; /* -220px */
 	}
 
