@@ -655,6 +655,11 @@ body.admin-bar :target {
 	border: 0.3125em solid #ecf6f6;
 }
 
+.post-entry iframe[src^="https://codepen.io"]
+{
+	width: 100%;
+}
+
 .post-entry img.alignleft {
 	float: left;
 	margin-right: 1.5em;
