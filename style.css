@@ -697,6 +697,10 @@ body.admin-bar :target {
 	font-size: 0.8em;
 }
 
+.post-entry .aligncenter .wp-caption-text {
+	text-align: center;
+}
+
 .post-entry [id^="attachment"] {
 	margin-top: 3.5rem;
 	margin-bottom: 3.5rem;
