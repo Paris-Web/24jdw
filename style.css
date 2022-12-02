@@ -532,9 +532,14 @@ body.admin-bar :target {
 	border-left: 0.5em solid #d9ecec;
 }
 
+.post-entry .pullquote {
+	font-size: 1.5em;
+	border-left: none;
+	padding: 0.25em;
+}
+
 @media only screen and (max-width: 47.9375rem) {
 	.post-entry blockquote,
-	.post-entry .pullquote,
 	.post-entry .answer {
 		padding-left: 1em;
 		border-width: 0.35em;
@@ -2589,7 +2594,6 @@ body.admin-bar :target {
 }
 
 .edition--2021 .post-entry blockquote,
-.edition--2021 .post-entry .pullquote,
 .edition--2021 .post-entry .answer {
 	border-color: #6abebf;
 }
