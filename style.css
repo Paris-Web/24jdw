@@ -520,6 +520,18 @@ body.admin-bar :target {
 	font-weight: bold;
 }
 
+.post-entry q {
+	font-style: italic;
+}
+
+.post-entry q::before {
+	content: "\0000AB\0000A0";
+}
+
+.post-entry q::after {
+	content: "\0000A0\0000BB";
+}
+
 .post-entry blockquote,
 .post-entry .pullquote,
 .post-entry .answer {
