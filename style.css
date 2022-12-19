@@ -602,6 +602,14 @@ body.admin-bar :target {
 	border-radius: 50%;
 }
 
+.post-entry dt {
+	font-weight: bold;
+}
+
+.post-entry dt:not(:first-child) {
+	margin-top: 1em;
+}
+
 .post-entry p > code,
 .post-entry li > code {
 	padding: 0.125rem 0.25rem;
