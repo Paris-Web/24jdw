@@ -12,7 +12,7 @@ function jdw_theme_styles() {
 		'10.1.8',
 		'all'
 	);
-	
+
 	wp_enqueue_style('styles');
 }
 add_action( 'wp_enqueue_scripts', 'jdw_theme_styles' );
@@ -79,7 +79,7 @@ add_action('wp_enqueue_scripts', 'jdw_add_prism');
  */
 function jdw_add_tabs() {
 	if(
-		is_single() 
+		is_single()
 		&& '73' === get_post_field( 'post_author', $post_id )
 		&& '2022' === get_the_time( 'Y', $post_id )
 	){
@@ -257,7 +257,9 @@ function jdw_the_illustrator() {
 function jdw_the_illustrator_name() {
 	$year = jdw_get_the_year();
 
-	if($year == '2022') {
+    if($year == '2023') {
+        echo '<a href="https://sophie-rocher.com/">Sophie Rocher</a>';
+    } elseif($year == '2022') {
 		echo '<a href="https://shop.cecillie.fr/">C&eacute;cile Ricordeau</a>';
 	} elseif($year == '2021') {
 		echo '<a href="https://sara-h.ch/">Sara Hernandez</a>';
@@ -308,7 +310,7 @@ function jdw_next_post_link() {
  * Récupère l'édition en cours
  */
 function jdw_get_the_edition() {
-	return 2022;
+	return 2023;
 }
 
 /**

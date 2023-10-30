@@ -1,8 +1,8 @@
 /*
-Theme Name: 24 jours de web 2022
+Theme Name: 24 jours de web 2023
 Theme URI: https://www.24joursdeweb.fr
-Description: Thème de 24 jours de web, édition 2022
-Version: 10.1.8
+Description: Thème de 24 jours de web, édition 2023
+Version: 11.0.0
 Author: Paris Web
 Author URI: https://www.paris-web.fr
 */
@@ -2592,3 +2592,7 @@ body.admin-bar :target {
 .tabs [role="tabpanel"] pre {
 	margin: -0.75em;
 }
+
+/**
+ * Thème 2023
+ */
