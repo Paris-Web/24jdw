@@ -1334,111 +1334,6 @@ body.admin-bar :target {
 }
 
 /**
- * Encart de don
- */
-.donation {
-	position: relative;
-	margin-top: 5.5rem;
-	padding: 1.5rem 1rem 4.5rem;
-	font-family: Raleway, sans-serif;
-	background-color: #faf8eb;
-}
-
-.donation::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: -1.5rem;
-	display: block;
-	border-bottom: 1px solid #d3c1c0;
-}
-
-@media only screen and (min-width: 60rem) {
-	.donation::after {
-		content: "";
-		position: absolute;
-		display: block;
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		background-size: cover;
-		left: calc(50% - 53.125rem);
-		top: -6.875rem;
-		width: 24.375rem;
-		height: 29.375rem;
-		background-image: url(images/footer/gifts.png);
-	}
-}
-
-.donation-content {
-	max-width: 46.875rem;
-	margin: 0 auto;
-}
-
-.donation-head {
-	padding-bottom: 1rem;
-	font-weight: 900;
-}
-
-.donation-title {
-	color: #6f232b;
-	font-size: 1.875rem;
-	line-height: 1.3333;
-	font-weight: inherit;
-	text-transform: uppercase;
-}
-
-.donation-subtitle {
-	color: #be3745;
-	font-size: 1.375rem;
-	line-height: 1.363636;
-}
-
-.donation-subtitle strong {
-	color: #6f232b;
-}
-
-.donation-subtitle a {
-	text-decoration: none;
-}
-
-.donation-body {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	color: #f8fafa;
-	font-size: 1rem;
-	background-color: rgba(111, 35, 43, 0.75);
-}
-
-.donation-body p:not(:last-child) {
-	margin-bottom: 1rem;
-}
-
-.donation-body-column {
-	padding: 1rem 1.5rem;
-	width: 23rem;
-	flex-grow: 1;
-	flex-shrink: 1;
-}
-
-.donation .jdw-button {
-	min-width: 50%;
-	font-size: 1.5rem;
-	outline-color: rgba(255, 255, 255, 0.5);
-	outline-width: 1px;
-	background-color: #be3745;
-}
-
-.donation .jdw-button:hover {
-	animation: tada 1s both;
-}
-
-.single .donation {
-	margin-top: 3rem;
-}
-
-/**
  * Footer
  */
 .footer {
@@ -2003,47 +1898,6 @@ body.admin-bar :target {
 	}
 }
 
-.home--2017 .donation {
-	margin-top: 0;
-}
-
-.edition--2017 .donation {
-	background-color: #faf8eb;
-}
-
-.edition--2017 .donation::before {
-	border-bottom-color: #d3c1c0;
-}
-
-@media only screen and (min-width: 60rem) {
-	.edition--2017 .donation::after {
-		left: calc(50% - 53.125rem);
-		width: 24.375rem;
-		height: 29.375rem;
-		background-image: url(images/footer/gifts.png);
-	}
-}
-
-.edition--2017 .donation-title {
-	color: #6f232b;
-}
-
-.edition--2017 .donation-subtitle {
-	color: #be3745;
-}
-
-.edition--2017 .donation-subtitle strong {
-	color: #6f232b;
-}
-
-.edition--2017 .donation-body {
-	background-color: rgba(111, 35, 43, 0.75);
-}
-
-.edition--2017 .donation .jdw-button {
-	background-color: #be3745;
-}
-
 .edition--2017 .header {
 	background: linear-gradient(to bottom, #86c1d8 0%, #a3e8f9 100%);
 }
@@ -2243,43 +2097,6 @@ body.admin-bar :target {
 	filter: hue-rotate(-90deg);
 }
 
-/* Encart de don */
-.edition--2019 .donation {
-	background-color: #eae7ee;
-}
-
-.edition--2019 .donation::before {
-	border-bottom-color: #eae7ee;
-}
-
-@media only screen and (min-width: 60rem) {
-	.edition--2019 .donation::after {
-		left: calc(50% - 60rem);
-		top: -6.875rem;
-		width: 40rem;
-		height: 30rem;
-		background-image: url(images/header/2019/dino.png);
-	}
-}
-
-.edition--2019 .donation-title,
-.edition--2019 .donation-subtitle strong {
-	color: #59457b;
-}
-
-.edition--2019 .donation-subtitle {
-	color: #817197;
-}
-
-.edition--2019 .donation-body {
-	background-color: #817197;
-}
-
-.edition--2019 .donation .jdw-button {
-	color: #333;
-	background-color: #ffbf4e;
-}
-
 /**
  * Thème 2020
  */
@@ -2365,47 +2182,6 @@ body.admin-bar :target {
 
 .home--2020 .day-author::before {
 	background-color: currentColor;
-}
-
-.edition--2020 .donation {
-	background: #000405 url(images/header/2020/footer.jpg) no-repeat center top;
-	background-size: auto 30rem;
-	background-color: #000405;
-	padding-bottom: 2.375rem;
-	border-top: 0.625rem solid #173767;
-	margin-top: 0;
-}
-
-.edition--2020 .donation::before {
-	display: none;
-}
-
-.edition--2020 .donation-body {
-	background-color: rgba(86, 170, 255, 0.2);
-}
-
-.edition--2020 .donation .jdw-button {
-	color: #005ba2;
-	background-color: #85ffd5;
-}
-
-.edition--2020 .donation-title {
-	color: #85ffd5;
-}
-
-.edition--2020 .donation-subtitle,
-.edition--2020 .donation-subtitle strong {
-	color: #fbb7ff;
-}
-
-.edition--2020 .donation::after {
-	left: calc(50% - 550px);
-	top: auto;
-	bottom: 4.5rem;
-	width: 5.75rem;
-	height: 5.75rem;
-	background-image: url(images/header/2020/perso.png);
-	background-color: transparent;
 }
 
 .edition--2020 .header {

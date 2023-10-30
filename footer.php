@@ -1,11 +1,6 @@
 		</main>
-		<?php
-			if(!is_single()) {
-				//get_template_part('donation');
-			}
+		<?php $logo_path = '/images/footer/logo.png';
 
-			$logo_path = '/images/footer/logo.png';
-			
 			if($year == 2021) {
 				$logo_path = '/images/header/2021/logo-alt.svg';
 			}
