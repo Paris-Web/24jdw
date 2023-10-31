@@ -39,6 +39,19 @@ function jdw_wysiwyg( $boutons ) {
 add_filter( 'tiny_mce_before_init', 'jdw_wysiwyg' );
 
 /**
+ * Supprime les styles injectés pour Gutenberg
+ */
+function jdw_disable_gutenberg() {
+
+	wp_dequeue_style('classic-theme-styles');
+	wp_dequeue_style('global-styles');
+	wp_dequeue_style('wp-block-library');
+	wp_dequeue_style('wp-block-library-theme');
+
+}
+add_filter('wp_enqueue_scripts', 'jdw_disable_gutenberg', 100);
+
+/**
  * Ajoute le support de gist via oEmbed
  *
  * @see http://blackhillswebworks.com/2013/08/03/embed-gists-on-your-wordpress-blog-without-a-plugin/
