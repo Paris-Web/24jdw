@@ -5,12 +5,12 @@
 	<title><?php jdw_title(); ?></title>
 	<link rel="alternate" type="application/rss+xml" title="Le flux RSS de <?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2022">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2022">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2022">
-	<link rel="manifest" href="/site.webmanifest?v=2022">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2022" color="#004063">
-	<link rel="shortcut icon" href="/favicon.ico?v=2022">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2023">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2023">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2023">
+	<link rel="manifest" href="/site.webmanifest?v=2023">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2023" color="#004063">
+	<link rel="shortcut icon" href="/favicon.ico?v=2023">
 	<meta name="msapplication-TileColor" content="#004063">
 	<meta name="theme-color" content="#004063">
 	<meta name="apple-mobile-web-app-title" content="24j de web" />
