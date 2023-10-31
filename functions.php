@@ -27,6 +27,18 @@ function jdw_add_iframe($initArray) {
 add_filter('tiny_mce_before_init', 'jdw_add_iframe');
 
 /**
+ * Personnalise l’éditeur classique en restreignant les options disponibles
+ */
+function jdw_wysiwyg( $boutons ) {
+	$boutons['block_formats'] = 'Paragraphe=p;Titre 2=h2;Titre 3=h3;Titre 4=h4;Pre=pre';
+	$boutons['toolbar1'] = 'undo,redo,formatselect,bold,italic,sub,sup,|,bullist,numlist,blockquote,cite,tinymce_abbr_class,|,outdent,indent,|,link,unlink,|,|,juizlangattr,juizhreflangattr,|,|,charmap,|,removeformat,|,wp_fullscreen';
+	$boutons['toolbar2'] = '';
+	$boutons['paste_as_text'] = true;
+	return $boutons;
+}
+add_filter( 'tiny_mce_before_init', 'jdw_wysiwyg' );
+
+/**
  * Ajoute le support de gist via oEmbed
  *
  * @see http://blackhillswebworks.com/2013/08/03/embed-gists-on-your-wordpress-blog-without-a-plugin/
