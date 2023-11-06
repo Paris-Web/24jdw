@@ -1,6 +1,12 @@
 /**
  * Thème 2018
  */
+.edition--2018 {
+	--24: #84cac1;
+	--jours: #00283c;
+	--de-web: #e95c43;
+}
+
 .home--2018 .site {
 	background-color: #f6f8f7;
 }
@@ -38,7 +44,7 @@
 	display: inline-block;
 	width: 15.625rem;
 	margin-right: 15.625rem;
-	color: #84cac1;
+	color: var(--24);
 }
 
 .home--2018 .hero-logo {
@@ -46,11 +52,9 @@
 	padding: 1.5rem;
 }
 
-.home--2018 .hero-logo img {
+.home--2018 .hero-logo svg {
 	width: 100%;
 	height: auto;
-	margin: 0;
-	display: block;
 }
 
 .home--2018 .calendar {
@@ -96,5 +100,5 @@
 }
 
 .edition--2018 .header::after {
-	background: #84cac1;
+	background: var(--24);
 }

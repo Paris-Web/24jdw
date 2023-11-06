@@ -25,9 +25,7 @@
 	background-color: #f8f9eb;
 }
 
-.home--2015 .day-link {
-	background-color: #adceb8;
-}
+.home--2015 .day-link,
 .home--2015 .day:nth-child(3n + 1) .day-link {
 	background-color: #adceb8;
 }
@@ -51,11 +49,7 @@
 .home--2015 .day-number::before {
 	content: "";
 	position: absolute;
-	background: red;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+	inset: 0;
 	z-index: -1;
 	transform: rotate(-14deg);
 }
@@ -88,8 +82,14 @@
 }
 
 .edition--2015 .footer {
-	background: #f6f8eb url(../images/footer/background.jpg) center top;
+	background:
+		linear-gradient(to bottom, #f5f7ea 25%, transparent 50%),
+		#f6f8eb url(../images/footer/2015/background.jpg) no-repeat center bottom / contain;
 	border-top: 0.625rem solid #d3c1bd;
+}
+
+.edition--2015 .footer-logo-img {
+	--jours: #fff9ed;
 }
 
 @media only screen and (min-width: 64em) and (max-width: 102.1875em) {

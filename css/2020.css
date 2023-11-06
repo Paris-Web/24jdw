@@ -1,6 +1,12 @@
 /**
  * Thème 2020
  */
+.edition--2020 {
+	--24: #0de5e0;
+	--jours: #fff;
+	--de-web: #de34fd;
+}
+
 .home--2020 .hero {
 	margin-bottom: 3rem;
 	background: #000405 url(../images/header/2020/background.jpg) no-repeat center top / auto 30rem;
@@ -18,11 +24,6 @@
 .home--2020 .hero-content {
 	padding-top: 2rem;
 	min-height: 30rem;
-}
-
-.home--2020 .hero-logo img {
-	width: 12rem;
-	height: 4.5rem;
 }
 
 .home--2020 .site {

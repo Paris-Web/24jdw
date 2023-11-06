@@ -41,8 +41,9 @@
 		<header class="hero">
 			<div class="hero-content">
 				<h1 class="hero-h1"><a href="<?php bloginfo('home'); ?>" class="hero-logo"><?php jdw_the_logo(); ?></a></h1>
-				<?php if(get_the_time('Y') <= 2017) : ?>
-				<p class="hero-baseline"><?php bloginfo('description'); ?></p>
+				<?php $year = jdw_get_the_year();
+				if($year <= 2017 || $year === 2023) : ?>
+					<p class="hero-baseline"><?php bloginfo('description'); ?></p>
 				<?php endif; ?>
 			</div>
 		</header>

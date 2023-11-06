@@ -1216,7 +1216,7 @@ body.admin-bar :target {
 	width: 11.25rem;
 }
 
-.header-logo img,
+.header-logo :is(img, svg),
 .footer-logo-img {
 	display: block;
 	padding: 0.625rem;
@@ -1284,11 +1284,9 @@ body.admin-bar :target {
 	display: inline-block;
 }
 
-.hero-logo img {
+.hero-logo :is(img, svg) {
 	display: block;
 	margin: 0 auto;
-	width: 10rem;
-	height: 3.75rem;
 }
 
 .hero-baseline {
@@ -1335,6 +1333,10 @@ body.admin-bar :target {
 }
 
 .footer-logo-img {
+	--24: #2c3d44;
+	--jours: #f7f7f7;
+	--de-web: var(--24);
+
 	padding: 0;
 }
 

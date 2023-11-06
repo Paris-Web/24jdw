@@ -21,12 +21,13 @@
 	background-color: #fff;
 }
 
-.home--2013 .day-link {
-	background-color: #d6ceaf;
-}
+.home--2013 .day-link,
 .home--2013 .day:nth-child(3n + 1) .day-link {
 	background-color: #d6ceaf;
 }
+
+.edition--2013 .footer,
+.edition--2013 .header::after,
 .home--2013 .day:nth-child(3n + 2) .day-link {
 	background-color: #e6e0cd;
 }
@@ -38,10 +39,6 @@
 	background: url(../images/header/2013/stars.png) repeat-x center top, linear-gradient(to bottom, #002c3e 0%, #019397 99%);
 }
 
-.edition--2013 .header::after {
-	background-color: #e6e0cd;
-}
-
-.edition--2013 .footer {
-	background: #e6e0cd;
+.edition--2013 .footer-logo-img {
+	--jours: #e6e0cd;
 }

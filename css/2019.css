@@ -1,6 +1,12 @@
 /**
  * Thème 2019
  */
+.edition--2019 {
+	--24: #59457b;
+	--jours: #fff;
+	--de-web: #221537;
+}
+
 .home--2019 .hero {
 	background: url(../images/header/2019/background.jpg) no-repeat center top / auto 100%,
 							url(../images/header/2019/pattern.jpg) repeat-x center top / auto 100%;
@@ -22,7 +28,7 @@
 	transform: rotate(-5deg);
 }
 
-.home--2019 .hero-logo img {
+.home--2019 .hero-logo svg {
 	width: 12.5rem;
 	height: 4.6875rem;
 }

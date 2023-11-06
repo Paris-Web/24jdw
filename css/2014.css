@@ -29,6 +29,7 @@
 	background-color: #b6c194;
 }
 
+.edition--2014 .header::after,
 .home--2014 .day:nth-child(3n + 3) .day-link {
 	background-color: #dae4ce;
 }
@@ -37,10 +38,10 @@
 	background: url(../images/header/2014/background.png) repeat-x center bottom / auto 110px;
 }
 
-.edition--2014 .header::after {
-	background-color: #dae4ce;
-}
-
 .edition--2014 .footer {
 	background: #dadcdd url(../images/header/2014/background.png) repeat-x center bottom / contain;
+}
+
+.edition--2014 .footer-logo-img {
+	--jours: #dadcdd;
 }
