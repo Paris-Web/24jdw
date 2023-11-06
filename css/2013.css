@@ -1,0 +1,47 @@
+/**
+ * Thème 2013
+ */
+.home--2013 .hero {
+	background: url(../images/header/2013/stars.png) repeat-x center top, linear-gradient(to bottom, #002c3e 0%, #019397 99%);
+}
+
+.home--2013 .hero-content {
+	background: url(../images/header/2013/illustration.png) no-repeat 50% 100% / contain;
+}
+
+.home--2013 .hero-baseline {
+	color: #e6daa8;
+}
+
+.home--2013 {
+	background-color: #00141c;
+}
+
+.home--2013 .calendar {
+	background-color: #fff;
+}
+
+.home--2013 .day-link {
+	background-color: #d6ceaf;
+}
+.home--2013 .day:nth-child(3n + 1) .day-link {
+	background-color: #d6ceaf;
+}
+.home--2013 .day:nth-child(3n + 2) .day-link {
+	background-color: #e6e0cd;
+}
+.home--2013 .day:nth-child(3n + 3) .day-link {
+	background-color: #bbc8bf;
+}
+
+.edition--2013 .header {
+	background: url(../images/header/2013/stars.png) repeat-x center top, linear-gradient(to bottom, #002c3e 0%, #019397 99%);
+}
+
+.edition--2013 .header::after {
+	background-color: #e6e0cd;
+}
+
+.edition--2013 .footer {
+	background: #e6e0cd;
+}

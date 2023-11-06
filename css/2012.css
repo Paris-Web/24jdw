@@ -1,0 +1,30 @@
+/**
+ * Thème 2012
+ */
+.home--2012 .hero-content {
+	min-height: 0;
+}
+.home--2012 .day-link {
+	background-color: #d6ceaf;
+}
+.home--2012 .day:nth-child(5n + 1) .day-link {
+	background-color: #accbbb;
+}
+.home--2012 .day:nth-child(5n + 2) .day-link {
+	color: #ddd;
+	color: rgba(255, 255, 255, 0.85);
+	background-color: #3e403d;
+}
+.home--2012 .day:nth-child(5n + 3) .day-link {
+	background-color: #dad3a7;
+}
+.home--2012 .day:nth-child(5n + 4) .day-link {
+	color: #ddd;
+	color: rgba(255, 255, 255, 0.85);
+	background-color: #a90d01;
+}
+.home--2012 .day:nth-child(5n + 5) .day-link {
+	color: #ddd;
+	color: rgba(255, 255, 255, 0.85);
+	background-color: #740700;
+}

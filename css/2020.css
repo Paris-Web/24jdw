@@ -1,0 +1,110 @@
+/**
+ * Thème 2020
+ */
+.home--2020 .hero {
+	margin-bottom: 3rem;
+	background: #000405 url(../images/header/2020/background.jpg) no-repeat center top / auto 30rem;
+}
+
+.home--2020 .hero::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 3rem;
+	background: url(../images/header/2020/pattern.png) repeat-x center top / auto 3rem;
+}
+
+.home--2020 .hero-content {
+	padding-top: 2rem;
+	min-height: 30rem;
+}
+
+.home--2020 .hero-logo img {
+	width: 12rem;
+	height: 4.5rem;
+}
+
+.home--2020 .site {
+	background-color: #000405;
+}
+
+.home--2020 .calendar {
+	background-color: transparent;
+	padding: 0.4375rem;
+	grid-gap: 0.4375rem;
+	margin-top: 0;
+}
+
+.home--2020 .day:nth-child(5n + 1) .day-link {
+	border-color: #fbb7ff;
+	background-color: #fbb7ff;
+}
+
+.home--2020 .day:nth-child(5n + 2) .day-link {
+	color: #fff;
+	border-color: #b121ff;
+	background-color: #b121ff;
+}
+
+.home--2020 .day:nth-child(5n + 3) .day-link {
+	color: #fff;
+	border-color: #0f6a5f;
+	background-color: #0f6a5f;
+}
+
+.home--2020 .day:nth-child(5n + 4) .day-link {
+	color: #fff;
+	border-color: #3b45ff;
+	background-color: #3b45ff;
+}
+
+.home--2020 .day:nth-child(5n + 5) .day-link {
+	color: #fff;
+	border-color: #173767;
+	background-color: #173767;
+}
+
+.home--2020 .day-off {
+	background-color: #191d1e;
+}
+
+.home--2020 .day-off-cell {
+	border-color: #191d1e;
+}
+
+.home--2020 .day-number,
+.home--2020 .day-off-number {
+	background-color: #000405;
+}
+
+.home--2020 .day-author::before {
+	background-color: currentColor;
+}
+
+.edition--2020 .header {
+	background: #000405 url(../images/header/2020/footer.jpg) no-repeat 70% 40%;
+}
+
+.edition--2020 .header::after {
+	background-color: #173767;
+}
+
+.edition--2020 .header-archive {
+	filter: hue-rotate(-90deg);
+}
+
+.edition--2020 .post-title,
+.edition--2020 .post-entry h2,
+.edition--2020 .post-entry a,
+.edition--2020 .comments-title {
+	color: #173767;
+}
+
+.edition--2020 .post-entry ul li::before {
+	background-color: #3b45ff;
+}
+
+.edition--2020 .post-entry h3 {
+	color: #3b45ff;
+}

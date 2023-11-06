@@ -42,7 +42,7 @@ a {
 }
 
 a img {
-	border: none;
+	border: 0;
 }
 
 a:focus,
@@ -429,7 +429,7 @@ body.admin-bar :target {
 	color: #6f232b;
 }
 
-.single .post-entry > p:not([class]):first-of-type:first-letter {
+.single .post-entry > p:not([class]):first-of-type::first-letter {
 	float: left;
 	display: inline-block;
 	margin-right: 0.055555em; /* (1 / 4.5) / 4 */
@@ -440,13 +440,13 @@ body.admin-bar :target {
 }
 
 @media only screen and (max-width: 47.9375em) {
-	.single .post-entry > p:not([class])::first-of-type:first-letter {
+	.single .post-entry > p:not([class]):first-of-type::first-letter {
 		font-size: 3em;
 	}
 }
 
 @supports (initial-letter: 3 2) or (-webkit-initial-letter: 3 2) {
-	.single .post-entry > p:not([class]):first-of-type:first-letter {
+	.single .post-entry > p:not([class]):first-of-type::first-letter {
 		float: none;
 		margin-right: 0;
 		height: auto;
@@ -456,15 +456,7 @@ body.admin-bar :target {
 	}
 }
 
-.post-entry p,
-.post-entry ul,
-.post-entry ol,
-.post-entry pre,
-.post-entry pre[class*="lang"],
-.post-entry h4,
-.post-entry h5,
-.post-entry h6,
-.post-entry .wp-video {
+.post-entry :is(p, ul, ol, pre, pre[class*="lang"], h4, h5, h6, .wp-video) {
 	margin-bottom: 1.25em;
 }
 
@@ -523,9 +515,7 @@ body.admin-bar :target {
 	content: "\0000A0\0000BB";
 }
 
-.post-entry blockquote,
-.post-entry .pullquote,
-.post-entry .answer {
+.post-entry :is(blockquote, .pullquote, .answer) {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	padding: 0.25em 0.25em 0.25em 2.5em;
@@ -542,21 +532,17 @@ body.admin-bar :target {
 }
 
 @media only screen and (max-width: 47.9375rem) {
-	.post-entry blockquote,
-	.post-entry .answer {
+	.post-entry :is(blockquote, .answer) {
 		padding-left: 1em;
 		border-width: 0.35em;
 	}
 }
 
-.post-entry blockquote > *:last-child,
-.post-entry .pullquote > *:last-child,
-.post-entry .answer > *:last-child {
+.post-entry :is(blockquote, .pullquote, .answer) > *:last-child {
 	margin-bottom: 0;
 }
 
-.post-entry ul,
-.post-entry ol {
+.post-entry :is(ul, ol) {
 	margin-top: 2em;
 	margin-bottom: 2em;
 	margin-left: 3em;
@@ -567,8 +553,7 @@ body.admin-bar :target {
 }
 
 @media only screen and (max-width: 47.9375rem) {
-	.post-entry ul,
-	.post-entry ol {
+	.post-entry :is(ul, ol) {
 		margin-left: 1em;
 	}
 }
@@ -601,17 +586,14 @@ body.admin-bar :target {
 	margin-top: 1em;
 }
 
-.post-entry p > code,
-.post-entry li > code {
+.post-entry :is(p, li) > code {
 	padding: 0.125rem 0.25rem;
 	background-color: rgba(0, 0, 0, 0.05);
 	border-radius: 0.125rem;
 	font-size: 0.85em;
 }
 
-.post-entry pre,
-.post-entry pre[class*="lang"],
-.post-entry .side-by-side-code {
+.post-entry :is(pre, pre[class*="lang"], .side-by-side-code) {
 	margin-bottom: 1.5em;
 }
 
@@ -647,8 +629,7 @@ body.admin-bar :target {
 	}
 }
 
-.post-entry img,
-.post-entry .wp-video {
+.post-entry :is(img, .wp-video) {
 	display: block;
 	width: auto;
 	height: auto;
@@ -667,8 +648,7 @@ body.admin-bar :target {
 	border: 0.3125em solid #ecf6f6;
 }
 
-.post-entry iframe[src^="https://codepen.io"]
-{
+.post-entry iframe[src^="https://codepen.io"] {
 	width: 100%;
 }
 
@@ -735,8 +715,7 @@ body.admin-bar :target {
 	border-collapse: collapse;
 }
 
-.post-entry td,
-.post-entry th {
+.post-entry :is(td, th) {
 	padding: 1em;
 	vertical-align: top;
 }
@@ -829,9 +808,7 @@ body.admin-bar :target {
 	font-size: 1rem;
 }
 
-.post-entry .footnotes a,
-.post-entry .footnotes h2,
-.post-entry .footnotes h3 {
+.post-entry .footnotes :is(a, h2, h3) {
 	color: inherit;
 }
 
@@ -1477,324 +1454,9 @@ body.admin-bar :target {
 		margin-top: -2.125rem;
 	}
 }
-
 /**
- * Thème 2012
+ * Thème > 2017
  */
-.home--2012 .hero-content {
-	min-height: 0;
-}
-.home--2012 .day-link {
-	background-color: #d6ceaf;
-}
-.home--2012 .day:nth-child(5n + 1) .day-link {
-	background-color: #accbbb;
-}
-.home--2012 .day:nth-child(5n + 2) .day-link {
-	color: #ddd;
-	color: rgba(255, 255, 255, 0.85);
-	background-color: #3e403d;
-}
-.home--2012 .day:nth-child(5n + 3) .day-link {
-	background-color: #dad3a7;
-}
-.home--2012 .day:nth-child(5n + 4) .day-link {
-	color: #ddd;
-	color: rgba(255, 255, 255, 0.85);
-	background-color: #a90d01;
-}
-.home--2012 .day:nth-child(5n + 5) .day-link {
-	color: #ddd;
-	color: rgba(255, 255, 255, 0.85);
-	background-color: #740700;
-}
-
-/**
- * Thème 2013
- */
-.home--2013 .hero {
-	background: #002c3e url(images/header/2013/stars.png) repeat-x center top;
-	background: url(images/header/2013/stars.png) repeat-x center top,
-		linear-gradient(to bottom, #002c3e 0%, #019397 99%);
-}
-
-.home--2013 .hero-content {
-	background-image: url(images/header/2013/illustration.png);
-	background-size: contain;
-	background-position: center bottom;
-	background-repeat: no-repeat;
-}
-
-.home--2013 .hero-baseline {
-	color: #e6daa8;
-}
-
-.home--2013 {
-	background-color: #00141c;
-}
-
-.home--2013 .calendar {
-	background-color: #fff;
-}
-
-.home--2013 .day-link {
-	background-color: #d6ceaf;
-}
-.home--2013 .day:nth-child(3n + 1) .day-link {
-	background-color: #d6ceaf;
-}
-.home--2013 .day:nth-child(3n + 2) .day-link {
-	background-color: #e6e0cd;
-}
-.home--2013 .day:nth-child(3n + 3) .day-link {
-	background-color: #bbc8bf;
-}
-
-.edition--2013 .header {
-	background: #002c3e url(images/header/2013/stars.png) repeat-x center top;
-	background: url(images/header/2013/stars.png) repeat-x center top,
-		linear-gradient(to bottom, #002c3e 0%, #019397 99%);
-}
-
-.edition--2013 .header::after {
-	background-color: #e6e0cd;
-}
-
-.edition--2013 .footer {
-	background: #e6e0cd;
-}
-
-/**
- * Thème 2014
- */
-.home--2014 .hero {
-	background: url(images/header/2014/background.png) repeat-x center top;
-}
-
-.home--2014 .hero-content {
-	background: url(images/header/2014/illustration.png) no-repeat center top;
-}
-
-.home--2014 .hero-baseline {
-	color: #aa160e;
-}
-
-.home--2014 {
-	background-color: #fafafb;
-}
-
-.home--2014 .day-link {
-	background-color: #89ab83;
-}
-.home--2014 .day:nth-child(3n + 1) .day-link {
-	background-color: #c6c095;
-}
-.home--2014 .day:nth-child(3n + 2) .day-link {
-	background-color: #b6c194;
-}
-.home--2014 .day:nth-child(3n + 3) .day-link {
-	background-color: #dae4ce;
-}
-
-.edition--2014 .header {
-	background: url(images/header/2014/background.png) repeat-x center bottom;
-	background-size: auto 110px;
-}
-
-.edition--2014 .header::after {
-	background-color: #dae4ce;
-}
-
-.edition--2014 .footer {
-	background: #dadcdd url(images/header/2014/background.png) repeat-x center
-		bottom;
-	background-size: contain;
-}
-
-/**
- * Thème 2015
- */
-.home--2015 .hero {
-	background: url(images/header/2015/animals.png) no-repeat center bottom,
-		url(images/header/2015/particles.png) repeat-x left bottom,
-		url(images/header/2015/landscape.jpg) no-repeat center bottom;
-	background-size: 60em, 99.6875em, 106.25em;
-	animation: particles 120s linear infinite both;
-}
-
-@keyframes particles {
-	from {
-		background-position: center bottom, left bottom, center bottom;
-	}
-	to {
-		background-position: center bottom, 99.6875em bottom, center bottom;
-	}
-}
-
-.home--2015 .hero-baseline {
-	color: #aa160e;
-}
-
-.home--2015 {
-	background-color: #f8f9eb;
-}
-
-.home--2015 .day-link {
-	background-color: #adceb8;
-}
-.home--2015 .day:nth-child(3n + 1) .day-link {
-	background-color: #adceb8;
-}
-.home--2015 .day:nth-child(3n + 2) .day-link {
-	background-color: #ecc7a1;
-}
-.home--2015 .day:nth-child(3n + 3) .day-link {
-	background-color: #caeade;
-}
-
-.home--2015 .day-number {
-	position: relative;
-	color: #fff;
-	font-size: 0.8em;
-	width: 2.5em;
-	height: 2.5em;
-	margin-left: -0.25em;
-	background: none;
-}
-
-.home--2015 .day-number::before {
-	content: "";
-	position: absolute;
-	background: red;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: -1;
-	transform: rotate(-14deg);
-}
-
-.home--2015 .day:nth-child(3n + 1) .day-number::before {
-	background: #76927f;
-}
-
-.home--2015 .day:nth-child(3n + 2) .day-number::before {
-	background: #aa5d61;
-}
-
-.home--2015 .day:nth-child(3n + 3) .day-number::before {
-	background: #2d6f8a;
-}
-
-.edition--2015 .header {
-	background: #f8f9eb url(images/header/2015/small.jpg) no-repeat center top;
-}
-
-@media only screen and (max-width: 78rem) {
-	.edition--2015 .header {
-		background-position: -11rem top;
-	}
-}
-
-.edition--2015 .header::after {
-	background-color: #c3e2e2;
-	border-top: 1px solid #d3c1bd;
-}
-
-.edition--2015 .footer {
-	background: #f6f8eb url(images/footer/background.jpg) center top;
-	border-top: 0.625rem solid #d3c1bd;
-}
-
-@media only screen and (min-width: 64em) and (max-width: 102.1875em) {
-	.edition--2015 .footer {
-		background-position: 0 0;
-	}
-}
-
-/**
- * Thème 2017
- */
-.home--2017 .hero {
-	min-height: 36.875rem;
-	text-align: center;
-	background: #e3f1f5 url(images/header/2017/background.jpg) no-repeat center
-		top;
-	background-size: 125rem 33.0625rem;
-}
-
-.home--2017 .hero-content {
-	padding-top: 1rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	min-height: 33.125rem;
-	background: url(images/header/2017/characters.png) no-repeat center bottom;
-	background-size: 125rem 21.875rem;
-}
-
-@media only screen and (max-width: 56.25rem) {
-	.home--2017 .hero-content {
-		background-position: right -34.375rem bottom;
-	}
-}
-
-.home--2017 .hero::after {
-	content: "";
-	display: block;
-	height: 0.25rem;
-	width: 100%;
-	background: #de362c;
-	position: absolute;
-	bottom: 0.375rem;
-	left: 0;
-	right: 0;
-}
-
-.home--2017 .hero-logo img {
-	width: 15rem;
-	height: 5.625rem;
-	margin-bottom: 0.75rem;
-}
-
-@media only screen and (max-width: 31.25em) {
-	.home--2017 .hero-logo img {
-		max-width: 60%;
-		height: auto;
-	}
-}
-
-.home--2017 .hero-baseline {
-	display: inline;
-	padding: 0.5rem 1.5rem;
-	width: auto;
-	max-width: 80%;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-family: Arial, sans-serif;
-	font-size: 0.75rem;
-	background: #de362c;
-	-webkit-box-decoration-break: clone;
-	box-decoration-break: clone;
-}
-
-.home--2017 .main {
-	position: relative;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-bottom: 5.5rem;
-	border-top: 0.25rem solid #de362c;
-	background: #de362c url(images/header/2017/pattern.png) center -1.5rem;
-}
-
-.home--2017 .footer {
-	margin-top: 0;
-}
-
-.home--2017 .calendar {
-	margin-top: -10rem;
-	border-top: 0.25rem solid #de362c;
-}
 
 .home--new .calendar {
 	position: relative;
@@ -1803,35 +1465,14 @@ body.admin-bar :target {
 	background-color: #e2e8e9;
 }
 
-.home--2017 .calendar::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: -1.125rem;
-	display: block;
-	width: 100%;
-	height: 1.125rem;
-	background: url(images/header/2017/pin.png) no-repeat center top;
-	background-size: 75.125rem 1.25rem;
-}
-
 .home--new .day-off {
 	background-color: #f6f6f6;
-}
-
-.home--2017 .day-off {
-	background: #e2e8e9;
 }
 
 .home--new .day-off-cell {
 	align-items: flex-start;
 	margin: -1px;
 	border: 2px solid currentColor;
-}
-
-.home--2017 .day-off-cell {
-	border-color: #a2dbe9;
 }
 
 @media only screen and (min-width: 31.25em) {
@@ -1846,17 +1487,7 @@ body.admin-bar :target {
 	border: 2px solid currentColor;
 }
 
-.home--2017 .day-link {
-	background-color: #eff1db;
-	border-color: #a2dbe9;
-}
-
-.home--2017 .day:nth-child(2n + 1) .day-link {
-	background-color: #d1eef5;
-}
-
-.home--new .day-number,
-.home--new .day-off-number {
+.home--new :is(.day-number, .day-off-number) {
 	flex-grow: 0;
 	margin-left: -0.25rem;
 	margin-top: -1rem;
@@ -1872,11 +1503,6 @@ body.admin-bar :target {
 	border-radius: 50%;
 }
 
-.home--2017 .day-number,
-.home--2017 .day-off-number {
-	background-color: #de362c;
-}
-
 .home--new .day-off-number {
 	margin: 1rem;
 	background: #666;
@@ -1887,670 +1513,6 @@ body.admin-bar :target {
 		max-width: 90rem;
 		grid-template-columns: repeat(6, 1fr);
 	}
-}
-
-.edition--2017 .header {
-	background: linear-gradient(to bottom, #86c1d8 0%, #a3e8f9 100%);
-}
-
-.edition--2017 .header::after {
-	background-color: #de362c;
-}
-
-.edition--2017 .footer {
-	background: #deecf0;
-	border-top-color: #7b8f96;
-}
-
-/**
- * Thème 2018
- */
-.home--2018 .site {
-	background-color: #f6f8f7;
-}
-
-.home--2018 .hero {
-	overflow: hidden;
-	background-color: #082637;
-	background-image: url(images/header/2018/etoiles.svg),
-		url(images/header/2018/etoiles.svg), url(images/header/2018/etoiles.svg),
-		linear-gradient(#082637 18%, #18474b 58%, #3e997c 90%, #f6f8f7 91%);
-	background-repeat: repeat-x;
-	background-position: 50% 0%, 50% 20%, 50% 10%, 0 0;
-	background-size: auto 40%, auto 50%, auto 60%, auto 100%;
-}
-
-.home--2018 .hero-content {
-	height: 25rem;
-	padding: 0;
-	background-image: url(images/header/2018/perso.svg),
-		url(images/header/2018/sol.svg);
-	text-align: center;
-	background-repeat: no-repeat, repeat-x;
-	background-position: left calc(50% - 8.4375rem) bottom 2rem,
-		left calc(50% - 0.125rem) bottom 0.75rem;
-	background-size: auto 66.5%, auto 91.2%;
-	position: relative;
-}
-
-@media (max-width: 37.5rem) {
-	.home--2018 .hero-content {
-		background-position: left -15.125rem bottom 2rem,
-			left -41.375rem bottom 0.75rem;
-	}
-}
-
-@media (max-width: 22.5rem) {
-	.home--2018 .hero-content {
-		background-position: right -13.25rem bottom 2rem,
-			right -56.0625rem bottom 0.75rem;
-	}
-}
-
-.home--2018 .hero-h1 {
-	display: inline-block;
-	width: 15.625rem;
-	margin-right: 15.625rem;
-	color: #84cac1;
-}
-
-.home--2018 .hero-logo {
-	display: block;
-	padding: 1.5rem;
-}
-
-.home--2018 .hero-logo img {
-	width: 100%;
-	height: auto;
-	margin: 0;
-	display: block;
-}
-
-.home--2018 .calendar {
-	background-color: transparent;
-	padding: 0.4375rem;
-	grid-gap: 0.4375rem;
-	margin-top: -0.75rem;
-}
-
-.home--2018 .day-title {
-	font-family: Raleway, sans-serif;
-	font-weight: bold;
-}
-
-.home--2018 .day-link {
-	color: rgba(0, 0, 0, 0.85);
-}
-
-.home--2018 .day-number {
-	color: #e35a48;
-	background-color: #fff;
-}
-
-.home--2018 .day:nth-child(3n + 1) .day-link {
-	border-color: #8acac0;
-	background-color: #8acac0;
-}
-
-.home--2018 .day:nth-child(3n + 2) .day-link {
-	border-color: #fbaa32;
-	background-color: #fbaa32;
-}
-
-.home--2018 .day:nth-child(3n + 3) .day-link {
-	border-color: #e35b4a;
-	background-color: #e35b4a;
-}
-
-.edition--2018 .header {
-	background: url(images/header/2018/etoiles.svg),
-		#082637 linear-gradient(#082637 18%, #18474b);
-	background-size: auto 150%, auto;
-}
-
-.edition--2018 .header::after {
-	background: #84cac1;
-}
-
-/**
- * Thème 2019
- */
-.home--2019 .hero {
-	background: url(images/header/2019/background.jpg) no-repeat center top,
-		url(images/header/2019/pattern.jpg) repeat-x center top;
-	background-size: auto 100%;
-}
-
-.home--2019 .hero-content {
-	min-height: 21.8125rem;
-}
-
-.home--2019 .hero-h1 {
-	text-align: center;
-}
-
-.home--2019 .hero-logo {
-	position: relative;
-	top: -1rem;
-	left: 1.25rem;
-	display: inline-block;
-	transform: rotate(-5deg);
-}
-
-.home--2019 .hero-logo img {
-	width: 12.5rem;
-	height: 4.6875rem;
-}
-
-.home--2019 .calendar {
-	background-color: transparent;
-	padding: 0.4375rem;
-	grid-gap: 0.4375rem;
-	margin-top: 1rem;
-}
-
-.home--2019 .day:nth-child(5n + 1) .day-link {
-	color: #fff;
-	border-color: #428cbd;
-	background-color: #428cbd;
-}
-
-.home--2019 .day:nth-child(5n + 2) .day-link {
-	border-color: #ffbf4e;
-	background-color: #ffbf4e;
-}
-
-.home--2019 .day:nth-child(5n + 3) .day-link {
-	color: #fff;
-	border-color: #dd3a63;
-	background-color: #dd3a63;
-}
-
-.home--2019 .day:nth-child(5n + 4) .day-link {
-	border-color: #9adbd5;
-	background-color: #9adbd5;
-}
-
-.home--2019 .day:nth-child(5n + 5) .day-link {
-	border-color: #ff7d55;
-	background-color: #ff7d55;
-}
-
-.edition--2019 .header {
-	background-color: #eae7ee;
-}
-
-.edition--2019 .header::after {
-	background: #817197;
-}
-
-.edition--2019 .header-archive {
-	filter: hue-rotate(-90deg);
-}
-
-/**
- * Thème 2020
- */
-.home--2020 .hero {
-	margin-bottom: 3rem;
-	background: #000405 url(images/header/2020/background.jpg) no-repeat center
-		top;
-	background-size: auto 30rem;
-}
-
-.home--2020 .hero::after {
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	height: 3rem;
-	background: url(images/header/2020/pattern.png) repeat-x center top;
-	background-size: auto 3rem;
-}
-
-.home--2020 .hero-content {
-	padding-top: 2rem;
-	min-height: 30rem;
-}
-
-.home--2020 .hero-logo img {
-	width: 12rem;
-	height: 4.5rem;
-}
-
-.home--2020 .site {
-	background-color: #000405;
-}
-
-.home--2020 .calendar {
-	background-color: transparent;
-	padding: 0.4375rem;
-	grid-gap: 0.4375rem;
-	margin-top: 0;
-}
-
-.home--2020 .day:nth-child(5n + 1) .day-link {
-	border-color: #fbb7ff;
-	background-color: #fbb7ff;
-}
-
-.home--2020 .day:nth-child(5n + 2) .day-link {
-	color: #fff;
-	border-color: #b121ff;
-	background-color: #b121ff;
-}
-
-.home--2020 .day:nth-child(5n + 3) .day-link {
-	color: #fff;
-	border-color: #0f6a5f;
-	background-color: #0f6a5f;
-}
-
-.home--2020 .day:nth-child(5n + 4) .day-link {
-	color: #fff;
-	border-color: #3b45ff;
-	background-color: #3b45ff;
-}
-
-.home--2020 .day:nth-child(5n + 5) .day-link {
-	color: #fff;
-	border-color: #173767;
-	background-color: #173767;
-}
-
-.home--2020 .day-off {
-	background-color: #191d1e;
-}
-
-.home--2020 .day-off-cell {
-	border-color: #191d1e;
-}
-
-.home--2020 .day-number,
-.home--2020 .day-off-number {
-	background-color: #000405;
-}
-
-.home--2020 .day-author::before {
-	background-color: currentColor;
-}
-
-.edition--2020 .header {
-	background: #000405 url(images/header/2020/footer.jpg) no-repeat 70% 40%;
-}
-
-.edition--2020 .header::after {
-	background-color: #173767;
-}
-
-.edition--2020 .header-archive {
-	filter: hue-rotate(-90deg);
-}
-
-.edition--2020 .post-title,
-.edition--2020 .post-entry h2,
-.edition--2020 .post-entry a,
-.edition--2020 .comments-title {
-	color: #173767;
-}
-
-.post-entry ul li::before {
-	background-color: #3b45ff;
-}
-
-.edition--2020 .post-entry h3 {
-	color: #3b45ff;
-}
-
-/**
- * Thème 2021
- */
-.home--2021 .site,
-.edition--2021 .header {
-	background: #2b1047 url(images/header/2021/pattern.jpg) repeat;
-}
-
-.home--2021 .hero {
-	margin-bottom: 2rem;
-	background: transparent url(images/header/2021/background.jpg) no-repeat
-		center top;
-}
-
-.home--2021 .hero-content {
-	padding-top: 6.5rem;
-	min-height: 31rem;
-}
-
-.home--2021 .hero-logo:focus {
-	outline-color: #2b1047;
-}
-
-.home--2021 .hero-logo img {
-	width: 12rem;
-	height: 4.5rem;
-	margin-left: 0.5rem;
-	filter: drop-shadow(0px 0px 25px rgb(170, 170, 147));
-}
-
-.home--2021 .hero-logo:focus img {
-	filter: drop-shadow(0px 0px 25px rgb(247, 247, 226));
-}
-
-@media only screen and (max-width: 31.25em) {
-	.home--2021 .hero {
-		margin-bottom: 1rem;
-		background-size: 800px;
-	}
-
-	.home--2021 .hero-content {
-		padding-top: 2.5rem;
-		min-height: 20rem;
-	}
-
-	.home--2021 .hero-logo img {
-		width: 8rem;
-		height: 6.75rem;
-	}
-}
-
-@media only screen and (max-width: 20em) {
-	.home--2021 .hero {
-		background-position: -320px;
-	}
-
-	.home--2021 .hero-logo img {
-		margin-left: 1rem;
-	}
-}
-
-.home--2021 .calendar {
-	background-color: transparent;
-	padding: 0.4375rem;
-	grid-gap: 0.4375rem;
-	margin-top: 0;
-}
-
-.home--2021 .day {
-	position: relative;
-	background-color: #fff6da;
-}
-.home--2021 .day::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	box-shadow: rgba(178, 170, 147, 0.3) 0px 30px 60px -12px,
-		rgba(178, 170, 147, 0.3) 0px 18px 36px -18px;
-	/* Transition box-shadow performante : https://alligator.io/css/transition-box-shadows/ */
-	opacity: 0;
-	transition-property: opacity;
-	transition-duration: 0.4s;
-	transition-delay: 0.1s;
-	transition-timing-function: ease-in-out;
-}
-
-.home--2021 .day:hover::before,
-.home--2021 .day:focus-within::before {
-	opacity: 1;
-}
-
-.home--2021 .day:nth-child(5n + 1) .day-link {
-	color: #fff6da;
-	border-color: #460d42;
-	background-color: #460d42;
-}
-
-.home--2021 .day:nth-child(5n + 2) .day-link {
-	color: #190537;
-	border-color: #c37578;
-	background-color: #c37578;
-}
-
-.home--2021 .day:nth-child(5n + 3) .day-link {
-	color: #fff6da;
-	border-color: #440166;
-	background-color: #440166;
-}
-
-.home--2021 .day:nth-child(5n + 4) .day-link {
-	color: #190537;
-	border-color: #c8978c;
-	background-color: #c8978c;
-}
-
-.home--2021 .day:nth-child(5n + 5) .day-link {
-	color: #fff6da;
-	border-color: #6a2449;
-	background-color: #6a2449;
-}
-
-.home--2021 .day:nth-child(5n + 6) .day-link {
-	color: #190537;
-	border-color: #e370a0;
-	background-color: #e370a0;
-}
-
-.home--2021 .day-off {
-	background-color: #191d1e;
-}
-
-.home--2021 .day-off-cell {
-	border-color: #191d1e;
-}
-
-.home--2021 .day-number,
-.home--2021 .day-off-number {
-	margin-bottom: 0.75em;
-	width: 2rem;
-	height: 2rem;
-	font-size: 1rem;
-	line-height: 2em;
-}
-
-.home--2021 .day-number {
-	background-color: #fff6da;
-	color: #2b1047;
-}
-
-.home--2021 .day-off-number {
-	background-color: #191d1e;
-	color: #b2aa93;
-}
-
-.home--2021 .day-author::before {
-	background-color: currentColor;
-}
-
-.edition--2021 .header::after {
-	background-color: #6abebf;
-}
-
-.edition--2021 .header-archive-year {
-	color: #2b1047;
-}
-
-.edition--2021 .header-archive,
-.edition--2021 .footer-archives,
-.edition--2021 .jdw-button,
-.edition--2021 .comment-button,
-.edition--2021 .comment-edit-link {
-	filter: hue-rotate(200deg);
-}
-
-.edition--2021 .post-title,
-.edition--2021 .post-entry h2,
-.edition--2021 .post-entry h3,
-.edition--2021 .post-entry h4,
-.edition--2021 .post-entry a,
-.edition--2021 .comments-title,
-.edition--2021 .post-author-title {
-	color: #2b1047;
-}
-
-.post-entry ul li::before {
-	background-color: #2b1047;
-}
-
-.edition--2021 .post-entry blockquote,
-.edition--2021 .post-entry .answer {
-	border-color: #6abebf;
-}
-
-.edition--2021 .post-entry .section,
-.edition--2021 .post-entry .section::before,
-.edition--2021 .post-entry .section::after,
-.edition--2021 .post-footer,
-.edition--2021 .post-footer::before,
-.edition--2021 .post-footer::after,
-.edition--2021 .posts-nav-link a,
-.edition--2021 .comment-form,
-.edition--2021 .comment-avatar {
-	background: #f2f0ea;
-}
-
-.edition--2021 .post-footer::after {
-	background: #eee8d5;
-}
-
-.edition--2021 .comment-avatar span {
-	color: #eee8d5;
-}
-
-.edition--2021 .posts-nav-link a::before {
-	background-image: url(images/header/2021/arrow.png);
-}
-
-.edition--2021 .comment-item,
-.edition--2021 .comment-textbox,
-.edition--2021 .comment-textarea {
-	border-color: #6abebf;
-}
-
-.edition--2021 .post-aside {
-	color: #367385;
-}
-
-.edition--2021 .footer {
-	margin-top: 2rem;
-	background: #2b1047 url(images/header/2021/footer-pattern.jpg) repeat;
-	color: #fffaeb;
-	border-top-color: #6abebf;
-}
-
-.edition--2021 .footer a:focus {
-	outline-color: #fffaeb;
-}
-
-.edition--2021 .footer-link--twitter a::before {
-	background-image: url(images/header/2021/icon-twitter.png);
-}
-
-/**
- * Thème 2022
- */
-.home--2022 .site {
-	background: #cbebfd url(images/header/2022/bg.png) repeat-x;
-}
-
-.home--2022 .hero {
-	background: transparent url(images/header/2022/header.png) no-repeat center
-		top;
-}
-
-.edition--2022 .header {
-	background: #004063;
-}
-
-.edition--2022 .header::after {
-	background-color: #aed5fe;
-}
-
-.edition--2022 .hero-content {
-	margin-top: 3.5rem;
-	min-height: 28.25rem;
-}
-
-.edition--2022 .hero-logo img {
-	width: 12rem;
-	height: 4.75rem;
-}
-
-.edition--2022 .footer {
-	margin-top: 2rem;
-	border-color: #aed5fe;
-}
-
-.edition--2022 .header-archive,
-.edition--2022 .footer-archives,
-.edition--2022 .jdw-button,
-.edition--2022 .comment-button,
-.edition--2022 .comment-edit-link {
-	filter: hue-rotate(220deg);
-}
-
-.home--2022 .calendar {
-	margin-top: 0;
-	background-color: #cbebfd;
-}
-
-.home--2022 .day-off {
-	background-color: #b1d2eb;
-}
-
-.home--2022 .day-off-cell {
-	border-color: #cbebfd;
-}
-
-.home--2022 .day-number {
-	background-color: #183b54;
-	color: #fdfefc;
-}
-
-.home--2022 .day-off-number {
-	background-color: #d4ebfc;
-	color: #183b54;
-}
-
-.home--2022 .day .day-link {
-	border-color: #cbebfd;
-}
-
-.home--2022 .day:nth-child(5n + 1) .day-link {
-	color: #fff;
-	background-color: #095b9a;
-}
-
-.home--2022 .day:nth-child(5n + 2) .day-link {
-	color: #003550;
-	background-color: #aee5e7;
-}
-
-.home--2022 .day:nth-child(5n + 3) .day-link {
-	color: #fff;
-	background-color: #045d7d;
-}
-
-.home--2022 .day:nth-child(5n + 4) .day-link {
-	color: #003550;
-	background-color: #a7d4ff;
-}
-
-.home--2022 .day:nth-child(5n + 5) .day-link {
-	color: #fff;
-	background-color: #146156;
-}
-
-.edition--2022 .post-title,
-.edition--2022 .post-entry h2,
-.edition--2022 .post-entry h3,
-.edition--2022 .post-entry a,
-.edition--2022 .post-author-title,
-.edition--2022 .comments-title,
-.edition--2022 .posts-nav {
-	color: #095b9a;
-}
-
-.edition--2022 .post-entry ul li::before {
-	background-color: #095b9a;
 }
 
 /*
@@ -2593,114 +1555,3 @@ body.admin-bar :target {
 	margin: -0.75em;
 }
 
-/**
- * Thème 2023
- */
-/* @todo Remplacer toutes ces valeurs par des custom properties */
-/* @note Comme ça on pilotera un thème avec quelques custom props sur la .edition--202n */
-/* @note Rétro-compatible sur les années précédentes ? */
-.home--2023 .site {
-	background: #cbebfd url(images/header/2022/bg.png) repeat-x;
-}
-
-.home--2023 .hero {
-	background: transparent url(images/header/2022/header.png) no-repeat center
-	top;
-}
-
-.edition--2023 .header {
-	background: #004063;
-}
-
-.edition--2023 .header::after {
-	background-color: #aed5fe;
-}
-
-.edition--2023 .hero-content {
-	margin-top: 3.5rem;
-	min-height: 28.25rem;
-}
-
-.edition--2023 .hero-logo img {
-	width: 12rem;
-	height: 4.75rem;
-}
-
-.edition--2023 .footer {
-	margin-top: 2rem;
-	border-color: #aed5fe;
-}
-
-.edition--2023 .header-archive,
-.edition--2023 .footer-archives,
-.edition--2023 .jdw-button,
-.edition--2023 .comment-button,
-.edition--2023 .comment-edit-link {
-	filter: hue-rotate(220deg);
-}
-
-.home--2023 .calendar {
-	margin-top: 0;
-	background-color: #cbebfd;
-}
-
-.home--2023 .day-off {
-	background-color: #b1d2eb;
-}
-
-.home--2023 .day-off-cell {
-	border-color: #cbebfd;
-}
-
-.home--2023 .day-number {
-	background-color: #183b54;
-	color: #fdfefc;
-}
-
-.home--2023 .day-off-number {
-	background-color: #d4ebfc;
-	color: #183b54;
-}
-
-.home--2023 .day .day-link {
-	border-color: #cbebfd;
-}
-
-.home--2023 .day:nth-child(5n + 1) .day-link {
-	color: #fff;
-	background-color: #095b9a;
-}
-
-.home--2023 .day:nth-child(5n + 2) .day-link {
-	color: #003550;
-	background-color: #aee5e7;
-}
-
-.home--2023 .day:nth-child(5n + 3) .day-link {
-	color: #fff;
-	background-color: #045d7d;
-}
-
-.home--2023 .day:nth-child(5n + 4) .day-link {
-	color: #003550;
-	background-color: #a7d4ff;
-}
-
-.home--2023 .day:nth-child(5n + 5) .day-link {
-	color: #fff;
-	background-color: #146156;
-}
-
-.edition--2023 .post-title,
-.edition--2023 .post-entry h2,
-.edition--2023 .post-entry h3,
-.edition--2023 .post-entry a,
-.edition--2023 .post-author-title,
-.edition--2023 .comments-title,
-.edition--2023 .posts-nav {
-	color: #095b9a;
-}
-
-.edition--2023 .post-entry ul li::before {
-	background-color: #095b9a;
-}

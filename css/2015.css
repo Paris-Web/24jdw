@@ -1,0 +1,99 @@
+/**
+ * Thème 2015
+ */
+.home--2015 .hero {
+	background: url(../images/header/2015/animals.png) no-repeat center bottom / 60em,
+							url(../images/header/2015/particles.png) repeat-x left bottom / 99.6875em,
+							url(../images/header/2015/landscape.jpg) no-repeat center bottom / 106.25em;
+	animation: particles 120s linear infinite both;
+}
+
+@keyframes particles {
+	from {
+		background-position: center bottom, left bottom, center bottom;
+	}
+	to {
+		background-position: center bottom, 99.6875em bottom, center bottom;
+	}
+}
+
+.home--2015 .hero-baseline {
+	color: #aa160e;
+}
+
+.home--2015 {
+	background-color: #f8f9eb;
+}
+
+.home--2015 .day-link {
+	background-color: #adceb8;
+}
+.home--2015 .day:nth-child(3n + 1) .day-link {
+	background-color: #adceb8;
+}
+.home--2015 .day:nth-child(3n + 2) .day-link {
+	background-color: #ecc7a1;
+}
+.home--2015 .day:nth-child(3n + 3) .day-link {
+	background-color: #caeade;
+}
+
+.home--2015 .day-number {
+	position: relative;
+	color: #fff;
+	font-size: 0.8em;
+	width: 2.5em;
+	height: 2.5em;
+	margin-left: -0.25em;
+	background: none;
+}
+
+.home--2015 .day-number::before {
+	content: "";
+	position: absolute;
+	background: red;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	transform: rotate(-14deg);
+}
+
+.home--2015 .day:nth-child(3n + 1) .day-number::before {
+	background: #76927f;
+}
+
+.home--2015 .day:nth-child(3n + 2) .day-number::before {
+	background: #aa5d61;
+}
+
+.home--2015 .day:nth-child(3n + 3) .day-number::before {
+	background: #2d6f8a;
+}
+
+.edition--2015 .header {
+	background: #f8f9eb url(../images/header/2015/small.jpg) no-repeat center top;
+}
+
+@media only screen and (max-width: 78rem) {
+	.edition--2015 .header {
+		background-position: -11rem top;
+	}
+}
+
+.edition--2015 .header::after {
+	background-color: #c3e2e2;
+	border-top: 1px solid #d3c1bd;
+}
+
+.edition--2015 .footer {
+	background: #f6f8eb url(../images/footer/background.jpg) center top;
+	border-top: 0.625rem solid #d3c1bd;
+}
+
+@media only screen and (min-width: 64em) and (max-width: 102.1875em) {
+	.edition--2015 .footer {
+		background-position: 0 0;
+	}
+}

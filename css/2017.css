@@ -1,0 +1,128 @@
+/**
+ * Thème 2017
+ */
+.home--2017 .hero {
+	min-height: 36.875rem;
+	text-align: center;
+	background: #e3f1f5 url(../images/header/2017/background.jpg) no-repeat center top / 125rem 33.0625rem;
+}
+
+.home--2017 .hero-content {
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	min-height: 33.125rem;
+	background: url(../images/header/2017/characters.png) no-repeat center bottom / 125rem 21.875rem;
+}
+
+@media only screen and (max-width: 56.25rem) {
+	.home--2017 .hero-content {
+		background-position: right -34.375rem bottom;
+	}
+}
+
+.home--2017 .hero::after {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	width: 100%;
+	background: #de362c;
+	position: absolute;
+	bottom: 0.375rem;
+	left: 0;
+	right: 0;
+}
+
+.home--2017 .hero-logo img {
+	width: 15rem;
+	height: 5.625rem;
+	margin-bottom: 0.75rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+	.home--2017 .hero-logo img {
+		max-width: 60%;
+		height: auto;
+	}
+}
+
+.home--2017 .hero-baseline {
+	display: inline;
+	padding: 0.5rem 1.5rem;
+	width: auto;
+	max-width: 80%;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	font-size: 0.75rem;
+	background: #de362c;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+.home--2017 .main {
+	position: relative;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 5.5rem;
+	border-top: 0.25rem solid #de362c;
+	background: #de362c url(../images/header/2017/pattern.png) center -1.5rem;
+}
+
+.home--2017 .footer {
+	margin-top: 0;
+}
+
+.home--2017 .calendar {
+	margin-top: -10rem;
+	border-top: 0.25rem solid #de362c;
+}
+
+.home--2017 .calendar::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -1.125rem;
+	display: block;
+	width: 100%;
+	height: 1.125rem;
+	background: url(../images/header/2017/pin.png) no-repeat center top;
+	background-size: 75.125rem 1.25rem;
+}
+
+.home--2017 .day-off {
+	background: #e2e8e9;
+}
+
+.home--2017 .day-off-cell {
+	border-color: #a2dbe9;
+}
+
+.home--2017 .day-link {
+	background-color: #eff1db;
+	border-color: #a2dbe9;
+}
+
+.home--2017 .day:nth-child(2n + 1) .day-link {
+	background-color: #d1eef5;
+}
+
+.home--2017 .day-number,
+.home--2017 .day-off-number {
+	background-color: #de362c;
+}
+
+.edition--2017 .header {
+	background: linear-gradient(to bottom, #86c1d8 0%, #a3e8f9 100%);
+}
+
+.edition--2017 .header::after {
+	background-color: #de362c;
+}
+
+.edition--2017 .footer {
+	background: #deecf0;
+	border-top-color: #7b8f96;
+}

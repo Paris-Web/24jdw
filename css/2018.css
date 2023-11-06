@@ -1,0 +1,100 @@
+/**
+ * Thème 2018
+ */
+.home--2018 .site {
+	background-color: #f6f8f7;
+}
+
+.home--2018 .hero {
+	overflow: hidden;
+	background: url(../images/header/2018/etoiles.svg) repeat-x 50% 0% / auto 40%,
+							url(../images/header/2018/etoiles.svg) repeat-x 50% 20% / auto 50%,
+							url(../images/header/2018/etoiles.svg) repeat-x 50% 10% / auto 60%,
+							#082637 linear-gradient(#082637 18%, #18474b 58%, #3e997c 90%, #f6f8f7 91%) repeat-x 0 0 /auto 100%;
+}
+
+.home--2018 .hero-content {
+	height: 25rem;
+	padding: 0;
+	background: url(../images/header/2018/perso.svg) no-repeat left calc(50% - 8.4375rem) bottom 2rem / auto 66.5%,
+							url(../images/header/2018/sol.svg) repeat-x left calc(50% - 0.125rem) bottom 0.75rem / auto 91.2%;
+	text-align: center;
+	position: relative;
+}
+
+@media (max-width: 37.5rem) {
+	.home--2018 .hero-content {
+		background-position: left -15.125rem bottom 2rem, left -41.375rem bottom 0.75rem;
+	}
+}
+
+@media (max-width: 22.5rem) {
+	.home--2018 .hero-content {
+		background-position: right -13.25rem bottom 2rem, right -56.0625rem bottom 0.75rem;
+	}
+}
+
+.home--2018 .hero-h1 {
+	display: inline-block;
+	width: 15.625rem;
+	margin-right: 15.625rem;
+	color: #84cac1;
+}
+
+.home--2018 .hero-logo {
+	display: block;
+	padding: 1.5rem;
+}
+
+.home--2018 .hero-logo img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	display: block;
+}
+
+.home--2018 .calendar {
+	background-color: transparent;
+	padding: 0.4375rem;
+	grid-gap: 0.4375rem;
+	margin-top: -0.75rem;
+}
+
+.home--2018 .day-title {
+	font-family: Raleway, sans-serif;
+	font-weight: bold;
+}
+
+.home--2018 .day-link {
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.home--2018 .day-number {
+	color: #e35a48;
+	background-color: #fff;
+}
+
+.home--2018 .day:nth-child(3n + 1) .day-link {
+	border-color: #8acac0;
+	background-color: #8acac0;
+}
+
+.home--2018 .day:nth-child(3n + 2) .day-link {
+	border-color: #fbaa32;
+	background-color: #fbaa32;
+}
+
+.home--2018 .day:nth-child(3n + 3) .day-link {
+	border-color: #e35b4a;
+	background-color: #e35b4a;
+}
+
+.edition--2018 .header {
+	background: url(../images/header/2018/etoiles.svg),
+							#082637 linear-gradient(#082637 18%, #18474b);
+	background-size: auto 150%, auto;
+}
+
+.edition--2018 .header::after {
+	background: #84cac1;
+}

@@ -1,0 +1,100 @@
+/**
+ * Thème 2023
+ */
+/* @todo Remplacer toutes ces valeurs par des custom properties */
+/* @note Comme ça on pilotera un thème avec quelques custom props sur la .edition--202n */
+/* @note Rétro-compatible sur les années précédentes ? */
+.home--2022 .site {
+	background: #cbebfd url(../images/header/2022/bg.png) repeat-x;
+}
+
+.home--2022 .hero {
+	background: transparent url(../images/header/2022/header.png) no-repeat center top;
+}
+
+.edition--2022 .header {
+	background: #004063;
+}
+
+.edition--2022 .header::after {
+	background-color: #aed5fe;
+}
+
+.edition--2022 .hero-content {
+	margin-top: 3.5rem;
+	min-height: 28.25rem;
+}
+
+.edition--2022 .hero-logo img {
+	width: 12rem;
+	height: 4.75rem;
+}
+
+.edition--2022 .footer {
+	margin-top: 2rem;
+	border-color: #aed5fe;
+}
+
+.edition--2022 :is(.header-archive, .footer-archives, .jdw-button, .comment-button, .comment-edit-link) {
+	filter: hue-rotate(220deg);
+}
+
+.home--2022 .calendar {
+	margin-top: 0;
+	background-color: #cbebfd;
+}
+
+.home--2022 .day-off {
+	background-color: #b1d2eb;
+}
+
+.home--2022 .day-off-cell {
+	border-color: #cbebfd;
+}
+
+.home--2022 .day-number {
+	background-color: #183b54;
+	color: #fdfefc;
+}
+
+.home--2022 .day-off-number {
+	background-color: #d4ebfc;
+	color: #183b54;
+}
+
+.home--2022 .day .day-link {
+	border-color: #cbebfd;
+}
+
+.home--2022 .day:nth-child(5n + 1) .day-link {
+	color: #fff;
+	background-color: #095b9a;
+}
+
+.home--2022 .day:nth-child(5n + 2) .day-link {
+	color: #003550;
+	background-color: #aee5e7;
+}
+
+.home--2022 .day:nth-child(5n + 3) .day-link {
+	color: #fff;
+	background-color: #045d7d;
+}
+
+.home--2022 .day:nth-child(5n + 4) .day-link {
+	color: #003550;
+	background-color: #a7d4ff;
+}
+
+.home--2022 .day:nth-child(5n + 5) .day-link {
+	color: #fff;
+	background-color: #146156;
+}
+
+.edition--2022 :is(.post-title, .post-entry h2, .post-entry h3, .post-entry a, .post-author-title, .comments-title, .posts-nav) {
+	color: #095b9a;
+}
+
+.edition--2022 .post-entry ul li::before {
+	background-color: #095b9a;
+}

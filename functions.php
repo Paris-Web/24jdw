@@ -13,7 +13,16 @@ function jdw_theme_styles() {
 		'all'
 	);
 
+	wp_register_style(
+		'year',
+		get_stylesheet_directory_uri().'/css/' . jdw_get_the_year() . '.css',
+		array(),
+		'11.0.0',
+		'all'
+	);
+
 	wp_enqueue_style('styles');
+	wp_enqueue_style('year');
 }
 add_action( 'wp_enqueue_scripts', 'jdw_theme_styles' );
 
@@ -30,8 +39,8 @@ add_filter('tiny_mce_before_init', 'jdw_add_iframe');
  * Personnalise l’éditeur classique en restreignant les options disponibles
  */
 function jdw_wysiwyg( $boutons ) {
-	$boutons['block_formats'] = 'Paragraphe=p;Titre 2=h2;Titre 3=h3;Titre 4=h4;Pre=pre';
-	$boutons['toolbar1'] = 'undo,redo,formatselect,bold,italic,sub,sup,|,bullist,numlist,blockquote,cite,tinymce_abbr_class,|,outdent,indent,|,link,unlink,|,|,juizlangattr,juizhreflangattr,|,|,charmap,|,removeformat,|,wp_fullscreen';
+	$boutons['block_formats'] = 'Paragraphe=p;Titre 2=h2;Titre 3=h3;Titre 4=h4;Titre 5=h5;Titre 6=h6;Pre=pre';
+	$boutons['toolbar1'] = 'undo,redo,formatselect,bold,italic,sub,sup,|,bullist,numlist,blockquote,cite,tinymce_abbr_class,|,outdent,indent,|,link,unlink,|,|,juizlangattr,juizhreflangattr,|,|,charmap,|,paste_as_text,removeformat,|,wp_fullscreen';
 	$boutons['toolbar2'] = '';
 	$boutons['paste_as_text'] = true;
 	return $boutons;
@@ -42,12 +51,10 @@ add_filter( 'tiny_mce_before_init', 'jdw_wysiwyg' );
  * Supprime les styles injectés pour Gutenberg
  */
 function jdw_disable_gutenberg() {
-
 	wp_dequeue_style('classic-theme-styles');
 	wp_dequeue_style('global-styles');
 	wp_dequeue_style('wp-block-library');
 	wp_dequeue_style('wp-block-library-theme');
-
 }
 add_filter('wp_enqueue_scripts', 'jdw_disable_gutenberg', 100);
 
@@ -76,7 +83,7 @@ function jdw_add_prism() {
 	if(is_single() || is_page()) {
 		wp_register_style(
 			'prism',
-			get_stylesheet_directory_uri().'/css/prism.css',
+			get_stylesheet_directory_uri().'/css/vendors/prism.css',
 			array(),
 			'1.25.0.20211204',
 			'all'

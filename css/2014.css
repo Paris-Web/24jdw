@@ -1,0 +1,46 @@
+/**
+ * Thème 2014
+ */
+.home--2014 .hero {
+	background: url(../images/header/2014/background.png) repeat-x center top;
+}
+
+.home--2014 .hero-content {
+	background: url(../images/header/2014/illustration.png) no-repeat center top;
+}
+
+.home--2014 .hero-baseline {
+	color: #aa160e;
+}
+
+.home--2014 {
+	background-color: #fafafb;
+}
+
+.home--2014 .day-link {
+	background-color: #89ab83;
+}
+
+.home--2014 .day:nth-child(3n + 1) .day-link {
+	background-color: #c6c095;
+}
+
+.home--2014 .day:nth-child(3n + 2) .day-link {
+	background-color: #b6c194;
+}
+
+.home--2014 .day:nth-child(3n + 3) .day-link {
+	background-color: #dae4ce;
+}
+
+.edition--2014 .header {
+	background: url(../images/header/2014/background.png) repeat-x center bottom / auto 110px;
+}
+
+.edition--2014 .header::after {
+	background-color: #dae4ce;
+}
+
+.edition--2014 .footer {
+	background: #dadcdd url(../images/header/2014/background.png) repeat-x center bottom / contain;
+}

@@ -1,0 +1,74 @@
+/**
+ * Thème 2019
+ */
+.home--2019 .hero {
+	background: url(../images/header/2019/background.jpg) no-repeat center top / auto 100%,
+							url(../images/header/2019/pattern.jpg) repeat-x center top / auto 100%;
+}
+
+.home--2019 .hero-content {
+	min-height: 21.8125rem;
+}
+
+.home--2019 .hero-h1 {
+	text-align: center;
+}
+
+.home--2019 .hero-logo {
+	position: relative;
+	top: -1rem;
+	left: 1.25rem;
+	display: inline-block;
+	transform: rotate(-5deg);
+}
+
+.home--2019 .hero-logo img {
+	width: 12.5rem;
+	height: 4.6875rem;
+}
+
+.home--2019 .calendar {
+	background-color: transparent;
+	padding: 0.4375rem;
+	grid-gap: 0.4375rem;
+	margin-top: 1rem;
+}
+
+.home--2019 .day:nth-child(5n + 1) .day-link {
+	color: #fff;
+	border-color: #428cbd;
+	background-color: #428cbd;
+}
+
+.home--2019 .day:nth-child(5n + 2) .day-link {
+	border-color: #ffbf4e;
+	background-color: #ffbf4e;
+}
+
+.home--2019 .day:nth-child(5n + 3) .day-link {
+	color: #fff;
+	border-color: #dd3a63;
+	background-color: #dd3a63;
+}
+
+.home--2019 .day:nth-child(5n + 4) .day-link {
+	border-color: #9adbd5;
+	background-color: #9adbd5;
+}
+
+.home--2019 .day:nth-child(5n + 5) .day-link {
+	border-color: #ff7d55;
+	background-color: #ff7d55;
+}
+
+.edition--2019 .header {
+	background-color: #eae7ee;
+}
+
+.edition--2019 .header::after {
+	background: #817197;
+}
+
+.edition--2019 .header-archive {
+	filter: hue-rotate(-90deg);
+}

@@ -1,0 +1,220 @@
+/**
+ * Thème 2021
+ */
+.home--2021 .site,
+.edition--2021 .header {
+	background: #2b1047 url(../images/header/2021/pattern.jpg) repeat;
+}
+
+.home--2021 .hero {
+	margin-bottom: 2rem;
+	background: transparent url(../images/header/2021/background.jpg) no-repeat center top;
+}
+
+.home--2021 .hero-content {
+	padding-top: 6.5rem;
+	min-height: 31rem;
+}
+
+.home--2021 .hero-logo:focus {
+	outline-color: #2b1047;
+}
+
+.home--2021 .hero-logo img {
+	width: 12rem;
+	height: 4.5rem;
+	margin-left: 0.5rem;
+	filter: drop-shadow(0px 0px 25px rgb(170, 170, 147));
+}
+
+.home--2021 .hero-logo:focus img {
+	filter: drop-shadow(0px 0px 25px rgb(247, 247, 226));
+}
+
+@media only screen and (max-width: 31.25em) {
+	.home--2021 .hero {
+		margin-bottom: 1rem;
+		background-size: 800px;
+	}
+
+	.home--2021 .hero-content {
+		padding-top: 2.5rem;
+		min-height: 20rem;
+	}
+
+	.home--2021 .hero-logo img {
+		width: 8rem;
+		height: 6.75rem;
+	}
+}
+
+@media only screen and (max-width: 20em) {
+	.home--2021 .hero {
+		background-position: -320px;
+	}
+
+	.home--2021 .hero-logo img {
+		margin-left: 1rem;
+	}
+}
+
+.home--2021 .calendar {
+	background-color: transparent;
+	padding: 0.4375rem;
+	grid-gap: 0.4375rem;
+	margin-top: 0;
+}
+
+.home--2021 .day {
+	position: relative;
+	background-color: #fff6da;
+}
+.home--2021 .day::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	box-shadow: rgba(178, 170, 147, 0.3) 0px 30px 60px -12px,
+	rgba(178, 170, 147, 0.3) 0px 18px 36px -18px;
+	/* Transition box-shadow performante : https://alligator.io/css/transition-box-shadows/ */
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.4s;
+	transition-delay: 0.1s;
+	transition-timing-function: ease-in-out;
+}
+
+.home--2021 .day:hover::before,
+.home--2021 .day:focus-within::before {
+	opacity: 1;
+}
+
+.home--2021 .day:nth-child(5n + 1) .day-link {
+	color: #fff6da;
+	border-color: #460d42;
+	background-color: #460d42;
+}
+
+.home--2021 .day:nth-child(5n + 2) .day-link {
+	color: #190537;
+	border-color: #c37578;
+	background-color: #c37578;
+}
+
+.home--2021 .day:nth-child(5n + 3) .day-link {
+	color: #fff6da;
+	border-color: #440166;
+	background-color: #440166;
+}
+
+.home--2021 .day:nth-child(5n + 4) .day-link {
+	color: #190537;
+	border-color: #c8978c;
+	background-color: #c8978c;
+}
+
+.home--2021 .day:nth-child(5n + 5) .day-link {
+	color: #fff6da;
+	border-color: #6a2449;
+	background-color: #6a2449;
+}
+
+.home--2021 .day:nth-child(5n + 6) .day-link {
+	color: #190537;
+	border-color: #e370a0;
+	background-color: #e370a0;
+}
+
+.home--2021 .day-off {
+	background-color: #191d1e;
+}
+
+.home--2021 .day-off-cell {
+	border-color: #191d1e;
+}
+
+.home--2021 :is(.day-number, .day-off-number) {
+	margin-bottom: 0.75em;
+	width: 2rem;
+	height: 2rem;
+	font-size: 1rem;
+	line-height: 2em;
+}
+
+.home--2021 .day-number {
+	background-color: #fff6da;
+	color: #2b1047;
+}
+
+.home--2021 .day-off-number {
+	background-color: #191d1e;
+	color: #b2aa93;
+}
+
+.home--2021 .day-author::before {
+	background-color: currentColor;
+}
+
+.edition--2021 .header::after {
+	background-color: #6abebf;
+}
+
+.edition--2021 .header-archive-year {
+	color: #2b1047;
+}
+
+.edition--2021 :is(.header-archive, .footer-archives, .jdw-button, .comment-button, .comment-edit-link) {
+	filter: hue-rotate(200deg);
+}
+
+.edition--2021 :is(.post-title, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry a, .comments-title, .post-author-title) {
+	color: #2b1047;
+}
+
+.post-entry ul li::before {
+	background-color: #2b1047;
+}
+
+.edition--2021 .post-entry :is(blockquote, .answer) {
+	border-color: #6abebf;
+}
+
+.edition--2021 .post-entry :is(.section, .section::before, .section::after),
+.edition--2021 :is(.post-footer, .post-footer::before, .post-footer::after),
+.edition--2021 :is(.posts-nav-link a, .comment-form, .comment-avatar) {
+	background: #f2f0ea;
+}
+
+.edition--2021 .post-footer::after {
+	background: #eee8d5;
+}
+
+.edition--2021 .comment-avatar span {
+	color: #eee8d5;
+}
+
+.edition--2021 .posts-nav-link a::before {
+	background-image: url(../images/header/2021/arrow.png);
+}
+
+.edition--2021 :is(.comment-item, .comment-textbox, .comment-textarea) {
+	border-color: #6abebf;
+}
+
+.edition--2021 .post-aside {
+	color: #367385;
+}
+
+.edition--2021 .footer {
+	margin-top: 2rem;
+	background: #2b1047 url(../images/header/2021/footer-pattern.jpg) repeat;
+	color: #fffaeb;
+	border-top-color: #6abebf;
+}
+
+.edition--2021 .footer a:focus {
+	outline-color: #fffaeb;
+}
+
+.edition--2021 .footer-link--twitter a::before {
+	background-image: url(../images/header/2021/icon-twitter.png);
+}
