@@ -42,9 +42,11 @@
 			<div class="hero-content">
 				<h1 class="hero-h1"><a href="<?php bloginfo('home'); ?>" class="hero-logo"><?php jdw_the_logo(); ?></a></h1>
 				<?php $year = jdw_get_the_year();
-				if($year <= 2017 || $year === 2023) : ?>
+				if($year <= 2017) { ?>
 					<p class="hero-baseline"><?php bloginfo('description'); ?></p>
-				<?php endif; ?>
+				<?php } else if($year == 2023) { ?>
+					<p class="hero-baseline"><?php echo str_replace('avent', 'avent<br>', get_bloginfo('description')); ?></p>
+				<?php } ?>
 			</div>
 		</header>
 		<?php else: ?>

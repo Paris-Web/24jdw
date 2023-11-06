@@ -33,7 +33,7 @@
 .home--2020 .calendar {
 	background-color: transparent;
 	padding: 0.4375rem;
-	grid-gap: 0.4375rem;
+	gap: 0.4375rem;
 	margin-top: 0;
 }
 
