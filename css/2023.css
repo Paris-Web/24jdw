@@ -54,7 +54,6 @@
 }
 
 .edition--2023 .footer-archives {
-	text-shadow: 0 0 .125rem var(--24);
 	transform: translateX(6rem);
 }
 
@@ -82,7 +81,7 @@
 	border: 0;
 	gap: 1rem;
 	margin-top: 0;
-	padding: 1rem 1rem 2rem;
+	padding: 1rem 1rem 4rem;
 }
 
 .home--2023 :is(.day, .day-off) {
@@ -92,32 +91,69 @@
 }
 
 .home--2023 :is(.day, .day-off) > * {
+	--is-reversed: -1;
 	border-color: #0b0318;
-	box-shadow: -.5rem .5rem 0 0 #000;
-	transform: rotateY(-20deg) translateX(-.25rem);
+	box-shadow: calc(.5rem * var(--is-reversed, 1)) .5rem 0 0 #000;
+	transform:
+		rotateY(calc(20deg * var(--is-reversed, 1)))
+		translateX(calc(.25rem * var(--is-reversed, 1)));
 }
 
-.home--2023 :is(.day, .day-off):nth-child(odd) > *,
-.home--2023 :is(.day, .day-off):nth-child(6) ~ :nth-child(even) > * {
-	box-shadow: .5rem .5rem 0 0 #000;
-	transform: rotateY(20deg) translateX(.25rem);
+.home--2023 :is(.day, .day-off):nth-child(odd) > * {
+	--is-reversed: 1;
 }
 
-.home--2023 :is(.day, .day-off):nth-child(6) ~ :nth-child(odd) > *,
-.home--2023 :is(.day, .day-off):nth-child(12) ~ :nth-child(even) > * {
-	box-shadow: -.5rem .5rem 0 0 #000;
-	transform: rotateY(-20deg) translateX(-.25rem);
+@media only screen and (min-width: 31.25rem) and (max-width: 41.4375rem) {
+	.home--2023 :is(.day, .day-off):first-child > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(4n), :nth-child(4n) + *) > * {
+		--is-reversed: -1;
+	}
+
+	.home--2023 :is(.day, .day-off):is(:nth-child(4n + 2), :nth-child(4n + 2) + *) > * {
+		--is-reversed: 1;
+	}
 }
 
-.home--2023 :is(.day, .day-off):nth-child(12) ~ :nth-child(odd) > *,
-.home--2023 :is(.day, .day-off):nth-child(18) ~ :nth-child(even) > * {
-	box-shadow: .5rem .5rem 0 0 #000;
-	transform: rotateY(20deg) translateX(.25rem);
+@media only screen and (min-width: 55rem) and (max-width: 89.9375rem) {
+	.home--2023 :is(.day, .day-off):first-child > *,
+	.home--2023 :is(.day, .day-off):nth-child(1) + * + * > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(6), :nth-child(6) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(9), :nth-child(9) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(14), :nth-child(14) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(17), :nth-child(17) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(22), :nth-child(22) + * + *) > * {
+		--is-reversed: -1;
+	}
+
+	.home--2023 :is(.day, .day-off):is(:nth-child(2), :nth-child(2) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(5), :nth-child(5) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(10), :nth-child(10) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(13), :nth-child(13) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(18), :nth-child(18) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(21), :nth-child(21) + * + *) > * {
+		--is-reversed: 1;
+	}
 }
 
-.home--2023 :is(.day, .day-off):nth-child(18) ~ :nth-child(odd) > * {
-	box-shadow: -.5rem .5rem 0 0 #000;
-	transform: rotateY(-20deg) translateX(-.25rem);
+@media only screen and (min-width: 90rem) {
+	.home--2023 :is(.day, .day-off):nth-child(odd) > *,
+	.home--2023 :is(.day, .day-off):nth-child(6) ~ :nth-child(even) > * {
+		--is-reversed: 1;
+	}
+
+	.home--2023 :is(.day, .day-off):nth-child(6) ~ :nth-child(odd) > *,
+	.home--2023 :is(.day, .day-off):nth-child(12) ~ :nth-child(even) > * {
+		--is-reversed: -1;
+	}
+
+	.home--2023 :is(.day, .day-off):nth-child(12) ~ :nth-child(odd) > *,
+	.home--2023 :is(.day, .day-off):nth-child(18) ~ :nth-child(even) > * {
+		--is-reversed: 1;
+	}
+
+	.home--2023 :is(.day, .day-off):nth-child(18) ~ :nth-child(odd) > * {
+		--is-reversed: -1;
+	}
 }
 
 .home--2023 .day-off:nth-child(6n + 1)  > * {
