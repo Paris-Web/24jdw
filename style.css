@@ -903,6 +903,10 @@ body.admin-bar :target {
 	margin: 0 1.5rem;
 }
 
+.posts-nav-next:only-child {
+	margin-left: auto;
+}
+
 @media only screen and (max-width: 40rem) {
 	.posts-nav {
 		flex-direction: column;

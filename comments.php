@@ -1,3 +1,7 @@
+<?php
+global $user_ID;
+global $id;
+?>
 <div class="comments" id="commentaires">
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
@@ -7,7 +11,8 @@
 			?>
 		</h2>
 		<ol class="comments-list">
-			<?php foreach ($comments as $comment) : ?>
+			<?php // @todo Utiliser wp_list_comments() ?
+			foreach ($comments as $comment) : ?>
 				<li class="comment-item" id="comment-<?php comment_ID() ?>">
 					<div class="comment-avatar" aria-hidden="true"><span><?php jdw_comment_author_initial(get_comment_author()) ?></span></div>
 					<div class="comment-body">
@@ -24,11 +29,12 @@
 						<?php edit_comment_link('&Eacute;diter'); ?>
 					</div>
 				</li>
-			  <?php 
+			  <?php
 			endforeach; ?>
 		</ol>
 	<?php endif; ?>
-	<?php if ( $post->comment_status == 'open' ) : ?>
+	<?php // @todo Utiliser comment_form() ?
+	if ( $post->comment_status == 'open' ) : ?>
 	<div class="comments-publish">
 		<h2 class="comments-title">Laisser un commentaire </h2>
 		<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" class="comment-form">

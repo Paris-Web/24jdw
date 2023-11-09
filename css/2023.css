@@ -7,6 +7,14 @@
 	--de-web: #9458ff;
 }
 
+.edition--2023 :not(.day-link):focus-visible {
+	box-shadow: 0 0 0 .125rem var(--24);
+	isolation: isolate;
+	outline: .125rem solid var(--jours);
+	outline-offset: .125rem;
+
+}
+
 .home--2023 .site {
 	background: linear-gradient(
 		var(--jours) 38rem,
@@ -19,11 +27,11 @@
 }
 
 .edition--2023 .header {
-	background: #004063;
+	background: var(--jours);
 }
 
 .edition--2023 .header::after {
-	background-color: #aed5fe;
+	background-color: var(--de-web);
 }
 
 .edition--2023 .hero-content {
@@ -38,7 +46,7 @@
 	width: 18em;
 }
 
-.edition--2023 .footer {
+.edition--2023 :is(.footer, .jdw-button, .comment-button, .comment-edit-link) {
 	margin-top: 0;
 	background: #320e78;
 	border-color: currentColor;
@@ -59,9 +67,14 @@
 .edition--2023 :is(.header-archive, .footer-archives) {
 	--ribbon-color: var(--24);
 	--ribbon-bg: var(--jours);
-	--ribbon-border: var(--24);
+	--ribbon-border: currentcolor;
 
 	color: var(--ribbon-color);
+}
+
+.edition--2023 .header-archive {
+	--ribbon-color: #3e1494;
+	--ribbon-bg: #9257ff;
 }
 
 .home--2023 .calendar {
@@ -177,7 +190,7 @@
 
 .home--2023 .day-author::before {
 	background: #fdb63a;
-	border-top: .125rem solid #639;
+	border-top: .125rem solid;
 	content: "";
 	height: auto;
 	inset: 0 -1.5rem -1.5rem;
@@ -190,3 +203,63 @@
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
 }
+
+.edition--2023 .post {
+	color: #0b0318;
+}
+
+.edition--2023 .post-entry :is(blockquote, .pullquote, .answer) {
+	color: inherit;
+	border-left-color: var(--24);
+}
+
+.edition--2023 .post-entry :is(img, .wp-video) {
+	border-color: var(--24);
+}
+
+.edition--2023 :is(.comment-textbox, .comment-textarea) {
+	border-color: #fdb63a;
+}
+
+.edition--2023 :is(.post-title, .post-author-title, .post-aside, .posts-nav, .comments-publish, .comments-title),
+.edition--2023 .post-entry :is(h2, h3, h4, h5, h6, strong),
+.edition--2023 .footnotes li::marker,
+.edition--2023.single .post-entry > p:not([class]):first-of-type::first-letter {
+	color: var(--jours);
+}
+
+.edition--2023 .post-entry ul li::before {
+	background-color: var(--de-web);
+}
+
+.edition--2023 .post-entry .section::after,
+.edition--2023 :is(.post-entry .section, .post-footer, .posts-nav-link a, .comment-form),
+.edition--2023 :is(.post-entry .section, .post-footer)::before {
+	background-color: #fff5dc;
+}
+
+.edition--2023 .post-footer::after,
+.edition--2023 :is(.post-author-avatar img) {
+	background-color: var(--24);
+}
+
+/**
+ * Filtre généré pour atteindre la couleur cible
+ * @link https://codepen.io/sosuke/pen/Pjoqqp
+ */
+.edition--2023 :is(.post-meta, .post-share-link)::before,
+.edition--2023 .post-comments-link::after {
+	filter: saturate(0) brightness(0) invert(11%) sepia(94%) saturate(5643%) hue-rotate(263deg) brightness(79%) contrast(94%);
+}
+
+.edition--2023 :is(.posts-nav-link, .footer-link--twitter) a::before {
+	filter: saturate(0) brightness(0) invert(92%) sepia(15%) saturate(1070%) hue-rotate(327deg) brightness(102%) contrast(107%);
+}
+
+
+.edition--2023 :is(.post-meta--length, .post-meta--comments) {
+	border-top-color: var(--de-web);
+}
+
+/* @todo Focus et responsive */
+/* @todo Regrouper les propriétés répétées */

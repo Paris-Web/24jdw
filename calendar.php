@@ -4,8 +4,7 @@
 
 		$year = jdw_get_the_year();
 
-		// @fixme ne pas commiter !!
-		query_posts('category_name=articles&posts_per_page=28&monthnum=11&order=asc&year='.$year);
+		query_posts('category_name=articles&posts_per_page=28&monthnum=12&order=asc&year='.$year);
 		while(have_posts()) {
 			the_post();
 			$day = get_the_date('d');
