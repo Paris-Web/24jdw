@@ -12,20 +12,30 @@
 	isolation: isolate;
 	outline: .125rem solid var(--jours);
 	outline-offset: .125rem;
-
 }
 
+/* Accueil */
 .home--2023 .site {
-	background: linear-gradient(
-		var(--jours) 38rem,
-		#320e78
-	);
+	background: linear-gradient(var(--jours) 38rem, #320e78);
 }
 
 .home--2023 .hero {
-	background: transparent url(../images/header/2023/header.jpg) no-repeat calc(50% - 1px) bottom;
+	background: transparent url(../images/header/2023/header.jpg) no-repeat -4.5rem bottom / auto 12.5rem;
 }
 
+.home--2023 .hero-content {
+	padding-top: 2rem;
+	min-height: 23rem;
+}
+
+.home--2023 .hero-baseline {
+	color: var(--24);
+	font-size: .875em;
+	font-weight: 700;
+	width: 18em;
+}
+
+/* Entête et pied-de-page */
 .edition--2023 .header {
 	background: var(--jours);
 }
@@ -34,27 +44,11 @@
 	background-color: var(--de-web);
 }
 
-.edition--2023 .hero-content {
-	padding-top: 2rem;
-	min-height: 38rem;
-}
-
-.edition--2023 .hero-baseline {
-	color: var(--24);
-	font-size: .875em;
-	font-weight: 700;
-	width: 18em;
-}
-
 .edition--2023 :is(.footer, .jdw-button, .comment-button, .comment-edit-link) {
 	margin-top: 0;
 	background: #320e78;
 	border-color: currentColor;
 	color: var(--24);
-}
-
-.edition--2023 .footer-archives {
-	transform: translateX(6rem);
 }
 
 .edition--2023 .footer-logo-img {
@@ -76,8 +70,9 @@
 	--ribbon-bg: #9257ff;
 }
 
+/* Calendrier */
 .home--2023 .calendar {
-	background: #6731d1 url(../images/header/2023/bg.jpg) repeat-y left -.25rem top;
+	background: var(--jours) url(../images/header/2023/bg.jpg) repeat-y left -4.5rem top / 40.2rem auto;
 	border: 0;
 	gap: 1rem;
 	margin-top: 0;
@@ -101,59 +96,6 @@
 
 .home--2023 :is(.day, .day-off):nth-child(odd) > * {
 	--is-reversed: 1;
-}
-
-@media only screen and (min-width: 31.25rem) and (max-width: 41.4375rem) {
-	.home--2023 :is(.day, .day-off):first-child > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(4n), :nth-child(4n) + *) > * {
-		--is-reversed: -1;
-	}
-
-	.home--2023 :is(.day, .day-off):is(:nth-child(4n + 2), :nth-child(4n + 2) + *) > * {
-		--is-reversed: 1;
-	}
-}
-
-@media only screen and (min-width: 55rem) and (max-width: 89.9375rem) {
-	.home--2023 :is(.day, .day-off):first-child > *,
-	.home--2023 :is(.day, .day-off):nth-child(1) + * + * > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(6), :nth-child(6) + * + *) > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(9), :nth-child(9) + * + *) > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(14), :nth-child(14) + * + *) > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(17), :nth-child(17) + * + *) > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(22), :nth-child(22) + * + *) > * {
-		--is-reversed: -1;
-	}
-
-	.home--2023 :is(.day, .day-off):is(:nth-child(2), :nth-child(2) + * + *) > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(5), :nth-child(5) + * + *) > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(10), :nth-child(10) + * + *) > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(13), :nth-child(13) + * + *) > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(18), :nth-child(18) + * + *) > *,
-	.home--2023 :is(.day, .day-off):is(:nth-child(21), :nth-child(21) + * + *) > * {
-		--is-reversed: 1;
-	}
-}
-
-@media only screen and (min-width: 90rem) {
-	.home--2023 :is(.day, .day-off):nth-child(odd) > *,
-	.home--2023 :is(.day, .day-off):nth-child(6) ~ :nth-child(even) > * {
-		--is-reversed: 1;
-	}
-
-	.home--2023 :is(.day, .day-off):nth-child(6) ~ :nth-child(odd) > *,
-	.home--2023 :is(.day, .day-off):nth-child(12) ~ :nth-child(even) > * {
-		--is-reversed: -1;
-	}
-
-	.home--2023 :is(.day, .day-off):nth-child(12) ~ :nth-child(odd) > *,
-	.home--2023 :is(.day, .day-off):nth-child(18) ~ :nth-child(even) > * {
-		--is-reversed: 1;
-	}
-
-	.home--2023 :is(.day, .day-off):nth-child(18) ~ :nth-child(odd) > * {
-		--is-reversed: -1;
-	}
 }
 
 .home--2023 .day-off:nth-child(6n + 1)  > * {
@@ -240,6 +182,7 @@
 	font-weight: 700;
 }
 
+/* Article */
 .edition--2023 .post {
 	color: #0b0318;
 }
@@ -292,10 +235,119 @@
 	filter: saturate(0) brightness(0) invert(92%) sepia(15%) saturate(1070%) hue-rotate(327deg) brightness(102%) contrast(107%);
 }
 
-
 .edition--2023 :is(.post-meta--length, .post-meta--comments) {
 	border-top-color: var(--de-web);
 }
 
-/* @todo Focus et responsive */
-/* @todo Regrouper les propriétés répétées */
+/**
+ * Responsive
+ */
+@media only screen and (min-width: 31.25rem) {
+	.home--2023 .hero,
+	.home--2023 .calendar {
+		background-position: center bottom;
+	}
+}
+
+@media only screen and (min-width: 31.25rem) and (max-width: 41.4375rem) {
+	.home--2023 :is(.day, .day-off):first-child > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(4n), :nth-child(4n) + *) > * {
+		--is-reversed: -1;
+	}
+
+	.home--2023 :is(.day, .day-off):is(:nth-child(4n + 2), :nth-child(4n + 2) + *) > * {
+		--is-reversed: 1;
+	}
+}
+
+@media only screen and (min-width: 31.25rem) and (max-width: 90rem) {
+	.footer-archives::after {
+		clip-path: polygon(0 .625rem, 100% .625rem, 100% calc(100% - .25rem), 50% calc(100% - 2.625rem), 0 calc(100% - .25rem));
+	}
+}
+
+@media only screen and (min-width: 41.4375rem) {
+	.home--2023 .hero,
+	.home--2023 .calendar {
+		background-size: 100vw auto;
+	}
+
+	.home--2023 .hero-content {
+		min-height: clamp(23rem, 7.7235rem + 36.8664vw, 28rem);
+	}
+}
+
+@media only screen and (min-width: 55rem) and (max-width: 89.9375rem) {
+	.home--2023 .hero-content {
+		min-height: 28rem;
+	}
+
+	.home--2023 :is(.day, .day-off):first-child > *,
+	.home--2023 :is(.day, .day-off):nth-child(1) + * + * > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(6), :nth-child(6) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(9), :nth-child(9) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(14), :nth-child(14) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(17), :nth-child(17) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(22), :nth-child(22) + * + *) > * {
+		--is-reversed: -1;
+	}
+
+	.home--2023 :is(.day, .day-off):is(:nth-child(2), :nth-child(2) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(5), :nth-child(5) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(10), :nth-child(10) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(13), :nth-child(13) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(18), :nth-child(18) + * + *) > *,
+	.home--2023 :is(.day, .day-off):is(:nth-child(21), :nth-child(21) + * + *) > * {
+		--is-reversed: 1;
+	}
+}
+
+@media only screen and (min-width: 61.25rem) {
+	.home--2023 .hero,
+	.home--2023 .calendar {
+		background-size: 62.75rem auto;
+	}
+
+	.home--2023 .hero-content {
+		min-height: 30rem;
+	}
+}
+
+@media only screen and (min-width: 90rem) {
+	.home--2023 .hero,
+	.home--2023 .calendar {
+		background-position: calc(50% - 1px) bottom;
+		background-size: auto;
+	}
+
+	.home--2023 .hero-content {
+		min-height: 38rem;
+	}
+
+	.home--2023 .calendar {
+		background-positon: left -.25rem top;
+	}
+
+	.home--2023 :is(.day, .day-off):nth-child(odd) > *,
+	.home--2023 :is(.day, .day-off):nth-child(6) ~ :nth-child(even) > * {
+		--is-reversed: 1;
+	}
+
+	.home--2023 :is(.day, .day-off):nth-child(6) ~ :nth-child(odd) > *,
+	.home--2023 :is(.day, .day-off):nth-child(12) ~ :nth-child(even) > * {
+		--is-reversed: -1;
+	}
+
+	.home--2023 :is(.day, .day-off):nth-child(12) ~ :nth-child(odd) > *,
+	.home--2023 :is(.day, .day-off):nth-child(18) ~ :nth-child(even) > * {
+		--is-reversed: 1;
+	}
+
+	.home--2023 :is(.day, .day-off):nth-child(18) ~ :nth-child(odd) > * {
+		--is-reversed: -1;
+	}
+
+	.edition--2023 .footer-archives {
+		transform: translateX(6rem);
+	}
+}

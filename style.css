@@ -1411,9 +1411,9 @@ body.admin-bar :target {
 	flex-grow: 0;
 	flex-shrink: 0;
 	width: 12.5rem;
-	padding: 2rem 1.5rem 4.5rem;
+	padding: 4.5rem 1.5rem 2rem;
 	color: #fff;
-	clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% calc(100% - 2.5rem), 0 100%);
+	clip-path: polygon(0 0, 50% 2.5rem, 100% 0%, 100% 100%, 0 100%);
 	background: var(--ribbon-border, #6f232b);
 }
 
@@ -1422,7 +1422,6 @@ body.admin-bar :target {
 	position: absolute;
 	inset: 0;
 	clip-path: polygon(0 0, 100% 0%, 100% calc(100% - .25rem), 50% calc(100% - 2.625rem), 0 calc(100% - .25rem));
-	margin: 0 .625rem .625rem;
 	background: var(--ribbon-bg, #be3745);
 	z-index: -1;
 }
@@ -1442,8 +1441,6 @@ body.admin-bar :target {
 
 	.footer-archives {
 		margin-top: 5rem;
-		padding-top: 1rem;
-		padding-bottom: 2rem;
 	}
 
 	.footer-archives > * {
@@ -1452,9 +1449,19 @@ body.admin-bar :target {
 	}
 
 	.footer-archives::after {
-		top: auto;
-		bottom: 100%;
+		margin: .625rem .625rem 0;
 		transform: rotate(180deg);
+	}
+}
+
+@media only screen and (min-width: 37.4375em) {
+	.footer-archives {
+		padding: 2rem 1.5rem 4.5rem;
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% calc(100% - 2.5rem), 0 100%);
+	}
+
+	.footer-archives::after {
+		margin: 0 .625rem .625rem;
 	}
 }
 
