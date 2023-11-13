@@ -25,14 +25,14 @@
 
 .home--2023 .hero-content {
 	padding-top: 2rem;
-	min-height: 23rem;
+	min-block-size: 23rem;
 }
 
 .home--2023 .hero-baseline {
 	color: var(--24);
 	font-size: .875em;
 	font-weight: 700;
-	width: 18em;
+	inline-size: 18em;
 }
 
 /* Entête et pied-de-page */
@@ -45,7 +45,7 @@
 }
 
 .edition--2023 :is(.footer, .jdw-button, .comment-button, .comment-edit-link) {
-	margin-top: 0;
+	margin-block-start: 0;
 	background: #320e78;
 	border-color: currentColor;
 	color: var(--24);
@@ -75,7 +75,7 @@
 	background: var(--jours) url(../images/header/2023/bg.jpg) repeat-y left -4.5rem top / 40.2rem auto;
 	border: 0;
 	gap: 1rem;
-	margin-top: 0;
+	margin-block-start: 0;
 	padding: 1rem 1rem 4rem;
 }
 
@@ -168,12 +168,12 @@
 
 .home--2023 .day-author::before {
 	background: #fdb63a;
-	border-top: .125rem solid;
+	block-size: auto;
+	border-block-start: .125rem solid;
 	content: "";
-	height: auto;
+	inline-size: auto;
 	inset: 0 -1.5rem -1.5rem;
 	position: absolute;
-	width: auto;
 	z-index: -1;
 }
 
@@ -189,7 +189,7 @@
 
 .edition--2023 .post-entry :is(blockquote, .pullquote, .answer) {
 	color: inherit;
-	border-left-color: var(--24);
+	border-inline-start-color: var(--24);
 }
 
 .edition--2023 .post-entry :is(img, .wp-video) {
@@ -236,7 +236,7 @@
 }
 
 .edition--2023 :is(.post-meta--length, .post-meta--comments) {
-	border-top-color: var(--de-web);
+	border-block-start-color: var(--de-web);
 }
 
 /**
@@ -273,13 +273,13 @@
 	}
 
 	.home--2023 .hero-content {
-		min-height: clamp(23rem, 7.7235rem + 36.8664vw, 28rem);
+		min-block-size: clamp(23rem, 7.7235rem + 36.8664vw, 28rem);
 	}
 }
 
 @media only screen and (min-width: 55rem) and (max-width: 89.9375rem) {
 	.home--2023 .hero-content {
-		min-height: 28rem;
+		min-block-size: 28rem;
 	}
 
 	.home--2023 :is(.day, .day-off):first-child > *,
@@ -309,7 +309,7 @@
 	}
 
 	.home--2023 .hero-content {
-		min-height: 30rem;
+		min-block-size: 30rem;
 	}
 }
 
@@ -321,7 +321,7 @@
 	}
 
 	.home--2023 .hero-content {
-		min-height: 38rem;
+		min-block-size: 38rem;
 	}
 
 	.home--2023 .calendar {
