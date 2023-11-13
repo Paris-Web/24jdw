@@ -15,7 +15,7 @@
 }
 
 /* Accueil */
-.home--2023 .site {
+.home--2023 {
 	background: linear-gradient(var(--jours) 38rem, #320e78);
 }
 

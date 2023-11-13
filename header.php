@@ -35,25 +35,24 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div class="site">
-		<?php if((is_home() && !is_paged()) || (is_year() && get_the_time('Y') != 2016)) : ?>
-		<header class="hero">
-			<div class="hero-content">
-				<h1 class="hero-h1"><a href="<?php bloginfo('home'); ?>" class="hero-logo"><?php jdw_the_logo(); ?></a></h1>
-				<?php $year = jdw_get_the_year();
-				if($year <= 2017) { ?>
-					<p class="hero-baseline"><?php bloginfo('description'); ?></p>
-				<?php } else if($year == 2023) { ?>
-					<p class="hero-baseline"><?php echo str_replace('avent', 'avent<br>', get_bloginfo('description')); ?></p>
-				<?php } ?>
-			</div>
-		</header>
-		<?php else: ?>
-		<header class="header">
-			<div class="header-content">
-				<a href="<?php bloginfo('home'); ?>" class="header-logo"><?php jdw_the_logo(); ?></a>
-				<a href="<?php bloginfo('url'); ?>/<?php jdw_the_year(); ?>/" class="header-archive" aria-label="Retour &agrave; l'&eacute;dition <?php jdw_the_year(); ?>"><span class="header-archive-year"><?php jdw_the_year(); ?></span></a>
-			</div>
-		</header>
-		<?php endif; ?>
-		<main role="main" class="main">
+	<?php if((is_home() && !is_paged()) || (is_year() && get_the_time('Y') != 2016)) : ?>
+	<header class="hero">
+		<div class="hero-content">
+			<h1 class="hero-h1"><a href="<?php bloginfo('home'); ?>" class="hero-logo"><?php jdw_the_logo(); ?></a></h1>
+			<?php $year = jdw_get_the_year();
+			if($year <= 2017) { ?>
+				<p class="hero-baseline"><?php bloginfo('description'); ?></p>
+			<?php } else if($year == 2023) { ?>
+				<p class="hero-baseline"><?php echo str_replace('avent', 'avent<br>', get_bloginfo('description')); ?></p>
+			<?php } ?>
+		</div>
+	</header>
+	<?php else: ?>
+	<header class="header">
+		<div class="header-content">
+			<a href="<?php bloginfo('home'); ?>" class="header-logo"><?php jdw_the_logo(); ?></a>
+			<a href="<?php bloginfo('url'); ?>/<?php jdw_the_year(); ?>/" class="header-archive" aria-label="Retour &agrave; l'&eacute;dition <?php jdw_the_year(); ?>"><span class="header-archive-year"><?php jdw_the_year(); ?></span></a>
+		</div>
+	</header>
+	<?php endif; ?>
+	<main role="main" class="main">

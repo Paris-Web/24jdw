@@ -7,7 +7,7 @@
 	--de-web: #ff9b4c;
 }
 
-.home--2022 .site {
+.home--2022 {
 	background: #cbebfd url(../images/header/2022/bg.png) repeat-x;
 }
 
@@ -24,7 +24,6 @@
 }
 
 .edition--2022 .hero-content {
-	margin-top: 3.5rem;
 	min-height: 28.25rem;
 }
 
