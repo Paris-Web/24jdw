@@ -402,7 +402,7 @@ function jdw_multi_author_avatar() {
  */
 add_action('widgets_init', 'jdw_widgets_init');
 function jdw_widgets_init() {
-    register_sidebar(array(
+	register_sidebar(array(
 		'name' => 'Footer Sidebar',
 		'id' => 'jdw-footer-sidebar',
 		'description' => 'Des widgets générés après le footer. Utile pour des scripts tiers par exemple.',
@@ -410,6 +410,30 @@ function jdw_widgets_init() {
 		'after_widget'  => '',
 		'before_title'  => '<!--',
 		'after_title'   => '-->'
-    ));
+	));
 }
+
+/**
+ * Masque certaines metabox pour les auteurices
+ */
+function jdw_remove_meta_boxes() {
+	if ( ! current_user_can( 'delete_others_pages' ) ) {
+		remove_meta_box( 'postexcerpt', 'post', 'normal' );
+		remove_meta_box( 'postcustom', 'post', 'normal' );
+		remove_meta_box( 'trackbacksdiv', 'post', 'normal' );
+		remove_meta_box( 'commentstatusdiv', 'post', 'normal' );
+		remove_meta_box( 'commentsdiv', 'post', 'normal' );
+		remove_meta_box( 'juizl-hreflang', 'post', 'normal' );
+		remove_meta_box( 'rocket_post_exclude', 'post', 'side' );
+	}
+}
+add_action('admin_init','jdw_remove_meta_boxes');
+
+function jdw_remove_dashboard_meta_boxes() {
+	remove_meta_box('dashboard_incoming_links', 'dashboard', 'normal');  // Incoming Links
+	remove_meta_box('dashboard_quick_press', 'dashboard', 'side');  // Quick Press
+	remove_meta_box('dashboard_primary', 'dashboard', 'side');   // WordPress blog
+	remove_meta_box('dashboard_secondary', 'dashboard', 'side');   // Other WordPress News
+}
+add_action('wp_dashboard_setup','jdw_remove_dashboard_meta_boxes');
 ?>
