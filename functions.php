@@ -5,6 +5,8 @@ include_once('functions-wp-crap.php');
  * Ajoute les styles du thème
  */
 function jdw_theme_styles() {
+	$year = jdw_get_the_year();
+
 	wp_register_style(
 		'styles',
 		get_bloginfo('stylesheet_url'),
@@ -15,8 +17,8 @@ function jdw_theme_styles() {
 
 	wp_register_style(
 		'year',
-		get_stylesheet_directory_uri().'/css/' . jdw_get_the_year() . '.css',
-		array(),
+		get_stylesheet_directory_uri().'/css/' . $year . '.css',
+		array('styles'),
 		'11.0.0',
 		'all'
 	);
@@ -46,17 +48,6 @@ function jdw_wysiwyg( $boutons ) {
 	return $boutons;
 }
 add_filter( 'tiny_mce_before_init', 'jdw_wysiwyg' );
-
-/**
- * Supprime les styles injectés pour Gutenberg
- */
-function jdw_disable_gutenberg() {
-	wp_dequeue_style('classic-theme-styles');
-	wp_dequeue_style('global-styles');
-	wp_dequeue_style('wp-block-library');
-	wp_dequeue_style('wp-block-library-theme');
-}
-add_filter('wp_enqueue_scripts', 'jdw_disable_gutenberg', 100);
 
 /**
  * Ajoute le support de gist via oEmbed
@@ -116,6 +107,14 @@ function jdw_add_tabs() {
 		&& '73' === get_post_field( 'post_author', $post_id )
 		&& '2022' === get_the_time( 'Y', $post_id )
 	){
+		wp_register_style(
+			'tabs',
+			get_stylesheet_directory_uri().'/css/tabs.css',
+			array(),
+			'1.0.3',
+			'all'
+		);
+
 		wp_register_script(
 			'tabs',
 			get_stylesheet_directory_uri().'/js/tabs.js',
@@ -124,6 +123,7 @@ function jdw_add_tabs() {
 			false
 		);
 
+		wp_enqueue_style('tabs');
 		wp_enqueue_script('tabs');
 	}
 }

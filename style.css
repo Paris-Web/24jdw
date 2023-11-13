@@ -17,26 +17,46 @@ Author URI: https://www.paris-web.fr
 }
 
 html {
-	scroll-behavior: smooth;
+	color-scheme: light;
+	scrollbar-gutter: stable;
+	text-size-adjust: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
 }
 
 body {
-	min-width: 17.5em;
+	background-color: #fff;
 	color: #595959;
 	font: 1em/1.5 Georgia, serif;
-	background-color: #fff;
-}
-
-.main {
-	flex: 1 0 auto;
+	font-synthesis: none;
+	min-width: 17.5em;
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-rendering: optimizeSpeed;
 }
 
 a {
 	color: inherit;
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: max(.1em, 1px);
+	text-underline-offset: .25em;
 }
 
 a img {
 	border: 0;
+}
+
+a,
+button {
+	touch-action: manipulation;
+}
+
+a svg,
+button svg {
+	pointer-events: none;
 }
 
 a:focus,
@@ -45,11 +65,23 @@ button:focus {
 	outline-offset: 0.25rem;
 }
 
-input[type="submit"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-button::-moz-focus-inner {
-	border: 0;
+p, li, dd {
+	hyphenate-limit-chars: 6 3 2;
+	hyphenate-limit-lines: 2;
+	hyphenate-limit-last: always;
+	hyphenate-limit-zone: 8%;
+	hyphens: auto;
+	text-wrap: pretty;
+	word-wrap: break-word;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizelegibility;
+	text-wrap: balance;
+}
+
 
 body.admin-bar :target {
 	scroll-margin-top: 2rem;
@@ -170,8 +202,7 @@ body.admin-bar :target {
 	color: #aa160e;
 	font-weight: bold;
 	letter-spacing: -0.05em;
-	background: url(images/number.png) no-repeat 0 0;
-	background-size: cover;
+	background: url(images/number.png) no-repeat 0 0 / cover;
 }
 
 .day-title {
@@ -569,6 +600,11 @@ body.admin-bar :target {
 	width: 0.5em;
 	height: 0.5em;
 	border-radius: 50%;
+}
+
+.post-entry ol li::marker {
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
 }
 
 .post-entry dt {
@@ -1474,10 +1510,10 @@ body.admin-bar :target {
 		margin-top: -2.125rem;
 	}
 }
+
 /**
  * Thème > 2017
  */
-
 .home--new .calendar {
 	position: relative;
 	gap: 0;
@@ -1534,44 +1570,3 @@ body.admin-bar :target {
 		grid-template-columns: repeat(6, 1fr);
 	}
 }
-
-/*
- * Styles pour les onglets
- * Article d'Emmanuelle Aboaf en 2022
- */
-.tabs {
-	margin: 1em 0;
-	border: 0.3125em solid #d9ecec;
-}
-
-.tabs [role="tablist"] {
-	background-color: #d9ecec;
-}
-
-.tabs [role="tab"] {
-	padding: 0.5em 0.8em;
-	font-family: inherit;
-	font-size: 0.8em;
-	background-color: #d9ecec;
-	border-width: 2px 2px 0 0;
-	border-style: solid;
-	border-color: #fff;
-	cursor: pointer;
-}
-
-.tabs [role="tab"]:first-child {
-	border-left-width: 2px;
-}
-
-.tabs [role="tab"][aria-selected="true"] {
-	background-color: #fff;
-}
-
-.tabs [role="tabpanel"] {
-	padding: 0.75em;
-}
-
-.tabs [role="tabpanel"] pre {
-	margin: -0.75em;
-}
-

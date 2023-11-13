@@ -1,5 +1,5 @@
 	</main>
-	<footer class="footer">
+	<footer class="footer" role="contentinfo">
 		<div class="footer-content">
 			<div class="footer-column footer-column--logo">
 				<a href="<?php bloginfo('home'); ?>" class="footer-logo">

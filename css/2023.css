@@ -7,6 +7,11 @@
 	--de-web: #9458ff;
 }
 
+.edition--2023 ::selection {
+	background-color: var(--jours);
+	color: var(--24);
+}
+
 .edition--2023 :not(.day-link):focus-visible {
 	box-shadow: 0 0 0 .125rem var(--24);
 	isolation: isolate;
@@ -202,7 +207,7 @@
 
 .edition--2023 :is(.post-title, .post-author-title, .post-aside, .posts-nav, .comments-publish, .comments-title),
 .edition--2023 .post-entry :is(h2, h3, h4, h5, h6, strong),
-.edition--2023 .footnotes li::marker,
+.edition--2023 .footnotes ol li::marker,
 .edition--2023.single .post-entry > p:not([class]):first-of-type::first-letter {
 	color: var(--jours);
 }

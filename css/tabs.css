@@ -1,0 +1,40 @@
+/*
+ * Styles pour les onglets
+ * Article d'Emmanuelle Aboaf en 2022
+ */
+.tabs {
+	margin: 1em 0;
+	border: 0.3125em solid #d9ecec;
+}
+
+.tabs [role="tablist"] {
+	background-color: #d9ecec;
+}
+
+.tabs [role="tab"] {
+	padding: 0.5em 0.8em;
+	font-family: inherit;
+	font-size: 0.8em;
+	background-color: #d9ecec;
+	border-width: 2px 2px 0 0;
+	border-style: solid;
+	border-color: #fff;
+	cursor: pointer;
+}
+
+.tabs [role="tab"]:first-child {
+	border-left-width: 2px;
+}
+
+.tabs [role="tab"][aria-selected="true"] {
+	background-color: #fff;
+}
+
+.tabs [role="tabpanel"] {
+	padding: 0.75em;
+}
+
+.tabs [role="tabpanel"] pre {
+	margin: -0.75em;
+}
+

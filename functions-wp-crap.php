@@ -65,4 +65,15 @@ function jdw_disable_emojis_tinymce($plugins) {
 remove_filter( 'the_content', 'wpautop' );
 add_filter( 'the_content', 'wpautop', 99 );
 add_filter( 'the_content', 'shortcode_unautop', 100 );
+
+/**
+ * Supprime les styles injectés pour Gutenberg
+ */
+function jdw_disable_gutenberg() {
+	wp_dequeue_style('classic-theme-styles');
+	wp_dequeue_style('global-styles');
+	wp_dequeue_style('wp-block-library');
+	wp_dequeue_style('wp-block-library-theme');
+}
+add_filter('wp_enqueue_scripts', 'jdw_disable_gutenberg', 100);
 ?>

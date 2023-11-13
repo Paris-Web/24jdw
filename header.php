@@ -35,8 +35,9 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
 	<?php if((is_home() && !is_paged()) || (is_year() && get_the_time('Y') != 2016)) : ?>
-	<header class="hero">
+	<header class="hero" role="banner">
 		<div class="hero-content">
 			<h1 class="hero-h1"><a href="<?php bloginfo('home'); ?>" class="hero-logo"><?php jdw_the_logo(); ?></a></h1>
 			<?php $year = jdw_get_the_year();
@@ -48,11 +49,11 @@
 		</div>
 	</header>
 	<?php else: ?>
-	<header class="header">
+	<header class="header" role="banner">
 		<div class="header-content">
 			<a href="<?php bloginfo('home'); ?>" class="header-logo"><?php jdw_the_logo(); ?></a>
 			<a href="<?php bloginfo('url'); ?>/<?php jdw_the_year(); ?>/" class="header-archive" aria-label="Retour &agrave; l'&eacute;dition <?php jdw_the_year(); ?>"><span class="header-archive-year"><?php jdw_the_year(); ?></span></a>
 		</div>
 	</header>
 	<?php endif; ?>
-	<main role="main" class="main">
+	<main role="main">
