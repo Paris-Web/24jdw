@@ -3,7 +3,7 @@
  */
 .edition--2023 {
 	--24: #ffe7a8;
-	--jours: #4921af;
+	--jours: #4f1eb6;
 	--de-web: #9458ff;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .home--2023 .hero {
-	background: transparent url(../images/header/2023/header.jpeg) no-repeat -4.5rem bottom / auto 12.5rem;
+	background: transparent url(../images/header/2023/header.webp) no-repeat -4.5rem bottom / auto 12.5rem;
 }
 
 .home--2023 .hero-content {
@@ -77,7 +77,7 @@
 
 /* Calendrier */
 .home--2023 .calendar {
-	background: var(--jours) url(../images/header/2023/bg.jpeg) repeat-y left -4.5rem top / 40.2rem auto;
+	background: var(--jours) url(../images/header/2023/bg.webp) repeat-y left -4.5rem top / 40rem auto;
 	border: 0;
 	gap: 1rem;
 	margin-block-start: 0;
@@ -322,7 +322,7 @@
 	.home--2023 .hero,
 	.home--2023 .calendar {
 		background-position: calc(50% - 1px) bottom;
-		background-size: auto;
+		background-size: 90.75rem auto;
 	}
 
 	.home--2023 .hero-content {
