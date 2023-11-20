@@ -436,4 +436,28 @@ function jdw_remove_dashboard_meta_boxes() {
 	remove_meta_box('dashboard_secondary', 'dashboard', 'side');   // Other WordPress News
 }
 add_action('wp_dashboard_setup','jdw_remove_dashboard_meta_boxes');
+
+
+/**
+ * Empêche WordPress d’envoyer un mail pour chaque création de compte
+ */
+function jdw_disable_new_user_notifications() {
+	// Débranche l’action standard de WordPress
+	remove_action( 'register_new_user', 'wp_send_new_user_notifications' );
+	remove_action( 'edit_user_created_user', 'wp_send_new_user_notifications', 10, 2 );
+
+	// Brancher notre propre fonction
+	add_action( 'register_new_user', 'jdw_send_new_user_notifications' );
+	add_action( 'edit_user_created_user', 'jdw_send_new_user_notifications', 10, 2 );
+}
+function jdw_send_new_user_notifications( $user_id, $notify = 'user' ) {
+	if ( empty($notify) || $notify == 'admin' ) {
+		return;
+	} elseif( $notify == 'both' ) {
+		// Envoyer seulement aux utilisateurs
+		$notify = 'user';
+	}
+	wp_send_new_user_notifications( $user_id, $notify );
+}
+add_action( 'init', 'jdw_disable_new_user_notifications' );
 ?>
