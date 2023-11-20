@@ -417,7 +417,8 @@ function jdw_widgets_init() {
  * Masque certaines metabox pour les auteurices
  */
 function jdw_remove_meta_boxes() {
-	if ( ! current_user_can( 'delete_others_pages' ) ) {
+	$user = wp_get_current_user();
+	if ( array_intersect( ['author', 'contributor'], $user->roles ) ) {
 		remove_meta_box( 'postexcerpt', 'post', 'normal' );
 		remove_meta_box( 'postcustom', 'post', 'normal' );
 		remove_meta_box( 'trackbacksdiv', 'post', 'normal' );
@@ -427,7 +428,7 @@ function jdw_remove_meta_boxes() {
 		remove_meta_box( 'rocket_post_exclude', 'post', 'side' );
 	}
 }
-add_action('admin_init','jdw_remove_meta_boxes');
+add_action('admin_head','jdw_remove_meta_boxes');
 
 function jdw_remove_dashboard_meta_boxes() {
 	remove_meta_box('dashboard_incoming_links', 'dashboard', 'normal');  // Incoming Links
@@ -436,6 +437,20 @@ function jdw_remove_dashboard_meta_boxes() {
 	remove_meta_box('dashboard_secondary', 'dashboard', 'side');   // Other WordPress News
 }
 add_action('wp_dashboard_setup','jdw_remove_dashboard_meta_boxes');
+
+
+/**
+ * PErmettre aux contributeurs d’ajouter des fichiers
+ */
+function jdw_allow_contributor_uploads() {
+	if (current_user_can('contributor') && !current_user_can('upload_files')) {
+		$contributor = get_role('contributor');
+		$contributor->add_cap('upload_files');
+	}
+}
+
+add_action('admin_head', 'jdw_allow_contributor_uploads');
+
 
 
 /**
