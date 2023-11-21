@@ -42,7 +42,7 @@ add_filter('tiny_mce_before_init', 'jdw_add_iframe');
  */
 function jdw_wysiwyg( $boutons ) {
 	$boutons['block_formats'] = 'Paragraphe=p;Titre 2=h2;Titre 3=h3;Titre 4=h4;Titre 5=h5;Titre 6=h6;Pre=pre';
-	$boutons['toolbar1'] = 'undo,redo,formatselect,bold,italic,sub,sup,|,bullist,numlist,blockquote,cite,tinymce_abbr_class,|,outdent,indent,|,link,unlink,|,|,juizlangattr,juizhreflangattr,|,|,charmap,|,paste_as_text,removeformat,|,wp_fullscreen';
+	$boutons['toolbar1'] = 'undo,redo,formatselect,bold,italic,sub,sup,strikethrough,|,bullist,numlist,blockquote,cite,tinymce_abbr_class,|,outdent,indent,|,link,unlink,|,|,juizlangattr,juizhreflangattr,|,|,charmap,|,paste_as_text,removeformat,|,wp_fullscreen';
 	$boutons['toolbar2'] = '';
 	$boutons['paste_as_text'] = true;
 	return $boutons;
