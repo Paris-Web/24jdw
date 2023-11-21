@@ -206,7 +206,7 @@
 }
 
 .edition--2023 :is(.post-title, .post-author-title, .post-aside, .posts-nav, .comments-publish, .comments-title),
-.edition--2023 .post-entry :is(h2, h3, h4, h5, h6, strong),
+.edition--2023 .post-entry :is(h2, h3, h4, h5, h6, strong, a),
 .edition--2023 .footnotes ol li::marker,
 .edition--2023.single .post-entry > p:not([class]):first-of-type::first-letter {
 	color: var(--jours);
