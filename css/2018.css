@@ -65,7 +65,7 @@
 }
 
 .home--2018 .day-title {
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: bold;
 }
 

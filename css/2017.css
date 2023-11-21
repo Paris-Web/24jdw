@@ -61,7 +61,7 @@
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif, var(--emoji-stack);
 	font-size: 0.75rem;
 	background: var(--de-web);
 	-webkit-box-decoration-break: clone;

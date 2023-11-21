@@ -17,6 +17,8 @@ Author URI: https://www.paris-web.fr
 }
 
 html {
+	--emoji-stack: Twemoji, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 	color-scheme: light;
 	scrollbar-gutter: stable;
 	text-size-adjust: none;
@@ -31,7 +33,7 @@ html {
 body {
 	background-color: #fff;
 	color: #595959;
-	font: 1em/1.5 Georgia, serif;
+	font: 1em/1.5 Georgia, serif, var(--emoji-stack);
 	font-synthesis: none;
 	min-width: 17.5em;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -309,7 +311,7 @@ body.admin-bar :target {
 	margin: 2.4em 0;
 	color: #6f232b;
 	font-size: 2em;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, Twemoji, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-weight: 900;
 	line-height: 1.25;
 	text-transform: uppercase;
@@ -332,7 +334,7 @@ body.admin-bar :target {
 	margin-bottom: 1rem;
 	color: #73838a;
 	font-size: 0.875rem;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 }
 
 .post-aside--end {
@@ -493,7 +495,7 @@ body.admin-bar :target {
 	margin-bottom: 0.8em;
 	color: #6f232b;
 	font-size: 1.5em;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: 900;
 	line-height: 1.25;
 	text-transform: uppercase;
@@ -503,7 +505,7 @@ body.admin-bar :target {
 	margin-bottom: 1.090909em;
 	color: #be3745;
 	font-size: 1.1em;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: 900;
 	line-height: 1.25;
 }
@@ -523,7 +525,7 @@ body.admin-bar :target {
 }
 
 .post-entry .question {
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: bold;
 }
 
@@ -603,7 +605,7 @@ body.admin-bar :target {
 }
 
 .post-entry ol li::marker {
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: 700;
 }
 
@@ -754,7 +756,7 @@ body.admin-bar :target {
 }
 
 .post-entry th {
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	text-align: left;
 	background: #ecf6f6;
 }
@@ -908,7 +910,7 @@ body.admin-bar :target {
 	margin-bottom: 0.7272rem;
 	color: #be3745;
 	font-size: 1.375rem;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: 900;
 	line-height: 1.25;
 }
@@ -924,7 +926,7 @@ body.admin-bar :target {
 	display: flex;
 	color: #2c3d44;
 	font-size: 1rem;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 }
 
 .posts-nav-link {
@@ -1017,7 +1019,7 @@ body.admin-bar :target {
 	color: #6f232b;
 	font-size: 1.875rem;
 	font-weight: 900;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	line-height: 1.25;
 	text-transform: uppercase;
 	margin-bottom: 1rem;
@@ -1049,7 +1051,7 @@ body.admin-bar :target {
 	flex-grow: 0;
 	width: 4.625rem;
 	height: 4.625rem;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: 900;
 	background: #ecf6f6;
 	overflow: hidden;
@@ -1081,7 +1083,7 @@ body.admin-bar :target {
 
 .comment-meta {
 	margin-bottom: 1.5rem;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: 500;
 }
 
@@ -1106,7 +1108,7 @@ body.admin-bar :target {
 	display: inline-block;
 	padding: 0.5em 1.5em;
 	color: #fff;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-size: 1em;
 	font-weight: 700;
 	line-height: inherit;
@@ -1135,7 +1137,7 @@ body.admin-bar :target {
 /* Formulaire de commentaires */
 .comments-publish {
 	color: #2c3d44;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 }
 
 .comment-form {
@@ -1176,7 +1178,7 @@ body.admin-bar :target {
 	width: 100%;
 	padding: 0.3125em 1em;
 	font-size: 1em;
-	font-family: Georgia, serif;
+	font-family: Georgia, serif, var(--emoji-stack);
 	line-height: 1.5;
 	background: #fff;
 	border: none;
@@ -1301,7 +1303,7 @@ body.admin-bar :target {
 	padding: 1rem 2rem;
 	color: var(--ribbon-color, #a2575c);
 	font-size: 1.25rem;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: bold;
 	line-height: 1;
 	text-align: right;
@@ -1341,7 +1343,7 @@ body.admin-bar :target {
 	width: 16em;
 	margin: 0.5em auto 0;
 	padding: 0 1em;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-size: 0.625em;
 	line-height: 1.25;
 	text-align: center;
@@ -1353,7 +1355,7 @@ body.admin-bar :target {
 .footer {
 	padding: 1.5rem 1rem 4.5rem;
 	color: #2c3d44;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: 500;
 	background: #f7f7f7;
 	border-top: 0.625rem solid #dbdbdb;
@@ -1550,7 +1552,7 @@ body.admin-bar :target {
 	width: 2.5rem;
 	height: 2.5rem;
 	color: #fff;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-size: 1.25rem;
 	font-weight: 700;
 	line-height: 2.5rem;

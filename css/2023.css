@@ -166,7 +166,7 @@
 
 .home--2023 .day-author {
 	color: #0b0318;
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-style: normal;
 	font-weight: 500;
 }
@@ -183,7 +183,7 @@
 }
 
 .home--2023 .day-title {
-	font-family: Raleway, sans-serif;
+	font-family: Raleway, sans-serif, var(--emoji-stack);
 	font-weight: 700;
 }
 
