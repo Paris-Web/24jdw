@@ -1,6 +1,8 @@
 <?php
 include_once('functions-wp-crap.php');
 
+add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'caption', 'style', 'script' ) );
+
 /**
  * Ajoute les styles du thème
  */
