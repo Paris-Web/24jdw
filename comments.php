@@ -43,15 +43,15 @@ global $id;
 			<?php else : ?>
 				<div class="comment-field comment-field--row">
 					<label class="comment-label" for="comment-author">Nom&nbsp;:</label>
-					<input class="comment-textbox" type="text" name="author" id="comment-author" value="<?php echo $comment_author; ?>" size="22" required="required" />
+					<input class="comment-textbox" type="text" name="author" id="comment-author" value="<?php echo $comment_author; ?>" size="22" required="required" autocomplete="name">
 				</div>
 				<div class="comment-field comment-field--row">
 					<label class="comment-label" for="comment-email">E-mail&nbsp;:</label>
-					<input class="comment-textbox" type="email" name="email" id="comment-email" value="<?php echo $comment_author_email; ?>" size="22" required="required" />
+					<input class="comment-textbox" type="email" name="email" id="comment-email" value="<?php echo $comment_author_email; ?>" size="22" required="required" autocomplete="email">
 				</div>
 				<div class="comment-field comment-field--row">
 					<label class="comment-label" for="comment-url">Site web <em>(facultatif)</em>&nbsp;:</label>
-					<input class="comment-textbox" type="url" name="url" id="comment-url" value="<?php echo $comment_author_url; ?>" size="22" />
+					<input class="comment-textbox" type="url" name="url" id="comment-url" value="<?php echo $comment_author_url; ?>" size="22" autocomplete="url">
 				</div>
 			<?php endif; ?>
 			<div class="comment-field comment-field--column">
@@ -59,8 +59,8 @@ global $id;
 				<textarea class="comment-textarea" name="comment" id="comment" cols="80" rows="5" required="required"></textarea>
 			</div>
 			<div class="comment-actions">
-				<input class="comment-button" name="submit" type="submit" id="submit" value="Poster mon commentaire" />
-				<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
+				<input class="comment-button" name="submit" type="submit" id="submit" value="Poster mon commentaire">
+				<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>">
 			</div>
 			<?php do_action('comment_form', $post->ID); ?>
 		</form>
