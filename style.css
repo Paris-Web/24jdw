@@ -88,6 +88,14 @@ p:empty  {
 	display: none;
 }
 
+p:blank {
+	display: none;
+}
+
+p:-moz-only-whitespace {
+	display: none;
+}
+
 body.admin-bar :target {
 	scroll-margin-top: 2rem;
 }
@@ -686,30 +694,30 @@ body.admin-bar :target {
 	width: 100%;
 }
 
-.post-entry img.alignleft {
+.post-entry .alignleft {
 	float: left;
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
-.post-entry img.alignright {
+.post-entry .alignright {
 	float: right;
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
 }
 
-.post-entry img.aligncenter {
+.post-entry .aligncenter img {
 	margin-left: auto;
 	margin-right: auto;
 }
 
 @media only screen and (min-width: 78.75em) {
 	/* 750 + (175 + 50x2)x2 */
-	.post-entry img.alignleft {
+	.post-entry .alignleft {
 		margin-left: -13.75em; /* -220px */
 	}
 
-	.post-entry img.alignright {
+	.post-entry .alignright {
 		margin-right: -13.75em; /* -220px */
 	}
 }
@@ -730,6 +738,7 @@ body.admin-bar :target {
 
 .post-entry .aligncenter .wp-caption-text {
 	text-align: center;
+	text-wrap: balance;
 }
 
 .post-entry [id^="attachment"] {
