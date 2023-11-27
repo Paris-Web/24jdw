@@ -381,6 +381,7 @@ function jdw_comment_author_initial($author_name) {
  * ATTENTION C'EST SUPER DÉGUEULASSE !
  * (Un jour, je ferais mieux que ça. Un jour.)
  */
+// @Fixme
 function jdw_multi_author_avatar() {
 	if(is_single('859')) {
 		echo '<img alt="Philippe Roser" src="http://media.24joursdeweb.fr/2014/12/philippe.jpg" class="avatar avatar-64 photo" height="64" width="64" />';
@@ -454,7 +455,6 @@ function jdw_allow_contributor_uploads() {
 add_action('admin_head', 'jdw_allow_contributor_uploads');
 
 
-
 /**
  * Empêche WordPress d’envoyer un mail pour chaque création de compte
  */
@@ -477,4 +477,13 @@ function jdw_send_new_user_notifications( $user_id, $notify = 'user' ) {
 	wp_send_new_user_notifications( $user_id, $notify );
 }
 add_action( 'init', 'jdw_disable_new_user_notifications' );
+
+
+/**
+ * Empêche WordPress d’envoyer un mail à l’admin pour chaque changement de mot de passe
+ */
+if ( !function_exists( 'wp_password_change_notification' ) ) {
+	function wp_password_change_notification() {}
+}
+
 ?>
