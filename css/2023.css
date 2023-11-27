@@ -223,7 +223,7 @@
 }
 
 .edition--2023 .post-footer::after,
-.edition--2023 :is(.post-author-avatar img) {
+.edition--2023 .post-author-avatar img {
 	background-color: var(--24);
 }
 

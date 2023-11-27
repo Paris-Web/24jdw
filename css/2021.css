@@ -183,9 +183,9 @@
 	border-color: #6abebf;
 }
 
-.edition--2021 .post-entry :is(.section, .section::before, .section::after),
-.edition--2021 :is(.post-footer, .post-footer::before, .post-footer::after),
-.edition--2021 :is(.posts-nav-link a, .comment-form, .comment-avatar) {
+.edition--2021 :is(.post-entry .section, .post-footer)::before,
+.edition--2021 :is(.post-entry .section, .post-footer)::after,
+.edition--2021 :is(.post-entry .section, .post-footer, .posts-nav-link a, .comment-form, .comment-avatar) {
 	background: #f2f0ea;
 }
 
