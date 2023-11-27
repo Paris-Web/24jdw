@@ -34,7 +34,8 @@ body {
 	background-color: #fff;
 	color: #595959;
 	font: 1em/1.5 Georgia, serif, var(--emoji-stack);
-	font-synthesis: none;
+	font-feature-settings: "liga", "dlig";
+	font-synthesis: style;
 	min-width: 17.5em;
 	-webkit-font-smoothing: subpixel-antialiased;
 	text-rendering: optimizeSpeed;
@@ -106,7 +107,7 @@ body.admin-bar :target {
 @font-face {
 	font-family: "Raleway";
 	src: url("fonts/raleway-regular.woff2") format("woff2");
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
@@ -213,7 +214,7 @@ body.admin-bar :target {
 	line-height: 2.45em;
 	white-space: nowrap;
 	color: #aa160e;
-	font-weight: bold;
+	font-weight: 700;
 	letter-spacing: -0.05em;
 	background: url(images/number.png) no-repeat 0 0 / cover;
 }
@@ -537,7 +538,7 @@ body.admin-bar :target {
 
 .post-entry .question {
 	font-family: Raleway, sans-serif, var(--emoji-stack);
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .post-entry q {
@@ -621,7 +622,7 @@ body.admin-bar :target {
 }
 
 .post-entry dt {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .post-entry dt:not(:first-child) {
@@ -1316,7 +1317,7 @@ body.admin-bar :target {
 	color: var(--ribbon-color, #a2575c);
 	font-size: 1.25rem;
 	font-family: Raleway, sans-serif, var(--emoji-stack);
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 1;
 	text-align: right;
 	transform: rotate(-90deg) translateX(-100%);
@@ -1338,7 +1339,7 @@ body.admin-bar :target {
 
 .hero-h1 {
 	font-size: 1em;
-	font-weight: normal;
+	font-weight: 400;
 	text-align: center;
 }
 
