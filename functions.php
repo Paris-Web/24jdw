@@ -486,4 +486,26 @@ if ( !function_exists( 'wp_password_change_notification' ) ) {
 	function wp_password_change_notification() {}
 }
 
+
+/**
+ * Améliore la gestion des images
+ */
+// Largeur du contenu
+if ( ! isset( $content_width ) ) {
+	$content_width = 740;
+}
+
+// Largeur max d’une image dans srcset
+// @see https://developer.wordpress.org/reference/hooks/max_srcset_image_width/
+add_filter( 'max_srcset_image_width', 830 );
+
+function jdw_remove_default_image_sizes( $sizes) {
+	unset( $sizes['thumbnail']);
+	unset( $sizes['medium_large']);
+	unset( $sizes['1536x1536']);
+	unset( $sizes['2048x2048']);
+	return $sizes;
+}
+add_filter('intermediate_image_sizes_advanced', 'jdw_remove_default_image_sizes');
+
 ?>
