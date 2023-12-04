@@ -236,10 +236,6 @@
 	filter: saturate(0) brightness(0) invert(11%) sepia(94%) saturate(5643%) hue-rotate(263deg) brightness(79%) contrast(94%);
 }
 
-.edition--2023 :is(.posts-nav-link, .footer-link--twitter) a::before {
-	filter: saturate(0) brightness(0) invert(92%) sepia(15%) saturate(1070%) hue-rotate(327deg) brightness(102%) contrast(107%);
-}
-
 .edition--2023 :is(.post-meta--length, .post-meta--comments) {
 	border-block-start-color: var(--de-web);
 }

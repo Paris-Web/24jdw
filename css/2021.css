@@ -224,7 +224,3 @@
 .edition--2021 .footer a:focus {
 	outline-color: #fffaeb;
 }
-
-.edition--2021 .footer-link--twitter a::before {
-	background-image: url(../images/header/2021/icon-twitter.png);
-}

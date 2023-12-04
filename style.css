@@ -57,6 +57,10 @@ button {
 	touch-action: manipulation;
 }
 
+svg {
+	fill: currentcolor;
+}
+
 a svg,
 button svg {
 	pointer-events: none;
@@ -1411,19 +1415,25 @@ body.admin-bar :target {
 	list-style: none;
 }
 
-.footer-link--twitter {
+.footer-link--socials {
 	margin-top: 1.5rem;
 }
 
-.footer-link--twitter a::before {
-	content: "";
-	display: inline-block;
-	margin-right: 0.25rem;
-	width: 1.25rem;
-	height: 1.3125rem;
-	vertical-align: middle;
-	background: url(images/footer/icon-twitter.png) no-repeat left center;
-	background-size: cover;
+.footer-link--github {
+	margin-top: 3rem;
+}
+
+.footer-link--socials a {
+	align-items: center;
+	display: flex;
+}
+
+.footer-link--socials svg {
+	margin-right: .25rem;
+}
+
+.footer-link--github svg {
+	margin: .125rem .5rem 0 .375rem;
 }
 
 @media only screen and (max-width: 63.9375em) {
@@ -1432,11 +1442,15 @@ body.admin-bar :target {
 	}
 
 	.footer-baseline {
-		margin-bottom: 0.75rem;
+		margin-bottom: .75rem;
 	}
 
-	.footer-link--twitter {
-		margin-top: 0.75rem;
+	.footer-link--socials {
+		margin-top: .75rem;
+	}
+
+	.footer-link--github {
+		margin-top: 1.5rem;
 	}
 }
 

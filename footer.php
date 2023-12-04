@@ -16,8 +16,37 @@
 					<li><a href="<?php bloginfo('url'); ?>/a-propos/">&Agrave; Propos</a></li>
 					<li><a href="<?php bloginfo('url'); ?>/mentions-legales/">Mentions l&eacute;gales</a></li>
 					<li><a href="<?php bloginfo('url'); ?>/remerciements/">Remerciements</a></li>
-					<li><a href="https://github.com/Paris-Web/24jdw/issues">Signaler un probl&egrave;me</a></li>
-					<li class="footer-link--twitter"><a href="https://www.twitter.com/ParisWeb">@ParisWeb sur Twitter</a></li>
+					<li class="footer-link--socials footer-link--github">
+						<a href="https://github.com/Paris-Web/24jdw/issues">
+							<svg aria-hidden="true" width="20" height="20">
+								<use href="<?php bloginfo('template_url') ?>/images/icon-socials.svg#github"></use>
+							</svg>
+							Signaler un problème
+						</a>
+					</li><li class="footer-link--socials">
+						<a href="https://mamot.fr/@parisweb">
+							<svg aria-hidden="true" width="32" height="32">
+								<use href="<?php bloginfo('template_url') ?>/images/icon-socials.svg#mastodon"></use>
+							</svg>
+							@ParisWeb sur Mastodon
+						</a>
+					</li>
+					<li class="footer-link--socials">
+						<a href="https://www.facebook.com/ParisWeb">
+							<svg aria-hidden="true" width="28" height="28">
+								<use href="<?php bloginfo('template_url') ?>/images/icon-socials.svg#facebook"></use>
+							</svg>
+							@ParisWeb sur Facebook
+						</a>
+					</li>
+					<li class="footer-link--socials">
+						<a href="https://www.twitter.com/ParisWeb">
+							<svg aria-hidden="true" width="28" height="28">
+								<use href="<?php bloginfo('template_url') ?>/images/icon-socials.svg#twitter"></use>
+							</svg>
+							@ParisWeb sur Twitter
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer-archives">
