@@ -497,7 +497,9 @@ if ( ! isset( $content_width ) ) {
 
 // Largeur max d’une image dans srcset
 // @see https://developer.wordpress.org/reference/hooks/max_srcset_image_width/
-add_filter( 'max_srcset_image_width', 830 );
+// @fixme Plante la prod (?)
+// @todo https://stackoverflow.com/questions/34210801/wordpress-4-4-change-max-srcset-image-width-in-media-php-from-functions-php
+# add_filter( 'max_srcset_image_width', 830 );
 
 function jdw_remove_default_image_sizes( $sizes) {
 	unset( $sizes['thumbnail']);

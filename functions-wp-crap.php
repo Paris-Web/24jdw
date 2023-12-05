@@ -9,10 +9,6 @@ remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'rel_canonical');
 remove_action('wp_head', 'rel_prev');
 
-// Remove jQuery if not in admin
-if (!is_admin())
-	wp_deregister_script('jquery');
-
 // Remove generator meta
 function jdw_remove_generator() {
 	return '';
@@ -24,10 +20,6 @@ function jdw_remove_recent_comments_style() {
 	add_filter('show_recent_comments_widget_style', '__return_false');
 }
 add_action('widgets_init', 'jdw_remove_recent_comments_style');
-
-// Enable support for a Sidebar
-if(function_exists('register_sidebar'))
-	register_sidebar();
 
 /*
  * Disable Emojis
