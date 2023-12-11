@@ -23,7 +23,8 @@
 							</svg>
 							Signaler un problème
 						</a>
-					</li><li class="footer-link--socials">
+					</li>
+					<li class="footer-link--socials">
 						<a href="https://mamot.fr/@parisweb">
 							<svg aria-hidden="true" width="32" height="32">
 								<use href="<?php bloginfo('template_url') ?>/images/icon-socials.svg#mastodon"></use>
@@ -31,12 +32,12 @@
 							@ParisWeb sur Mastodon
 						</a>
 					</li>
-					<li class="footer-link--socials">
-						<a href="https://www.facebook.com/ParisWeb">
-							<svg aria-hidden="true" width="28" height="28">
-								<use href="<?php bloginfo('template_url') ?>/images/icon-socials.svg#facebook"></use>
+					<li class="footer-link--socials footer-link--linkedin">
+						<a href="https://www.linkedin.com/company/paris-web/">
+							<svg aria-hidden="true" width="20" height="20">
+								<use href="<?php bloginfo('template_url') ?>/images/icon-socials.svg#linkedin"></use>
 							</svg>
-							@ParisWeb sur Facebook
+							@ParisWeb sur LinkedIn
 						</a>
 					</li>
 					<li class="footer-link--socials">

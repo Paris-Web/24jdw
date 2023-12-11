@@ -1429,11 +1429,13 @@ body.admin-bar :target {
 }
 
 .footer-link--socials svg {
+	margin-left: -.375rem;
 	margin-right: .25rem;
 }
 
-.footer-link--github svg {
-	margin: .125rem .5rem 0 .375rem;
+.footer-link--github svg,
+.footer-link--linkedin svg {
+	margin: .125rem .5rem 0 0;
 }
 
 @media only screen and (max-width: 63.9375em) {
