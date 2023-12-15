@@ -26,7 +26,7 @@
 			if ( is_search() || is_archive() ) {
 				the_excerpt();
 			} else {
-				the_content('<span class="post-more">Lire la suite</span>', '', '');
+				the_content('<span class="post-more">Lire la suite</span>', false);
 			}
 		?>
 	</div>
