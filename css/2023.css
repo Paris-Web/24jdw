@@ -197,7 +197,7 @@
 	border-inline-start-color: var(--24);
 }
 
-.edition--2023 .post-entry :is(img, .wp-video) {
+.edition--2023 .post-entry :is(img, .wp-video, table) {
 	border-color: var(--24);
 }
 
@@ -205,9 +205,9 @@
 	border-color: #fdb63a;
 }
 
-.edition--2023 :is(.post-title, .post-author-title, .post-aside, .posts-nav, .comments-publish, .comments-title),
-.edition--2023 .post-entry :is(h2, h3, h4, h5, h6, strong, a),
 .edition--2023 .footnotes ol li::marker,
+.edition--2023 .post-entry :is(h2, h3, h4, h5, h6, strong, a),
+.edition--2023 :is(.post-title, .post-author-title, .post-aside, .posts-nav, .comments-publish, .comments-title),
 .edition--2023.single .post-entry > p:not([class]):first-of-type::first-letter {
 	color: var(--jours);
 }
@@ -217,13 +217,19 @@
 }
 
 .edition--2023 .post-entry .section::after,
-.edition--2023 :is(.post-entry .section, .post-footer, .posts-nav-link a, .comment-form),
-.edition--2023 :is(.post-entry .section, .post-footer)::before {
+.edition--2023 .post-entry tr:nth-child(odd) td,
+.edition--2023 :is(.post-entry .section, .post-footer)::before,
+.edition--2023 :is(.post-entry .section, .post-footer, .posts-nav-link a, .comment-form, .post-author-avatar img) {
 	background-color: #fff5dc;
 }
 
+.edition--2023 .comment-avatar span {
+	color: #fff5dc;
+}
+
 .edition--2023 .post-footer::after,
-.edition--2023 .post-author-avatar img {
+.edition--2023 .post-author-avatar img::before,
+.edition--2023 :is(.post-entry th, .comment-avatar) {
 	background-color: var(--24);
 }
 
@@ -231,8 +237,8 @@
  * Filtre généré pour atteindre la couleur cible
  * @link https://codepen.io/sosuke/pen/Pjoqqp
  */
-.edition--2023 :is(.post-meta, .post-share-link)::before,
-.edition--2023 .post-comments-link::after {
+.edition--2023 .post-comments-link::after,
+.edition--2023 :is(.post-meta, .post-share-link, .posts-nav-link a)::before {
 	filter: saturate(0) brightness(0) invert(11%) sepia(94%) saturate(5643%) hue-rotate(263deg) brightness(79%) contrast(94%);
 }
 

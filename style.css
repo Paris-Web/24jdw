@@ -898,19 +898,24 @@ body.admin-bar :target {
 }
 
 .post-author-avatar {
-	padding: 0.75rem 0;
 	flex-shrink: 1;
 	flex-grow: 0;
 }
 
 .post-author-avatar img {
 	display: block;
-	min-width: 4rem;
-	width: 100%;
+	width: 9.375rem;
 	height: auto;
-	max-width: 9.375rem;
+	max-height: 9.375rem;
 	font-size: 1rem;
 	background: #d9ecec;
+	position: relative;
+}
+
+.post-author-avatar img::before {
+	inset: 0;
+	padding: 1rem;
+	position: absolute;
 }
 
 .post-author-text {
