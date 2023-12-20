@@ -510,4 +510,11 @@ function jdw_remove_default_image_sizes( $sizes) {
 }
 add_filter('intermediate_image_sizes_advanced', 'jdw_remove_default_image_sizes');
 
+
+/**
+ * Empêche les XSS dans les commentaires
+ */
+add_filter('comment_text', 'wp_kses_post');
+add_filter('comment_text_rss', 'wp_kses_post');
+add_filter('comment_excerpt', 'wp_kses_post');
 ?>
